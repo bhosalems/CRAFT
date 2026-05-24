@@ -205,24 +205,23 @@ Each line of a `queries*.jsonl` file is one query record with: `query_id`, `quer
 
 ## Running on WikiVideo
 
-Same orchestrator as MAGMaR, configured for the WikiVideo paths and queries:
+Same orchestrator as MAGMaR, configured for the WikiVideo paths and queries. For WikiVideo we extract with **`Qwen/Qwen3-VL-30B-A3B-Instruct-FP8`** — the 30B-A3B mixture-of-experts VL model, FP8-quantised — rather than the dense 27B used on MAGMaR. WikiVideo has ~8× more videos per topic, so the larger sparse expert set both fits the per-card budget at FP8 and is more sample-efficient across the longer-tail topic mix:
 
 ```bash
 export WIKIVIDEO_ROOT=/path/to/wikivideo
 
 SKIP_CHUNK=1 \
-TEAM_ID=cite_chasers RUN_ID=wikivideo_query_v1 \
-MODEL_NAME=Qwen/Qwen3.6-27B-FP8 \
+MODEL_NAME=Qwen/Qwen3-VL-30B-A3B-Instruct-FP8 \
 PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
-MAX_CRITIC_ROUNDS=4 COVERAGE_FOLLOWUP_ROUNDS=1 \
+MAX_CRITIC_ROUNDS=2 COVERAGE_FOLLOWUP_ROUNDS=1 \
 CRITIC_NLI_ENABLED=true CRITIC_COVERAGE_ENABLED=true \
-STEP15_CHUNK_SIZE=10 GPU_MEM_UTIL=0.85 \
+STEP15_CHUNK_SIZE=10 GPU_MEM_UTIL=0.95 \
 VIDEO_ROOT="$WIKIVIDEO_ROOT/en" \
 ASR_DIR="$WIKIVIDEO_ROOT/asr" \
-bash run_query_wikivideo.sh outputs/outputs_query_wikivideo_v1
+bash run_query_wikivideo.sh outputs/craft_wikivideo_main
 ```
 
-Critic config, calibration, packet assembly, inference, and report assembly are identical to the MAGMaR run — only the data inputs differ.
+Two values differ from the MAGMaR command above: `MAX_CRITIC_ROUNDS=2` (the 30B-A3B model already produces tighter atomic claims, so two repair rounds suffice) and `GPU_MEM_UTIL=0.95` (the FP8 weights plus the UNLI critic still leave KV-cache headroom at this fraction). Critic config, calibration, packet assembly, inference, and report assembly are otherwise identical to the MAGMaR run — only the data inputs and the extractor model differ.
 
 ---
 
