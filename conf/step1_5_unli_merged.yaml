@@ -1,0 +1,15 @@
+defaults:
+  - config
+  - override /model: unli_merged
+  - override /runtime: unli
+  - override /output: step1_5_unli_merged
+  - _self_
+
+stage: step1_5
+scorer_backend: unli
+# Chunked mode: when > 0, predict_unli.py is invoked once per chunk of N videos
+# in a fresh subprocess. Set to 0 to run single-process.
+chunk_size: 0
+# When true, disable audio decoding in the UNLI scorer (helps with long videos).
+no_audio: false
+verbose: true

@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+  - override /model: qwen3_30b
+  - override /runtime: step1_qwen
+  - override /output: step1_query_claims
+  - _self_
+
+stage: step1
+task: query-claims
+query_mode: single-query
+verbose: true

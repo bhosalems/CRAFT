@@ -1,0 +1,7 @@
+mapping: ./outputs/topic_video_mapping.json
+video_root: /a2il/data/mbhosale/MAGMaR2026_test
+queries_jsonl: /a2il/data/mbhosale/MAGMaR2026_test/MAGMaR2026_queries.jsonl
+expanded_queries: ./retrieval/expanded_queries.json
+artifacts_jsonl: null
+claims_jsonl: null
+unli_jsonl: null

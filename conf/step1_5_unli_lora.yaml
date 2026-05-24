@@ -1,0 +1,19 @@
+defaults:
+  - config
+  - override /model: unli_lora
+  - override /runtime: unli
+  - override /output: step1_5_unli_lora
+  - _self_
+
+stage: step1_5
+scorer_backend: unli
+# Chunked mode: when > 0, predict_unli.py is invoked once per chunk of N videos
+# in a fresh subprocess. This avoids pyav/libav mmap leaks that otherwise
+# exhaust vm.max_map_count after ~70-100 videos. Set to 0 to run single-process.
+chunk_size: 0
+# When true, disable audio decoding in the UNLI scorer.
+# Recommended for datasets containing long (>2-3 min) videos where the audio
+# buffer (float32 stereo at source sample rate) can exceed 100 MB and trigger
+# libav/torchvision EAGAIN cascades that destroy throughput.
+no_audio: false
+verbose: true

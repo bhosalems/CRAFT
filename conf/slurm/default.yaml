@@ -1,0 +1,6 @@
+python_module: python/3.12.3
+gpu_type: h100
+step1_general_notes_time: 4:00:00
+step1_query_claims_time: 8:00:00
+step1_5_general_notes_time: 8:00:00
+step1_5_query_claims_time: 4:00:00

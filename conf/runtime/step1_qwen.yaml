@@ -1,0 +1,32 @@
+fps: 1.0
+max_frames: 32
+enable_thinking: false
+temperature: 0.3
+top_p: 0.8
+top_k: 20
+max_tokens: 2048
+seed: 42
+repetition_penalty: 1.0
+presence_penalty: 0.0
+# Shard the VLM across two GPUs. Qwen3-VL-30B-A3B-Instruct (MoE, ~60 GB
+# in bf16) doesn't fit on a single 24 GiB A5000; TP=2 puts ~30 GB per GPU
+# (cuda:0 + cuda:1). The critic UNLI MUST move outside this range —
+# set critic.gpu=2 (or higher) in conf/step1_query_claims.yaml.
+tensor_parallel_size: 1
+# vLLM is generous with GPU memory by default. With the 30B sharded across
+# two cards we need headroom for KV cache + video activations.
+gpu_memory_utilization: 0.65
+# Optional vLLM quantization mode (examples: awq, gptq, fp8). Empty disables.
+quantization: ""
+# Cap vLLM's max context. Qwen3-VL-30B advertises 262144 (262K) which demands
+# ~24 GB of KV cache pre-reservation — won't fit after FP8 weights load.
+#
+# Empirically vLLM reports (at GPU_MEM_UTIL=0.95 on A6000 47 GB):
+#   weights+overhead ≈ 33 GB → ~12 GB KV cache → max context ≈ 130992 tokens.
+# 131072 fails by 10 MB. 122880 (120K) leaves ~6% margin and still fits typical
+# Qwen3-VL prompts at max_frames=128 (~100-130K tokens depending on resolution).
+#
+# If you hit "prompt too long" mid-run, drop max_frames to 96 or 64.
+# If you hit "KV cache memory needed > available" at init, drop this value
+# (or raise GPU_MEM_UTIL above 0.95 to give vLLM more total memory).
+max_model_len: 122880

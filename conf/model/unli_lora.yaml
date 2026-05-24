@@ -1,0 +1,4 @@
+model: AdoptedIrelia/UNLI
+base_model: AdoptedIrelia/UNLI
+lora_path: AdoptedIrelia/UNLI/lora
+download_dir: ""

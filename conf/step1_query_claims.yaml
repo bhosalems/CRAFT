@@ -1,0 +1,48 @@
+defaults:
+  - config
+  - override /model: qwen3_30b
+  - override /runtime: step1_qwen
+  - override /output: step1_query_claims
+  - _self_
+
+stage: step1
+task: query-claims
+query_mode: single-query
+max_critic_rounds: 0      # 0 = disabled; set to e.g. 4 to enable critic loop
+critic:
+  unli_model: AdoptedIrelia/UNLI
+  # Match Step 1.5 defaults (conf/model/unli_lora.yaml): base + LoRA
+  # This avoids accidental base/adapter mismatches and keeps critic behavior consistent.
+  unli_base_model: AdoptedIrelia/UNLI
+  unli_lora_path: AdoptedIrelia/UNLI/lora
+  # CUDA device for UNLI. vLLM with tensor_parallel_size=2 takes cuda:0 + cuda:1,
+  # so the critic must sit on cuda:2 (or higher). Lower this to 1 only when running
+  # a single-GPU (non-TP) VLM such as the legacy 9B.
+  gpu: 2
+  # Contradiction detection: two-stage cascade.
+  #   Stage A = MNLI cross-encoder (fast, recall-heavy screen).
+  #   Stage B = coverage LLM adjudicates each candidate and explains the conflict.
+  nli_enabled: true
+  nli_model: MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli
+  nli_device: cpu
+  nli_screen_threshold: 0.5      # loose; LLM filters false positives
+  nli_max_candidates: 5          # cap pairs sent to the LLM judge per round
+  # Coverage auditor and contradiction adjudicator: shared small instruct LLM.
+  # coverage_gpu=-1 means "reuse critic.gpu" (co-locate with UNLI).
+  coverage_enabled: true
+  coverage_model: meta-llama/Llama-3.2-3B-Instruct
+  coverage_gpu: -1
+  # After all videos for a query are processed, run a per-query coverage
+  # audit. If gaps are found, do up to this many targeted re-extraction
+  # sweeps over every video with a focused "find evidence of X" prompt.
+  # 0 = audit-and-log only; 1 = one bounded follow-up pass (recommended).
+  coverage_followup_rounds: 1
+# Per-video ASR transcript directory (output of extract_asr.py). When
+# non-empty, transcripts are pasted into the VLM prompt so claims can be
+# grounded in audio as well as visual content. Empty string disables.
+asr_dir: ""
+# Optional comma-separated query_ids to filter to (e.g. "3" or "1,2,5").
+# Used by run_query.sh's PARALLEL_QUERIES path so each parallel worker
+# only handles its assigned queries. Empty = process all queries.
+only_query_ids: ""
+verbose: true

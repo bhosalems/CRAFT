@@ -1,0 +1,10 @@
+defaults:
+  - config
+  - override /model: qwen_score_9b
+  - override /runtime: qwen_score
+  - override /output: step1_5_qwen_score
+  - _self_
+
+stage: step1_5
+scorer_backend: qwen_score
+verbose: true

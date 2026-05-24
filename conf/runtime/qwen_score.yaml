@@ -1,0 +1,10 @@
+fps: 1.0
+max_frames: 128
+enable_thinking: false
+temperature: 0.3
+top_p: 0.8
+top_k: 20
+max_tokens: 2048
+seed: 42
+repetition_penalty: 1.0
+presence_penalty: 0.0

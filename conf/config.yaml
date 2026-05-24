@@ -1,0 +1,19 @@
+defaults:
+  - model: qwen3_30b
+  - runtime: step1_qwen
+  - data: test
+  - output: default
+  - slurm: default
+  - optional experiment: null
+  - _self_
+
+stage: null
+task: null
+artifact_type: null
+query_mode: null
+verbose: false
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null

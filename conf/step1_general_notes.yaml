@@ -1,0 +1,11 @@
+defaults:
+  - config
+  - override /model: qwen3_5_vl
+  - override /runtime: step1_qwen
+  - override /output: step1_general_notes
+  - _self_
+
+stage: step1
+task: general-notes
+include_topic_in_prompt: true
+verbose: true

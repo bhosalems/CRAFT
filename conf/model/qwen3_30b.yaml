@@ -1,0 +1,4 @@
+model: Qwen/Qwen3-VL-30B-A3B-Instruct-FP8
+download_dir: ""
+base_model: null
+lora_path: null

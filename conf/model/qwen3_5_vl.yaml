@@ -1,0 +1,4 @@
+model: Qwen/Qwen3.5-9B
+download_dir: ""
+base_model: null
+lora_path: null

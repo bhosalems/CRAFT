@@ -1,0 +1,8 @@
+fps: 0.5
+resized_height: 256
+resized_width: 256
+new_token_num: 100
+new_token_prefix: "<CON_{idx}>"
+device_map: cuda:0
+torch_dtype: auto
+attn_implementation: sdpa
