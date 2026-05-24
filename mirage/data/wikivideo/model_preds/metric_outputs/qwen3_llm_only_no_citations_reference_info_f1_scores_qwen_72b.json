@@ -1,0 +1,52 @@
+{
+    "Launch_and_commissioning_of_the_James_Webb_Space_Telescope": {
+        "precision": 0.9473684210526315,
+        "recall": 0.9545454545454546,
+        "f1": 0.9509433962264151
+    },
+    "2018_lower_Puna_eruption": {
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1": 0.9268292682926829
+    },
+    "Notre-Dame_fire": {
+        "precision": 0.76,
+        "recall": 1.0,
+        "f1": 0.8636363636363636
+    },
+    "2022_United_States_Senate_election_in_Georgia": {
+        "precision": 1.0,
+        "recall": 0.918918918918919,
+        "f1": 0.9577464788732395
+    },
+    "Hurricane_Irma": {
+        "precision": 0.9411764705882353,
+        "recall": 0.8771929824561403,
+        "f1": 0.9080590238365494
+    },
+    "2018_Anchorage_earthquake": {
+        "precision": 0.96,
+        "recall": 0.375,
+        "f1": 0.5393258426966292
+    },
+    "2025_Canadian_federal_election": {
+        "precision": 0.45454545454545453,
+        "recall": 0.5277777777777778,
+        "f1": 0.4884318766066838
+    },
+    "2025_Myanmar_earthquake": {
+        "precision": 0.6538461538461539,
+        "recall": 0.6,
+        "f1": 0.6257668711656442
+    },
+    "Blue_Ghost_Mission_1": {
+        "precision": 0.72,
+        "recall": 0.75,
+        "f1": 0.7346938775510204
+    },
+    "Liberation_Day_Tariffs": {
+        "precision": 0.0,
+        "recall": 0.8974358974358975,
+        "f1": 0.0
+    }
+}

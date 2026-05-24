@@ -1,0 +1,1316 @@
+{
+    "Launch_and_commissioning_of_the_James_Webb_Space_Telescope": {
+        "reference": "The James Webb Space Telescope is a space telescope designed primarily to conduct infrared astronomy. The telescope had a complex launch and commissioning process that began in late 2021. \r\n\r\nThe U.S. National Aeronautics and Space Administration (NASA) led the development of the James Webb Space Telescope in collaboration with the European Space Agency and the Canadian Space Agency. The NASA Goddard Space Flight Center managed the telescope development with Northrop Grumman as a prime contractor. \r\n\r\nThe launch was scheduled for and took place on 25 December 2021 on an Ariane 5 rocket that lifted off from the Guiana Space Centre in French Guiana. The launch was successful and after the launch the telescope started a deployment phase as it began traveling to its target destination. The telescope now maintains a halo orbit. ",
+        "claims": [
+            {
+                "claim": "The James Webb Space Telescope (JWST) is a space telescope",
+                "judgment": true
+            },
+            {
+                "claim": "The primary purpose of the telescope is to conduct infrared astronomy",
+                "judgment": true
+            },
+            {
+                "claim": "The James Webb Space Telescope had a complex launch process",
+                "judgment": true
+            },
+            {
+                "claim": "The James Webb Space Telescope had a complex commissioning process",
+                "judgment": true
+            },
+            {
+                "claim": "The process began in late 2021",
+                "judgment": true
+            },
+            {
+                "claim": "The U.S. National Aeronautics and Space Administration (NASA) led the development of JWST",
+                "judgment": true
+            },
+            {
+                "claim": "The European Space Agency collaborated on JWST's development",
+                "judgment": true
+            },
+            {
+                "claim": "The Canadian Space Agency collaborated on JWST's development",
+                "judgment": true
+            },
+            {
+                "claim": "The development of JWST began in the late 1990s",
+                "judgment": false
+            },
+            {
+                "claim": "The NASA Goddard Space Flight Center (GSFC) managed the telescope development",
+                "judgment": false
+            },
+            {
+                "claim": "Northrop Grumman was the prime contractor for JWST",
+                "judgment": false
+            },
+            {
+                "claim": "The launch took place on 25 December 2021",
+                "judgment": true
+            },
+            {
+                "claim": "The launch took place on an Ariane 5 rocket",
+                "judgment": true
+            },
+            {
+                "claim": "The launch was scheduled for 25 December 2021",
+                "judgment": true
+            },
+            {
+                "claim": "The launch lifted off from the Guiana Space Centre",
+                "judgment": true
+            },
+            {
+                "claim": "The Guiana Space Centre is located in French Guiana",
+                "judgment": false
+            },
+            {
+                "claim": "The launch was successful",
+                "judgment": true
+            },
+            {
+                "claim": "The telescope started a deployment phase after launching",
+                "judgment": true
+            },
+            {
+                "claim": "The deployment phase involves deploying the parts of the telescope",
+                "judgment": true
+            },
+            {
+                "claim": "The telescope began traveling to its target destination",
+                "judgment": false
+            },
+            {
+                "claim": "JWST maintains a halo orbit",
+                "judgment": true
+            },
+            {
+                "claim": "JWST was launched on an Ariane 5 rocket",
+                "judgment": true
+            }
+        ]
+    },
+    "2018_lower_Puna_eruption": {
+        "reference": "The 2018 lower Puna eruption was a volcanic event on the island of Hawai\u02bbi, on K\u012blauea volcano's East Rift Zone that began on May 3, 2018. The eruption featured outbreaks of high lava fountains, lava flows, and volcanic gas in the Leilani Estates subdivision, as well as earthquakes and ground deformation. 24 fissures erupted lava, including some near the Leilani Estates subdivision, forcing residents to evacuate. The lava damaged the Puna Geothermal Venture, buried part of Hawaii Route 137, and flowed into the ocean. On May 29, Lava from a northeastern flow also overran Hawaii Route 132, cutting off access between Kapoho and P\u0101hoa before reaching and filling Kapoho Crater and Kapoho Bay on June 4, forming a point where the Bay had been by June 5. The same flow also destroyed the subdivision of Vacationland Hawaii. Lava flows covered land as well, destroying homes, and also created new land in the ocean.",
+        "claims": [
+            {
+                "claim": "The lower Puna eruption was a volcanic event",
+                "judgment": true
+            },
+            {
+                "claim": "The lower Puna eruption occurred on the island of Hawai\\u02bbi",
+                "judgment": true
+            },
+            {
+                "claim": "The lower Puna eruption took place on K\\u012blauea volcano's East Rift Zone",
+                "judgment": false
+            },
+            {
+                "claim": "The lower Puna eruption began on May 3, 2018",
+                "judgment": true
+            },
+            {
+                "claim": "Outbreaks of lava fountains occurred during the 2018 lower Puna eruption",
+                "judgment": true
+            },
+            {
+                "claim": "Lava fountains were high during the 2018 lower Puna eruption",
+                "judgment": true
+            },
+            {
+                "claim": "Lava flows occurred during the 2018 lower Puna eruption",
+                "judgment": true
+            },
+            {
+                "claim": "Volcanic gas was emitted during the 2018 lower Puna eruption",
+                "judgment": true
+            },
+            {
+                "claim": "Lava fountains during the 2018 lower Puna eruption occurred in the Leilani Estates subdivision",
+                "judgment": true
+            },
+            {
+                "claim": "Lava flows during the 2018 lower Puna eruption occurred in the Leilani Estates subdivision",
+                "judgment": true
+            },
+            {
+                "claim": "The ground was deformed during the 2018 lower Puna eruption",
+                "judgment": true
+            },
+            {
+                "claim": "Some of the 24 fissures that erupted lava were located in or near the Leilani Estates subdivision",
+                "judgment": false
+            },
+            {
+                "claim": "Some fissures erupted lava",
+                "judgment": true
+            },
+            {
+                "claim": "Fissures erupting lava forced approximately two thousand residents to evacuate",
+                "judgment": false
+            },
+            {
+                "claim": "Residents evacuated from the Leilani Estates subdivision",
+                "judgment": true
+            },
+            {
+                "claim": "Residents evacuated from nearby the Leilani Estates subdivision",
+                "judgment": true
+            },
+            {
+                "claim": "The Puna Geothermal Venture was damaged by lava",
+                "judgment": false
+            },
+            {
+                "claim": "Fissures erupted lava",
+                "judgment": true
+            },
+            {
+                "claim": "Fissures formed lava rivers",
+                "judgment": false
+            },
+            {
+                "claim": "Lava rivers buried part of Hawaii Route 137",
+                "judgment": false
+            },
+            {
+                "claim": "Lava rivers began flowing into the ocean",
+                "judgment": true
+            },
+            {
+                "claim": "Lava from a new northeastern flow overran Hawaii Route 132",
+                "judgment": false
+            },
+            {
+                "claim": "Lava from a new northeastern flow overran Hawaii Route 132 on May 29",
+                "judgment": false
+            },
+            {
+                "claim": "Lava overrunning Hawaii Route 132 cut the access between Kapoho and P\\u0101hoa",
+                "judgment": false
+            },
+            {
+                "claim": "There was a new northeastern flow of lava",
+                "judgment": false
+            },
+            {
+                "claim": "The lava flow that overran Hawaii Route 132 reached the Pacific Ocean",
+                "judgment": false
+            },
+            {
+                "claim": "The lava that overran Hawaii Route 132 reached Kapoho Bay",
+                "judgment": false
+            },
+            {
+                "claim": "The lava flow that overran Hawaii Route 132 reached Kapoho Bay on June 4",
+                "judgment": false
+            },
+            {
+                "claim": "A lava flow overran Hawaii Route 132",
+                "judgment": false
+            },
+            {
+                "claim": "The lava flow that overran Hawaii Route 132 reached the Pacific Ocean on June 4",
+                "judgment": false
+            },
+            {
+                "claim": "Lava entered the Kapoho Crater",
+                "judgment": true
+            },
+            {
+                "claim": "A northeastern flow of lava destroyed the subdivision of Vacationland Hawaii",
+                "judgment": false
+            },
+            {
+                "claim": "Kapoho Bay was filled in with lava",
+                "judgment": true
+            },
+            {
+                "claim": "The filling of Kapoho Bay with lava occurred by June 5",
+                "judgment": false
+            },
+            {
+                "claim": "When lava filled in Kapok Bay, it formed a point where the bay had been",
+                "judgment": true
+            },
+            {
+                "claim": "Lava flows covered some land",
+                "judgment": true
+            },
+            {
+                "claim": "New land has been created",
+                "judgment": false
+            },
+            {
+                "claim": "The creation of new land in the ocean is a result of the eruption",
+                "judgment": false
+            },
+            {
+                "claim": "New land has been created in the ocean",
+                "judgment": false
+            },
+            {
+                "claim": "Houses were destroyed by the 2018 lower Puna eruption",
+                "judgment": true
+            }
+        ]
+    },
+    "Notre-Dame_fire": {
+        "reference": "A structural fire broke out in the roof space of the Notre-Dame de Paris, a medieval Catholic cathedral in Paris, France. By the time the fire was extinguished, the cathedra'l's wooden spire, called a fl\u00e8che, collapsed, most of the wooden roof had been destroyed, and the cathedral's upper walls were severely damaged. Extensive damage to the cathedral's interior was prevented by the vaulted stone ceiling, which largely contained the burning roof as it collapsed. However, some works of art and religious relics suffered smoke damage and some exterior art was damaged or destroyed. The cathedral's altar and three 13th-century rose windows suffered little or no damage. There were emergency workers present during the fire. The fire contaminated the site and nearby areas of Paris with toxic dust. French president Emmanuel Macron set a deadline for the restoration of the cathedral. ",
+        "claims": [
+            {
+                "claim": "A structural fire broke out",
+                "judgment": true
+            },
+            {
+                "claim": "The fire broke out in the roof space",
+                "judgment": true
+            },
+            {
+                "claim": "Notre-Dame de Paris is a medieval Catholic cathedral",
+                "judgment": true
+            },
+            {
+                "claim": "Notre-Dame de Paris is located in Paris, France",
+                "judgment": true
+            },
+            {
+                "claim": "The fire was extinguished",
+                "judgment": true
+            },
+            {
+                "claim": "The cathedral's wooden spire (fl\u00e8che) collapsed",
+                "judgment": true
+            },
+            {
+                "claim": "Most of the cathedral's wooden roof was destroyed",
+                "judgment": true
+            },
+            {
+                "claim": "The cathedral's upper walls were severely damaged",
+                "judgment": true
+            },
+            {
+                "claim": "Extensive damage to the cathedral's interior was prevented",
+                "judgment": true
+            },
+            {
+                "claim": "The vaulted stone ceiling largely contained the burning roof",
+                "judgment": false
+            },
+            {
+                "claim": "The cathedral's burning roof collapsed",
+                "judgment": true
+            },
+            {
+                "claim": "The vaulted stone ceiling prevented extensive damage to the cathedral\u2019s interior ",
+                "judgment": true
+            },
+            {
+                "claim": "Some works of art suffered smoke damage",
+                "judgment": false
+            },
+            {
+                "claim": "Some religious relics suffered smoke damage",
+                "judgment": false
+            },
+            {
+                "claim": "Some exterior art was damaged",
+                "judgment": true
+            },
+            {
+                "claim": "Some exterior art was destroyed",
+                "judgment": true
+            },
+            {
+                "claim": "The cathedral's altar suffered little or no damage",
+                "judgment": true
+            },
+            {
+                "claim": "The cathedral's three 13th-century rose windows suffered little or no damage",
+                "judgment": false
+            },
+            {
+                "claim": "Emergency workers were present during the fire",
+                "judgment": false
+            },
+            {
+                "claim": "The fire contaminated the site",
+                "judgment": true
+            },
+            {
+                "claim": "The fire contaminated nearby areas of Paris",
+                "judgment": true
+            },
+            {
+                "claim": "The contamination included toxic dust",
+                "judgment": false
+            },
+            {
+                "claim": "The cathedral is located in Paris",
+                "judgment": true
+            },
+            {
+                "claim": "The deadline was set by Emmanuel Macron",
+                "judgment": true
+            },
+            {
+                "claim": "The deadline is for the restoration of the cathedral",
+                "judgment": true
+            },
+            {
+                "claim": "Emmanuel Macron is the the French president at the time of the deadline setting",
+                "judgment": true
+            }
+        ]
+    },
+    "2022_United_States_Senate_election_in_Georgia": {
+        "reference": "The 2022 United States senate election in Georgia was held on November 8, 2022 to elect a member of the U.S. senate to represent the state of Georgia. The election was part of the 2022 midterm elections and featured incumbent democratic senator Raphael Warnock and Republican former football player Herschel Walker. Warnock, who had one a shortened seat in a special election held in 2020-21 defeated Walker in a runoff election and was re-elected for his first full term in office.\r\n\r\nUnder Georgia's two-round election system, a runoff election occurs if no candidate receives more than 50% of the vote. In the November 8 election, Warnock received 49.4% of the vote and Walker received 48.5%, triggering the December 6th runoff election. \r\n\r\nWarnock's victory in the runoff was a state-wide victory for Democrats. Warnock's win gave Democrats a net gain of one seat in the 2022 midterms. The election was also one of many very close Senate elections during the 2022 midterms, with both Nevada and Wisconsin also having tight races. \r\n\r\n",
+        "claims": [
+            {
+                "claim": "The election was held on November 8, 2022",
+                "judgment": true
+            },
+            {
+                "claim": "The election was for a U.S. Senate position",
+                "judgment": true
+            },
+            {
+                "claim": "The election was to represent Georgia",
+                "judgment": true
+            },
+            {
+                "claim": "The election took place",
+                "judgment": true
+            },
+            {
+                "claim": "Raphael Warnock is a Democrat",
+                "judgment": true
+            },
+            {
+                "claim": "Raphael Warnock was the incumbent senator",
+                "judgment": true
+            },
+            {
+                "claim": "Raphael Warnock won his first full term in office",
+                "judgment": false
+            },
+            {
+                "claim": "Raphael Warnock's previous term was not a full term",
+                "judgment": false
+            },
+            {
+                "claim": "Herschel Walker is a Republican",
+                "judgment": true
+            },
+            {
+                "claim": "Herschel Walker is a former football player",
+                "judgment": false
+            },
+            {
+                "claim": "Georgia has a two-round election system",
+                "judgment": false
+            },
+            {
+                "claim": "The runoff election is part of the two-round election system in Georgia",
+                "judgment": true
+            },
+            {
+                "claim": "A run off election occurs when no candidate receives 50% of the vote",
+                "judgment": true
+            },
+            {
+                "claim": "Neither candidate received more than 50% of the vote in the first election",
+                "judgment": true
+            },
+            {
+                "claim": "The runoff election took place on December 6",
+                "judgment": true
+            },
+            {
+                "claim": "Warnock won the runoff election",
+                "judgment": true
+            },
+            {
+                "claim": "Warnock was the incumbent candidate",
+                "judgment": true
+            },
+            {
+                "claim": "The first election took place on November 8",
+                "judgment": true
+            },
+            {
+                "claim": "Warnock won the election",
+                "judgment": true
+            },
+            {
+                "claim": "Warnock is a Democrat",
+                "judgment": true
+            },
+            {
+                "claim": "Warnock's win was a statewide victory",
+                "judgment": false
+            },
+            {
+                "claim": "Warnock won a shortened term to the seat",
+                "judgment": false
+            },
+            {
+                "claim": "The special election took place in 2020-21",
+                "judgment": false
+            },
+            {
+                "claim": "There was a U.S. Senate election in Georgia",
+                "judgment": true
+            },
+            {
+                "claim": "A runoff occurred in this election",
+                "judgment": true
+            },
+            {
+                "claim": "The election took place on November 8",
+                "judgment": true
+            },
+            {
+                "claim": "Warnock received 49.4% of the votes in the November 8 election",
+                "judgment": false
+            },
+            {
+                "claim": "Walker received 48.5% of the votes in the November 8 election",
+                "judgment": false
+            },
+            {
+                "claim": "The results of the November 8 election triggered a runoff election",
+                "judgment": true
+            },
+            {
+                "claim": "Warnock defeated Walker",
+                "judgment": true
+            },
+            {
+                "claim": "Warnock won in a runoff election",
+                "judgment": true
+            },
+            {
+                "claim": "The election was part of the 2022 midterms",
+                "judgment": true
+            },
+            {
+                "claim": "Democrats had a net gain of one seat in the 2022 midterm elections",
+                "judgment": true
+            },
+            {
+                "claim": "Nevada had a close Senate election",
+                "judgment": false
+            },
+            {
+                "claim": "Wisconsin had a close Senate election",
+                "judgment": false
+            },
+            {
+                "claim": "The Democratic senator from Georgia was the incumbent senator",
+                "judgment": true
+            },
+            {
+                "claim": "The Democratic senator from Georgia won re-election",
+                "judgment": false
+            }
+        ]
+    },
+    "Hurricane_Irma": {
+        "reference": "Hurricane Irma was an extremely powerful Cape Verde hurricane that occurred in early September 2017. Irma was a Category 5 hurricane and the most powerful hurricane on record in the open Atlantic region outside of the Caribbean Sea and Gulf of Mexico. Irma was also the strongest tropical cyclone by wind speed worldwide in 2017. Irma caused widespread and catastrophic damage throughout its path, and was particularly severe in the northeastern Caribbean. \r\n\r\nIrma developed from a tropical wave near the Cape Verde Islands. Irma then became a Category 3 hurricane on the Saffir-Simpson wind scale before resuming intensifying on September 4 and becoming a Category 5 hurricane by early September 5. Irma's intensity peaked on September 6 with 1-minute sustained winds at 180mph and a minimum pressure of 914 hPa. Before making landfall in Cuba, Irma weakened to a Category 4 hurricane, but regained its Category 5 status before hitting Cuba. \r\n\r\nIrma hit both Caribbean islands and the continental United States. Irma caused catastrophic damage in Barbuda, Saint Barth\u00e9lemy, Saint Martin, Anguilla, and the Virgin Islands as a Category 5 hurricane. Irma also made landfall in Anguilla, Barbados, Cuba, French West Indies, Haiti, Puerto Rico, and the Dutch side of Sint Maarten. After crossing the Straits of Florida, Irma made landfall in Cudjoe Key on September 10 making landfall in Florida before then making landfall at Marco Island. \r\n\r\n\r\n\r\n",
+        "claims": [
+            {
+                "claim": "Hurricane Irma was a Cape Verde hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Hurricane Irma was extremely powerful",
+                "judgment": true
+            },
+            {
+                "claim": "Hurricane Irma caused widespread destruction",
+                "judgment": true
+            },
+            {
+                "claim": "Hurricane Irma occurred in early September 2017",
+                "judgment": true
+            },
+            {
+                "claim": "Irma was a Category 5 hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Irma struck the Leeward Islands",
+                "judgment": true
+            },
+            {
+                "claim": "Irma was the most powerful hurricane on record in the open Atlantic region outside of the Caribbean Sea and Gulf of Mexico",
+                "judgment": false
+            },
+            {
+                "claim": "Irma occurred in the Atlantic",
+                "judgment": true
+            },
+            {
+                "claim": "Irma caused widespread damage",
+                "judgment": true
+            },
+            {
+                "claim": "Irma caused catastrophic damage",
+                "judgment": true
+            },
+            {
+                "claim": "Irma's damage was particularly severe in the northeastern Caribbean",
+                "judgment": true
+            },
+            {
+                "claim": "Irma occurred during the 2017 Atlantic hurricane season",
+                "judgment": true
+            },
+            {
+                "claim": "Hurricane Irma struck the continental United States",
+                "judgment": true
+            },
+            {
+                "claim": "Hurricane Irma made landfall in Florida",
+                "judgment": true
+            },
+            {
+                "claim": "Hurricane Irma was a Category 4 hurricane when it struck Florida",
+                "judgment": false
+            },
+            {
+                "claim": "Irma caused damage",
+                "judgment": true
+            },
+            {
+                "claim": "Irma developed near the Cape Verde Islands",
+                "judgment": false
+            },
+            {
+                "claim": "Irma became a Category 3 hurricane on the Saffir-Simpson wind scale",
+                "judgment": false
+            },
+            {
+                "claim": "Irma resumed intensifying on September 4",
+                "judgment": false
+            },
+            {
+                "claim": "Irma became a Category 5 hurricane by early September 5",
+                "judgment": false
+            },
+            {
+                "claim": "Irma became a Category 5 hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Irma\u2019s intensity peaked on September 6",
+                "judgment": false 
+            },
+            {
+                "claim": "Irma's highest 1-minute sustained winds was 180 mph",
+                "judgment": false
+            },
+            {
+                "claim": "Irma's highest minimum pressure was 914 hPa",
+                "judgment": false
+            },
+            {
+                "claim": "Irma was the strongest tropical cyclone by wind speed worldwide in 2017",
+                "judgment": false
+            },
+            {
+                "claim": "Irma occurred in 2017",
+                "judgment": true
+            },
+            {
+                "claim": "Irma weakened from a Category 5 to Category 4 hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Irma regained Category 5 status before making landfall in Cuba",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in Cuba",
+                "judgment": true
+            },
+            {
+                "claim": "Irma made landfall on Cuba",
+                "judgment": true
+            },
+            {
+                "claim": "Irma cross the Straits of Florida",
+                "judgment": true
+            },
+            {
+                "claim": "Irma made landfall on Cudjoe Key",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall on Cudjoe Key on September 10",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall on Cudjoe Key after crossing the Straits of Florida",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in Florida before landfall at Marco Island",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall at Marco Island",
+                "judgment": false
+            },
+            {
+                "claim": "Irma caused catastrophic damage in Barbuda",
+                "judgment": true
+            },
+            {
+                "claim": "Irma caused catastrophic damage in Saint Barth\u00e9lemy",
+                "judgment": true
+            },
+            {
+                "claim": "Irma caused catastrophic damage in Saint Martin",
+                "judgment": true
+            },
+            {
+                "claim": "Irma caused catastrophic damage in Anguilla",
+                "judgment": false
+            },
+            {
+                "claim": "Irma caused catastrophic damage in the Virgin Islands",
+                "judgment": false
+            },
+            {
+                "claim": "Irma hit Barbuda as a Category 5 hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Irma hit Saint Barth\u00e9lemy as a Category 5 hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Irma hit Saint Martin as a Category 5 hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Irma hit Anguilla as a Category 5 hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Irma hit Virgin Islands as a Category 5 hurricane",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in Anguilla",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in Barbados",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in Barbuda",
+                "judgment": true
+            },
+            {
+                "claim": "Irma made landfall in the British Virgin Islands",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in French West Indies",
+                "judgment":false
+            },
+            {
+                "claim": "Irma made landfall in Haiti",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in Puerto Rico",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall on the Dutch side of Sint Maarten",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in the contiguous United States",
+                "judgment": false
+            },
+            {
+                "claim": "Irma made landfall in the U.S. Virgin Islands",
+                "judgment": false
+            },
+            {
+                "claim": "Hurricane Irma occurred in 2017",
+                "judgment": true
+            }
+        ]
+    },
+    "2018_Anchorage_earthquake": {
+        "reference": "On November 30, 2018 at 8:29 a.m. AKST (17:29 UTC), a magnitude 7.1 earthquake hit Anchorage in South Central Alaska. The earthquake's epicenter was 10 miles north of Anchorage and occurred at a depth of 29 miles. It was followed by a magnitude 5.7 aftershock. The National Tsunami Warning Center issued tsunami warnings for nearby costal areas, including Cook Inlet. The warnings were lifted shortly after being issued. ",
+        "claims": [
+            {
+                "claim": "The earthquake occurred",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake occurred on November 30 2018",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake occurred at 8:29 a.m. AKST",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake hit Anchorage",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake hit South Central Alaska",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake had a magnitude of 7.1",
+                "judgment": false
+            },
+            {
+                "claim": "The earthquake\u2019s epicenter was 10 miles north of Anchorage",
+                "judgment": false
+            },
+            {
+                "claim": "The earthquake occurred at a depth of 29 miles",
+                "judgment": false
+            },
+            {
+                "claim": "An aftershock occurred",
+                "judgment": false
+            },
+            {
+                "claim": "The aftershock had a magnitude of 5.7",
+                "judgment": false
+            },
+            {
+                "claim": "The National Tsunami Warning Center issued tsunami warnings",
+                "judgment": false
+            },
+            {
+                "claim": "Tsunami warnings were issued for nearby coastal areas",
+                "judgment": false
+            },
+            {
+                "claim": "Tsunami warnings were issued for Cook Inlet",
+                "judgment": false
+            },
+            {
+                "claim": "Tsunami warnings were lifted shortly after being issued",
+                "judgment": false
+            },
+            {
+                "claim": "Tsunami warnings for nearby coastal areas were lifted",
+                "judgment": false
+            },
+            {
+                "claim": "Tsunami warnings for Cook Inlet were lifted",
+                "judgment": false
+            }
+        ]
+    },
+    "2025_Canadian_federal_election": {
+        "reference": "The 2025 Canadian federal election was held on April 28, 2025, to elect members of the House of Commons after Prime Minister Mark Carney advised the Governor General to dissolve Parliament. This election had a new electoral map with 343 seats. It featured key issues around the tariffs and threats of annexation from the current United States president Donald Trump. \r\n\r\nThe Liberal Party won a fourth term in the election, forming a minority government. The NDP received just over six percent of the popular vote and only won seven seats in the election. As a result, the NDP lost official party status. Additionally, Pierre Poilievre, the Conservative Party leader, did not win re-election to his parliamentary seat. \r\n\r\nThere was a concentration of support for the two major parties, where initial polls, from mid-2023 to January 2025, indicated the Conservatives would win in a landslide. However, the Liberal party reversed these trends, with Carney's replacement of Justin Trudeau as leader playing a key role in the turnaround. Carney, an experienced central banker, was perceived as better equipped to handle the trade war launched by the U.S. and other major economic issues. \r\n\r\n",
+        "claims": [
+            {
+                "claim": "The 2025 Canadian federal election took place on April 28, 2025",
+                "judgment": false
+            },
+            {
+                "claim": "The purpose of the election was to elect members of the House of Commons",
+                "judgment": false
+            },
+            {
+                "claim": "Prime Minister Mark Carney advised the Governor General to dissolve Parliament",
+                "judgment": false
+            },
+            {
+                "claim": "The new electoral map had 343 seats",
+                "judgment": true
+            },
+            {
+                "claim": "Tariffs were a key issue in the election campaign",
+                "judgment": true
+            },
+            {
+                "claim": "Threats of annexation from the United States were a key issue in the election campaign",
+                "judgment": true
+            },
+            {
+                "claim": "Donald Trump was the president of the United States during the election campaign",
+                "judgment": true
+            },
+            {
+                "claim": "Annexation threats from Donald Trump were a concern during the election campaign",
+                "judgment": true
+            },
+            {
+                "claim": "The Liberal Party won a fourth term in the 2025 Canadian federal election",
+                "judgment": true
+            },
+            {
+                "claim": "The Liberal Party formed a minority government for a third consecutive election",
+                "judgment": false
+            },
+            {
+                "claim": "The party experienced a substantial rebound in the polls",
+                "judgment": false
+            },
+            {
+                "claim": "Both the Liberal Party and the Conservative Party improved their vote share from 2021",
+                "judgment": false
+            },
+            {
+                "claim": "Both the Liberal Party and the Conservative Party improved their seat count from 2021",
+                "judgment": false
+            },
+            {
+                "claim": "Other parties lost ground in terms of vote share",
+                "judgment": true
+            },
+            {
+                "claim": "Other parties lost ground in terms of seat count",
+                "judgment": true
+            },
+            {
+                "claim": "The NDP received just over six percent of the popular vote",
+                "judgment": true
+            },
+            {
+                "claim": "The NDP won only seven seats in the election",
+                "judgment": true
+            },
+            {
+                "claim": "The NDP lost official party status",
+                "judgment": true
+            },
+            {
+                "claim": "There was a concentration of support for the two major parties",
+                "judgment": false
+            },
+            {
+                "claim": "Commentators identified the concentration of support",
+                "judgment": false
+            },
+            {
+                "claim": "Polling trends reversed",
+                "judgment": true
+            },
+            {
+                "claim": "Polling trends lasted from mid-2023 to January 2025",
+                "judgment": true
+            },
+            {
+                "claim": "Polling trends previously indicated the Conservatives would win in a landslide",
+                "judgment": true
+            },
+            {
+                "claim": "The actual election results contradicted the previous polling trends",
+                "judgment": true
+            },
+            {
+                "claim": "Mark Carney replaced Justin Trudeau as the leader of the Liberal Party",
+                "judgment": true
+            },
+            {
+                "claim": "Carney's leadership played a key role in the turnaround of the Liberal Party's fortunes",
+                "judgment": true
+            },
+            {
+                "claim": "Mark Carney has extensive experience as a central banker",
+                "judgment": true
+            },
+            {
+                "claim": "Mark Carney is perceived as competent",
+                "judgment": true
+            },
+            {
+                "claim": "Carney was seen as better able to handle the trade war launched by the U.S.",
+                "judgment": true
+            },
+            {
+                "claim": "Carney was seen as better able to handle other major economic issues",
+                "judgment": true
+            },
+            {
+                "claim": "Pierre Poilievre is a party leader",
+                "judgment": false
+            },
+            {
+                "claim": "Pierre Poilievre leads the Conservative Party",
+                "judgment": false
+            },
+            {
+                "claim": "Jagmeet Singh is a party leader",
+                "judgment": false
+            },
+            {
+                "claim": "Jagmeet Singh leads the NDP",
+                "judgment": false
+            },
+            {
+                "claim": "Pierre Poilievre did not win re-election to his parliamentary seat",
+                "judgment": false
+            },
+            {
+                "claim": "Pierre Poilievre lost his riding in the 2025 election",
+                "judgment": false
+            }
+        ]
+    },
+    "2025_Myanmar_earthquake": {
+        "reference": "On 28 March 2025, a magnitude 7.7 earthquake struck the Sagaing Region of Myanmar, with an epicenter close to Mandalay. The earthquake was a strike-slip type and the shaking caused extensive damage in Myanmar and Thailand, even causing damage in China. The earthquake caused deaths in Myanmar and Thailand and hundreds of people were report missing due to the earthquake. Authorities in Myanmar declared a state of emergency following the earthquake. ",
+        "claims": [
+            {
+                "claim": "An earthquake struck the Sagaing Region of Myanmar",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake occurred on 28 March 2025",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake had a magnitude between 7.7 and 7.9 on the Mw scale",
+                "judgment": false
+            },
+            {
+                "claim": "The epicenter of the earthquake was close to Mandalay",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake caused shaking",
+                "judgment": false
+            },
+            {
+                "claim": "The earthquake was a strike-slip type",
+                "judgment": false
+            },
+            {
+                "claim": "The earthquake caused extensive damage in Myanmar",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake caused significant damage in Thailand",
+                "judgment": true
+            },
+            {
+                "claim": "Hundreds of homes were damaged in Yunnan, China",
+                "judgment": false
+            },
+            {
+                "claim": "The earthquake caused direct deaths in Myanmar",
+                "judgment": true
+            },
+            {
+                "claim": "The earthquake caused direct deaths in Thailand",
+                "judgment": false
+            },
+            {
+                "claim": "Hundreds of people were reported missing due to the earthquake",
+                "judgment": false
+            },
+            {
+                "claim": "The collapsed construction site was located in Bangkok",
+                "judgment": true
+            },
+            {
+                "claim": "Seismic waves can affect Bangkok from far away",
+                "judgment": true
+            },
+            {
+                "claim": "Authorities in Myanmar declared a state of emergency",
+                "judgment": true
+            }
+        ]
+    },
+    "Blue_Ghost_Mission_1": {
+        "reference": "Blue Ghost Mission 1 was a robotic Moon landing missions by Firefly Aerospace that successfully soft-landed on the lunar surface. With this achievement, Firefly Aerospace became the first commercial company to complete a fully successful soft landing on the Moon. The mission was part of NASA's Commercial Lunar Payload Services (CLPS) program and delivered ten scientific and technological experiments to the moon. \r\n\r\nThe Blue Ghost lunar lander was launched from Kennedy Space Center aboard a SpaceX Falcon 9 Block 5 rocket that also carried the Hakuto-R Mission 2 lander. It delivered 10 payloads to Mare Cirsium, a lunar basin. The payloads included included a regolith adherence characterization experiment, a lunar retroreflector for precision distance measurements, a radiation-tolerant computer, and thermal exploration probes. The mission aimed to analyze lunar regolith, study geophysical characteristics, and investigate interactions between the solar wind and Earth's magnetic field. ",
+        "claims": [
+            {
+                "claim": "Blue Ghost Mission 1 was a robotic Moon landing mission",
+                "judgment": true
+            },
+            {
+                "claim": "Blue Ghost Mission 1 was conducted by Firefly Aerospace",
+                "judgment": true
+            },
+            {
+                "claim": "Blue Ghost Mission 1 successfully soft-landed on the lunar surface",
+                "judgment": true
+            },
+            {
+                "claim": "Firefly Aerospace completed a soft landing on the Moon",
+                "judgment": true
+            },
+            {
+                "claim": "Firefly Aerospace is a commercial company",
+                "judgment": false
+            },
+            {
+                "claim": "This was a fully successful soft landing",
+                "judgment": true
+            },
+            {
+                "claim": "Firefly Aerospace was the first commercial company to achieve a fully successful soft landing on the Moon",
+                "judgment": false
+            },
+            {
+                "claim": "Intuitive Machines' IM-1 was the first commercial mission to land softly on the Moon in February 2024",
+                "judgment": false
+            },
+            {
+                "claim": "Intuitive Machines' IM-1's lander tipped to an unplanned 30 degree angle after touchdown",
+                "judgment": false
+            },
+            {
+                "claim": "The mission delivered ten scientific and technological experiments",
+                "judgment": false
+            },
+            {
+                "claim": "The mission is part of NASA's Commercial Lunar Payload Services program",
+                "judgment": true
+            },
+            {
+                "claim": "The lander was solar-powered",
+                "judgment": false
+            },
+            {
+                "claim": "The Blue Ghost lunar lander was launched",
+                "judgment": true
+            },
+            {
+                "claim": "The launch site was Kennedy Space Center",
+                "judgment": false
+            },
+            {
+                "claim": "The launch vehicle was a SpaceX Falcon 9 Block 5 rocket",
+                "judgment": false
+            },
+            {
+                "claim": "The Falcon 9 Block 5 rocket carried the Blue Ghost lunar lander",
+                "judgment": false
+            },
+            {
+                "claim": "The Falcon 9 Block 5 rocket also carried the Hakuto-R Mission 2 lander",
+                "judgment": false
+            },
+            {
+                "claim": "The mission delivered payloads to Mare Crisium",
+                "judgment": false
+            },
+            {
+                "claim": "Mare Crisium is a lunar basin",
+                "judgment": false
+            },
+            {
+                "claim": "The mission delivered 10 payloads",
+                "judgment": false
+            },
+            {
+                "claim": "The mission aimed to analyze lunar regolith",
+                "judgment": false
+            },
+            {
+                "claim": "The mission aimed to study geophysical characteristics",
+                "judgment": false
+            },
+            {
+                "claim": "The mission aimed to investigate interactions between the solar wind and Earth's magnetic field",
+                "judgment": false
+            },
+            {
+                "claim": "The lander carried scientific payloads",
+                "judgment": false
+            },
+            {
+                "claim": "One of the payloads was a regolith adherence characterization experiment",
+                "judgment": false
+            },
+            {
+                "claim": "Another payload was a lunar retroreflector for precision distance measurements",
+                "judgment": false
+            },
+            {
+                "claim": "The payloads included a radiation-tolerant computer",
+                "judgment": false
+            },
+            {
+                "claim": "Thermal exploration probes were among the payloads",
+                "judgment": false
+            }
+        ]
+    },
+    "Liberation_Day_Tariffs": {
+        "reference": "The Liberation Day tariffs are a broad package of import duties announced by Donald Trump in a White House Rose Garden ceremony on April 2, 2025 \u2014a date he called 'Liberation Day.'  The Trump administration called the measures 'reciprocal' tariffs to mirror and counteract foreign trade barriers imposed on U.S. exports. The tariffs imposed a 10% baseline tariff and higher rates to countries which the United States had the largest trade deficits. With the tariffs, the Trump administration also closed the de minimis exemption for China.   \r\n\r\nThe announcement lead to a global market crash and was faced with criticism. Trade analysts rejected the Trump administrations characterization of tariffs as 'reciprocal,' noting that the tariffs often exceeded those imposed by trading partners and included countries with which the U.S. had a trade surplus. Economists also criticized the formula used to calculate the tariffs, calling it simplistic and based on flawed economic reasoning. \r\n\r\nThe executive order signed by Trump to implement these tariffs declared a national emergency over the United States' trade deficit and invoked the International Emergency Economic Powers Act (IEEPA) to authorize sweeping tariffs on foreign imports. On May 28, 2025, the United States Court of International Trade ruled Trump had overstepped his authority in imposing tariffs under the IEEPA and ordered that the 'Liberation Day' tariffs be vacated. The United States Court of Appeals for the Federal Circuit issued a stay while it considered the administration's appeal, allowing the tariffs to remain in effect.",
+        "claims": [
+            {
+                "claim": "The Liberation Day tariffs are a broad package of import duties",
+                "judgment": true
+            },
+            {
+                "claim": "U.S. President Donald Trump announced the Liberation Day tariffs",
+                "judgment": true
+            },
+            {
+                "claim": "The Liberation Day tariffs were announced on April 2, 2025",
+                "judgment": true
+            },
+            {
+                "claim": "President Trump referred to April 2, 2025 as 'Liberation Day'",
+                "judgment": true
+            },
+            {
+                "claim": "The signing took place in a White House Rose Garden ceremony",
+                "judgment": false
+            },
+            {
+                "claim": "The purpose of the executive order is to regulate imports",
+                "judgment": true
+            },
+            {
+                "claim": "The executive order aims to rectify trade practices contributing to large and persistent annual United States goods trade deficits",
+                "judgment": false
+            },
+            {
+                "claim": "The order declared a national emergency",
+                "judgment": false
+            },
+            {
+                "claim": "The national emergency was over the United States' trade deficit",
+                "judgment": false
+            },
+            {
+                "claim": "The order invoked the International Emergency Economic Powers Act (IEEPA)",
+                "judgment": true
+            },
+            {
+                "claim": "The invocation of IEEPA authorized sweeping tariffs on foreign imports",
+                "judgment": true
+            },
+            {
+                "claim": "Sweeping tariffs on foreign imports were authorized through the use of IEEPA",
+                "judgment": true
+            },
+            {
+                "claim": "The order closed the de minimis exemption for China",
+                "judgment": false
+            },
+            {
+                "claim": "Executive Order 14257 imposed a 10% baseline tariff",
+                "judgment": false
+            },
+            {
+                "claim": "The 10% baseline tariff applies to imports from nearly all countries",
+                "judgment": false
+            },
+            {
+                "claim": "Higher rates were applied to countries with which the United States had the largest trade deficits",
+                "judgment": false
+            },
+            {
+                "claim": "The Trump administration described the measures as 'reciprocal'",
+                "judgment": false
+            },
+            {
+                "claim": "The measures were intended to mirror foreign trade barriers",
+                "judgment": false
+            },
+            {
+                "claim": "The measures were intended to counteract foreign trade barriers",
+                "judgment": false
+            },
+            {
+                "claim": "Foreign trade barriers affected U.S. exports",
+                "judgment": false
+            },
+            {
+                "claim": "Trade analysts rejected the characterization of the tariffs as 'reciprocal'",
+                "judgment": false
+            },
+            {
+                "claim": "The tariffs often exceeded those imposed by trading partners",
+                "judgment": false
+            },
+            {
+                "claim": "The tariffs were applied to countries with which the U.S. had a trade surplus",
+                "judgment": true
+            },
+            {
+                "claim": "Economists criticized the formula used to calculate the 'reciprocal' tariffs",
+                "judgment": false
+            },
+            {
+                "claim": "The formula used to calculate the 'reciprocal' tariffs was overly simplistic",
+                "judgment": false
+            },
+            {
+                "claim": "The formula used to calculate the 'reciprocal' tariffs was based on flawed economic reasoning",
+                "judgment": false
+            },
+            {
+                "claim": "The 'Liberation Day' tariff announcement had an impact on global markets",
+                "judgment": true
+            },
+            {
+                "claim": "The global market experienced a crash",
+                "judgment": true
+            },
+            {
+                "claim": "The crash was a direct result of the 'Liberation Day' tariff announcement",
+                "judgment": true
+            },
+            {
+                "claim": "The White House postponed the April 9 tariff increases",
+                "judgment": false
+            },
+            {
+                "claim": "On May 28, 2025, the United States Court of International Trade made a ruling",
+                "judgment": false
+            },
+            {
+                "claim": "The ruling was against Trump's imposition of tariffs",
+                "judgment": false
+            },
+            {
+                "claim": "The tariffs were imposed under the International Emergency Economic Powers Act (IEEPA)",
+                "judgment": false
+            },
+            {
+                "claim": "The court ruled that Trump overstepped his authority",
+                "judgment": false
+            },
+            {
+                "claim": "The court ordered that the 'Liberation Day' tariffs be vacated",
+                "judgment": false
+            },
+            {
+                "claim": "The United States Court of Appeals for the Federal Circuit issued a stay",
+                "judgment": false
+            },
+            {
+                "claim": "The stay allowed the tariffs to remain in effect",
+                "judgment": false
+            },
+            {
+                "claim": "The court was considering the administration's appeal",
+                "judgment": false
+            },
+            {
+                "claim": "The tariffs in question were the 'Liberation Day' tariffs",
+                "judgment": false
+            }
+        ]
+    }
+}

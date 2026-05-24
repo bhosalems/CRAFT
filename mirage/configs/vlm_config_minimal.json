@@ -1,0 +1,9 @@
+{
+    "vlm_name": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "llm_name": "Qwen/Qwen2.5-3B-Instruct",
+    "fps": 0.25,
+    "cache_dir": "",
+    "max_videos": 1,
+    "max_retries": 10,
+    "devices": 1
+}

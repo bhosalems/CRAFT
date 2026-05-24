@@ -1,0 +1,62 @@
+{
+    "Launch_and_commissioning_of_the_James_Webb_Space_Telescope": {
+        "claim_recall": 0.9545454545454546,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.0,
+        "citation_quality_f1": 0.0
+    },
+    "2018_lower_Puna_eruption": {
+        "claim_recall": 1.0,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.125,
+        "citation_quality_f1": 0.0
+    },
+    "Notre-Dame_fire": {
+        "claim_recall": 1.0,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.0,
+        "citation_quality_f1": 0.0
+    },
+    "2022_United_States_Senate_election_in_Georgia": {
+        "claim_recall": 0.9459459459459459,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.0,
+        "citation_quality_f1": 0.0
+    },
+    "Hurricane_Irma": {
+        "claim_recall": 0.8771929824561403,
+        "citation_quality_precision": 0.14285714285714285,
+        "citation_quality_recall": 0.14285714285714285,
+        "citation_quality_f1": 0.14285714285714285
+    },
+    "2018_Anchorage_earthquake": {
+        "claim_recall": 0.9375,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.125,
+        "citation_quality_f1": 0.0
+    },
+    "2025_Canadian_federal_election": {
+        "claim_recall": 0.3611111111111111,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.0,
+        "citation_quality_f1": 0.0
+    },
+    "2025_Myanmar_earthquake": {
+        "claim_recall": 0.8,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.0,
+        "citation_quality_f1": 0.0
+    },
+    "Blue_Ghost_Mission_1": {
+        "claim_recall": 0.7857142857142857,
+        "citation_quality_precision": 0.16666666666666666,
+        "citation_quality_recall": 0.16666666666666666,
+        "citation_quality_f1": 0.16666666666666666
+    },
+    "Liberation_Day_Tariffs": {
+        "claim_recall": 0.7435897435897436,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.0,
+        "citation_quality_f1": 0.0
+    }
+}

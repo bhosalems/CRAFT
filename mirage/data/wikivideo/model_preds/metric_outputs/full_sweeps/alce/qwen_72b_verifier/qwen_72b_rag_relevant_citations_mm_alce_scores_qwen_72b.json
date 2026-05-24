@@ -1,0 +1,62 @@
+{
+    "Launch_and_commissioning_of_the_James_Webb_Space_Telescope": {
+        "claim_recall": 0.9545454545454546,
+        "citation_quality_precision": 0.14285714285714285,
+        "citation_quality_recall": 0.42857142857142855,
+        "citation_quality_f1": 0.21428571428571427
+    },
+    "2018_lower_Puna_eruption": {
+        "claim_recall": 0.95,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.14285714285714285,
+        "citation_quality_f1": 0.0
+    },
+    "Notre-Dame_fire": {
+        "claim_recall": 1.0,
+        "citation_quality_precision": 0.16666666666666666,
+        "citation_quality_recall": 0.5,
+        "citation_quality_f1": 0.25
+    },
+    "2022_United_States_Senate_election_in_Georgia": {
+        "claim_recall": 0.918918918918919,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.0,
+        "citation_quality_f1": 0.0
+    },
+    "Hurricane_Irma": {
+        "claim_recall": 0.9298245614035088,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.15384615384615385,
+        "citation_quality_f1": 0.0
+    },
+    "2018_Anchorage_earthquake": {
+        "claim_recall": 0.75,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.5,
+        "citation_quality_f1": 0.0
+    },
+    "2025_Canadian_federal_election": {
+        "claim_recall": 0.7777777777777778,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.14285714285714285,
+        "citation_quality_f1": 0.0
+    },
+    "2025_Myanmar_earthquake": {
+        "claim_recall": 0.7333333333333333,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.3333333333333333,
+        "citation_quality_f1": 0.0
+    },
+    "Blue_Ghost_Mission_1": {
+        "claim_recall": 0.8928571428571429,
+        "citation_quality_precision": 0.2,
+        "citation_quality_recall": 0.2,
+        "citation_quality_f1": 0.20000000000000004
+    },
+    "Liberation_Day_Tariffs": {
+        "claim_recall": 0.9230769230769231,
+        "citation_quality_precision": 0.0,
+        "citation_quality_recall": 0.06666666666666667,
+        "citation_quality_f1": 0.0
+    }
+}

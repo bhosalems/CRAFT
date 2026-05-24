@@ -1,0 +1,52 @@
+{
+    "Launch_and_commissioning_of_the_James_Webb_Space_Telescope": {
+        "first_prediction": "qwen_72b_cag",
+        "second_prediction": "qwen3_llm_only",
+        "third_prediction": "qwen_72b_rag"
+    },
+    "2018_lower_Puna_eruption": {
+        "first_prediction": "qwen_72b_rag",
+        "second_prediction": "qwen3_llm_only",
+        "third_prediction": "qwen_72b_cag"
+    },
+    "Notre-Dame_fire": {
+        "first_prediction": "qwen_72b_rag",
+        "second_prediction": "qwen3_llm_only",
+        "third_prediction": "qwen_72b_cag"
+    },
+    "2022_United_States_Senate_election_in_Georgia": {
+        "first_prediction": "qwen3_llm_only",
+        "second_prediction": "qwen_72b_rag",
+        "third_prediction": "qwen_72b_cag"
+    },
+    "Hurricane_Irma": {
+        "first_prediction": "qwen3_llm_only",
+        "second_prediction": "qwen_72b_rag",
+        "third_prediction": "qwen_72b_cag"
+    },
+    "2018_Anchorage_earthquake": {
+        "first_prediction": "qwen_72b_cag",
+        "second_prediction": "qwen_72b_rag",
+        "third_prediction": "qwen3_llm_only"
+    },
+    "2025_Canadian_federal_election": {
+        "first_prediction": "qwen_72b_rag",
+        "second_prediction": "qwen_72b_cag",
+        "third_prediction": "qwen3_llm_only"
+    },
+    "2025_Myanmar_earthquake": {
+        "first_prediction": "qwen3_llm_only",
+        "second_prediction": "qwen_72b_cag",
+        "third_prediction": "qwen_72b_rag"
+    },
+    "Blue_Ghost_Mission_1": {
+        "first_prediction": "qwen_72b_cag",
+        "second_prediction": "qwen3_llm_only",
+        "third_prediction": "qwen_72b_rag"
+    },
+    "Liberation_Day_Tariffs": {
+        "first_prediction": "qwen_72b_cag",
+        "second_prediction": "qwen_72b_rag",
+        "third_prediction": "qwen3_llm_only"
+    }
+}

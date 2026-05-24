@@ -1,0 +1,1450 @@
+{
+    "Launch_and_commissioning_of_the_James_Webb_Space_Telescope": {
+        "prediction": "The James Webb Space Telescope (JWST) is a space telescope designed to succeed the Hubble Space Telescope. Launched on December 25, 2021, aboard an Ariane 5 rocket from the Guiana Space Centre, the JWST is a collaborative project involving NASA, the European Space Agency (ESA), and the Canadian Space Agency (CSA). The telescope features a large, foldable primary mirror composed of 18 hexagonal segments, which, when combined, form a single mirror 2.5 times larger than Hubble's. Positioned at the second Lagrange point (L2), approximately 1.5 million kilometers from Earth, the JWST is optimized for infrared observations, allowing it to study the early universe, distant galaxies, and the atmospheres of exoplanets. The telescope's deployment, including the unfolding of its sunshield and mirror segments, was completed successfully, marking a significant milestone in space exploration and astronomical research.",
+        "claims": {
+            "The James Webb Space Telescope (JWST) is a space telescope designed to succeed the Hubble Space Telescope.": [
+                {
+                    "claim": "The James Webb Space Telescope (JWST) is a space telescope",
+                    "judgment": true
+                },
+                {
+                    "claim": "The JWST is designed to succeed the Hubble Space Telescope",
+                    "judgment": false
+                }
+            ],
+            "Launched on December 25, 2021, aboard an Ariane 5 rocket from the Guiana Space Centre, the JWST is a collaborative project involving NASA, the European Space Agency (ESA), and the Canadian Space Agency (CSA).": [
+                {
+                    "claim": "The JWST was launched on December 25, 2021",
+                    "judgment": true
+                },
+                {
+                    "claim": "The JWST was launched aboard an Ariane 5 rocket",
+                    "judgment": true
+                },
+                {
+                    "claim": "The launch of the JWST took place from the Guiana Space Centre",
+                    "judgment": true
+                },
+                {
+                    "claim": "The JWST is a collaborative project",
+                    "judgment": true
+                },
+                {
+                    "claim": "NASA is involved in the JWST project",
+                    "judgment": true
+                },
+                {
+                    "claim": "The European Space Agency (ESA) is involved in the JWST project",
+                    "judgment": true
+                },
+                {
+                    "claim": "The Canadian Space Agency (CSA) is involved in the JWST project",
+                    "judgment": true
+                }
+            ],
+            "The telescope features a large, foldable primary mirror composed of 18 hexagonal segments, which, when combined, form a single mirror 2.5 times larger than Hubble's.": [
+                {
+                    "claim": "The telescope has a primary mirror",
+                    "judgment": false
+                },
+                {
+                    "claim": "The primary mirror is large",
+                    "judgment": false
+                },
+                {
+                    "claim": "The primary mirror is foldable",
+                    "judgment": false
+                },
+                {
+                    "claim": "The primary mirror is composed of 18 segments",
+                    "judgment": false
+                },
+                {
+                    "claim": "Each segment is hexagonal",
+                    "judgment": false
+                },
+                {
+                    "claim": "When combined, the segments form a single mirror",
+                    "judgment": false
+                },
+                {
+                    "claim": "The single mirror formed is 2.5 times larger than Hubble's mirror",
+                    "judgment": false
+                }
+            ],
+            "Positioned at the second Lagrange point (L2), approximately 1.5 million kilometers from Earth, the JWST is optimized for infrared observations, allowing it to study the early universe, distant galaxies, and the atmospheres of exoplanets.": [
+                {
+                    "claim": "The JWST is positioned at the second Lagrange point (L2)",
+                    "judgment": false
+                },
+                {
+                    "claim": "The L2 point is approximately 1.5 million kilometers from Earth",
+                    "judgment": false
+                },
+                {
+                    "claim": "The JWST is optimized for infrared observations",
+                    "judgment": false
+                },
+                {
+                    "claim": "Infrared observations allow the JWST to study the early universe",
+                    "judgment": false
+                },
+                {
+                    "claim": "Infrared observations allow the JWST to study distant galaxies",
+                    "judgment": false
+                },
+                {
+                    "claim": "Infrared observations allow the JWST to study the atmospheres of exoplanets",
+                    "judgment": false
+                }
+            ],
+            "The telescope's deployment, including the unfolding of its sunshield and mirror segments, was completed successfully, marking a significant milestone in space exploration and astronomical research.": [
+                {
+                    "claim": "The telescope's deployment was completed successfully",
+                    "judgment": true
+                },
+                {
+                    "claim": "The deployment included the unfolding of the sunshield",
+                    "judgment": false
+                },
+                {
+                    "claim": "The deployment included the unfolding of the mirror segments",
+                    "judgment":false
+                },
+                {
+                    "claim": "The successful deployment marked a significant milestone",
+                    "judgment": false
+                },
+                {
+                    "claim": "The milestone is related to space exploration",
+                    "judgment": false
+                },
+                {
+                    "claim": "The milestone is related to astronomical research",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2018_lower_Puna_eruption": {
+        "prediction": "The 2018 K\u012blauea eruption was a significant volcanic event that occurred in the Lower Puna District of the Big Island of Hawaii, beginning on May 3, 2018. The eruption involved multiple fissures opening in the Leilani Estates and Lanipuna Gardens subdivisions, with lava flows that rapidly expanded over the following weeks. By mid-May, the lava had reached the coast, creating new landforms and causing widespread destruction. The eruption led to the evacuation of thousands of residents, with some refusing to leave despite the hazards. The event was characterized by intense lava fountains, extensive lava flows, and the release of volcanic gases, which posed significant health and safety risks. The U.S. Geological Survey (USGS) and Hawaii County Civil Defense provided regular updates and advisories, emphasizing the need for preparedness and caution. The eruption continued to evolve, with lava entering the ocean at Kapoho Bay, creating large plumes of steam and smoke, and reshaping the coastline. The event highlighted the raw power of volcanic activity and the importance of monitoring and responding to natural disasters.",
+        "claims": {
+            "The 2018 K\u012blauea eruption was a significant volcanic event that occurred in the Lower Puna District of the Big Island of Hawaii, beginning on May 3, 2018.": [
+                {
+                    "claim": "The 2018 K\u012blauea eruption was a significant volcanic event",
+                    "judgment": true
+                },
+                {
+                    "claim": "The eruption occurred in the Lower Puna District",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Lower Puna District is located on the Big Island of Hawaii",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption began on May 3, 2018",
+                    "judgment": true
+                }
+            ],
+            "The eruption involved multiple fissures opening in the Leilani Estates and Lanipuna Gardens subdivisions, with lava flows that rapidly expanded over the following weeks.": [
+                {
+                    "claim": "The eruption involved multiple fissures opening",
+                    "judgment": false
+                },
+                {
+                    "claim": "The fissures opened in the Leilani Estates subdivision",
+                    "judgment": true    
+                },
+                {
+                    "claim": "The fissures opened in the Lanipuna Gardens subdivision",
+                    "judgment": true
+                },
+                {
+                    "claim": "Lava flows occurred as a result of the fissures",
+                    "judgment": true
+                },
+                {
+                    "claim": "The lava flows expanded over the following weeks",
+                    "judgment": true
+                },
+                {
+                    "claim": "The expansion of the lava flows happened rapidly",
+                    "judgment": false
+                }
+            ],
+            "By mid-May, the lava had reached the coast, creating new landforms and causing widespread destruction.": [
+                {
+                    "claim": "By mid-May, the lava reached the coast",
+                    "judgment": false
+                },
+                {
+                    "claim": "The lava created new landforms",
+                    "judgment": true
+                },
+                {
+                    "claim": "The lava caused widespread destruction",
+                    "judgment": true
+                }
+            ],
+            "The eruption led to the evacuation of thousands of residents, with some refusing to leave despite the hazards.": [
+                {
+                    "claim": "The eruption led to the evacuation of thousands of residents",
+                    "judgment": true
+                },
+                {
+                    "claim": "Some residents refused to leave their homes",
+                    "judgment": false
+                },
+                {
+                    "claim": "There were hazards associated with the eruption",
+                    "judgment": false
+                },
+                {
+                    "claim": "Residents were aware of the hazards",
+                    "judgment": false
+                }
+            ],
+            "The event was characterized by intense lava fountains, extensive lava flows, and the release of volcanic gases, which posed significant health and safety risks.": [
+                {
+                    "claim": "The event featured intense lava fountains",
+                    "judgment": true
+                },
+                {
+                    "claim": "The event involved extensive lava flows",
+                    "judgment": true
+                },
+                {
+                    "claim": "Volcanic gases were released during the event",
+                    "judgment": true
+                },
+                {
+                    "claim": "The release of volcanic gases posed significant health risks",
+                    "judgment": false
+                },
+                {
+                    "claim": "The release of volcanic gases posed significant safety risks",
+                    "judgment": false
+                }
+            ],
+            "The U.S. Geological Survey (USGS) and Hawaii County Civil Defense provided regular updates and advisories, emphasizing the need for preparedness and caution.": [
+                {
+                    "claim": "The U.S. Geological Survey (USGS) provided regular updates and advisories",
+                    "judgment": false
+                },
+                {
+                    "claim": "Hawaii County Civil Defense provided regular updates and advisories",
+                    "judgment": false
+                },
+                {
+                    "claim": "The updates and advisories emphasized the need for preparedness",
+                    "judgment": false
+                },
+                {
+                    "claim": "The updates and advisories emphasized the need for caution",
+                    "judgment": false
+                }
+            ],
+            "The eruption continued to evolve, with lava entering the ocean at Kapoho Bay, creating large plumes of steam and smoke, and reshaping the coastline.": [
+                {
+                    "claim": "The eruption continued to evolve",
+                    "judgment": true
+                },
+                {
+                    "claim": "Lava entered the ocean at Kapoho Bay",
+                    "judgment": true
+                },
+                {
+                    "claim": "Lava entering the ocean created large plumes of steam",
+                    "judgment": false
+                },
+                {
+                    "claim": "Lava entering the ocean created large plumes of smoke",
+                    "judgment": false
+                },
+                {
+                    "claim": "Lava entering the ocean reshaped the coastline",
+                    "judgment": false
+                }
+            ],
+            "The event highlighted the raw power of volcanic activity and the importance of monitoring and responding to natural disasters.": [
+                {
+                    "claim": "The 2018 K\u012blauea eruption highlighted the raw power of volcanic activity",
+                    "judgment": false
+                },
+                {
+                    "claim": "The 2018 K\u012blauea eruption highlighted the importance of monitoring natural disasters",
+                    "judgment": false
+                },
+                {
+                    "claim": "The 2018 K\u012blauea eruption highlighted the importance of responding to natural disasters",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "Notre-Dame_fire": {
+        "prediction": "On April 15, 2019, a catastrophic fire broke out at Notre-Dame Cathedral in Paris, France, causing extensive damage to the historic landmark. The blaze, which erupted in the afternoon, rapidly spread through the cathedral's roof and spire, leading to the collapse of the iconic spire and significant portions of the roof. Thick plumes of smoke billowed into the sky, visible from across the city, as firefighters worked tirelessly to contain the inferno. The fire drew a large crowd of concerned onlookers, including Parisians and tourists, who gathered to watch the unfolding disaster, many expressing their shock and sorrow. Despite the extensive damage, the structural integrity of the cathedral's main walls and towers was preserved, and key religious artifacts, including the cross and some statues, remained intact. President Emmanuel Macron pledged to rebuild the cathedral, which is a UNESCO World Heritage site and a symbol of French heritage and culture. The cause of the fire was initially suspected to be linked to ongoing renovation work, and investigations were launched to determine the exact cause. The event highlighted the global significance of Notre-Dame and the profound impact of its partial destruction on both the local community and the international community.",
+        "claims": {
+            "On April 15, 2019, a catastrophic fire broke out at Notre-Dame Cathedral in Paris, France, causing extensive damage to the historic landmark.": [
+                {
+                    "claim": "A catastrophic fire broke out",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire occurred on April 15, 2019",
+                    "judgment": false
+                },
+                {
+                    "claim": "The fire happened at Notre-Dame Cathedral",
+                    "judgment": true
+                },
+                {
+                    "claim": "Notre-Dame Cathedral is located in Paris, France",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire caused extensive damage",
+                    "judgment": true
+                },
+                {
+                    "claim": "Notre-Dame Cathedral is a historic landmark",
+                    "judgment": true
+                }
+            ],
+            "The blaze, which erupted in the afternoon, rapidly spread through the cathedral's roof and spire, leading to the collapse of the iconic spire and significant portions of the roof.": [
+                {
+                    "claim": "The blaze erupted in the afternoon",
+                    "judgment": false
+                },
+                {
+                    "claim": "The fire spread rapidly through the cathedral's roof",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire spread rapidly through the cathedral's spire",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire led to the collapse of the iconic spire",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire led to the collapse of significant portions of the roof",
+                    "judgment": true
+                }
+            ],
+            "Thick plumes of smoke billowed into the sky, visible from across the city, as firefighters worked tirelessly to contain the inferno.": [
+                {
+                    "claim": "Thick plumes of smoke billowed into the sky",
+                    "judgment": false
+                },
+                {
+                    "claim": "The smoke was visible from across the city",
+                    "judgment": false
+                },
+                {
+                    "claim": "Firefighters were working to contain the fire",
+                    "judgment": false
+                },
+                {
+                    "claim": "Firefighters were working tirelessly",
+                    "judgment": false
+                },
+                {
+                    "claim": "There was an inferno at Notre-Dame Cathedral",
+                    "judgment": false
+                }
+            ],
+            "The fire drew a large crowd of concerned onlookers, including Parisians and tourists, who gathered to watch the unfolding disaster, many expressing their shock and sorrow.": [
+                {
+                    "claim": "The fire attracted a large crowd",
+                    "judgment": false
+                },
+                {
+                    "claim": "The crowd included Parisians",
+                    "judgment": false
+                },
+                {
+                    "claim": "The crowd included tourists",
+                    "judgment": false
+                },
+                {
+                    "claim": "People gathered to watch the fire",
+                    "judgment": false
+                },
+                {
+                    "claim": "Many people expressed shock",
+                    "judgment": false
+                },
+                {
+                    "claim": "Many people expressed sorrow",
+                    "judgment": false
+                }
+            ],
+            "Despite the extensive damage, the structural integrity of the cathedral's main walls and towers was preserved, and key religious artifacts, including the cross and some statues, remained intact.": [
+                {
+                    "claim": "Extensive damage was caused by the fire",
+                    "judgment": true
+                },
+                {
+                    "claim": "The structural integrity of the cathedral's main walls was preserved",
+                    "judgment": false
+                },
+                {
+                    "claim": "The structural integrity of the cathedral's towers was preserved",
+                    "judgment": false
+                },
+                {
+                    "claim": "Key religious artifacts remained intact",
+                    "judgment": false
+                },
+                {
+                    "claim": "The cross remained intact",
+                    "judgment": false
+                },
+                {
+                    "claim": "Some statues remained intact",
+                    "judgment": false
+                }
+            ],
+            "President Emmanuel Macron pledged to rebuild the cathedral, which is a UNESCO World Heritage site and a symbol of French heritage and culture.": [
+                {
+                    "claim": "President Emmanuel Macron pledged to rebuild the cathedral",
+                    "judgment": true
+                },
+                {
+                    "claim": "Notre-Dame Cathedral is a UNESCO World Heritage site",
+                    "judgment": false
+                },
+                {
+                    "claim": "Notre-Dame Cathedral is a symbol of French heritage",
+                    "judgment": false
+                },
+                {
+                    "claim": "Notre-Dame Cathedral is a symbol of French culture",
+                    "judgment": false
+                }
+            ],
+            "The cause of the fire was initially suspected to be linked to ongoing renovation work, and investigations were launched to determine the exact cause.": [
+                {
+                    "claim": "The cause of the fire was suspected to be related to renovation work",
+                    "judgment": false
+                },
+                {
+                    "claim": "Investigations were initiated to find the exact cause of the fire",
+                    "judgment": false
+                },
+                {
+                    "claim": "Renovation work was being conducted at the time of the fire",
+                    "judgment": false
+                },
+                {
+                    "claim": "There was uncertainty about the exact cause of the fire",
+                    "judgment": false
+                }
+            ],
+            "The event highlighted the global significance of Notre-Dame and the profound impact of its partial destruction on both the local community and the international community.": [
+                {
+                    "claim": "The fire at Notre-Dame highlighted its global significance",
+                    "judgment": false
+                },
+                {
+                    "claim": "The partial destruction of Notre-Dame had a profound impact on the local community",
+                    "judgment": false
+                },
+                {
+                    "claim": "The partial destruction of Notre-Dame had a profound impact on the international community",
+                    "judgment": false
+                },
+                {
+                    "claim": "Notre-Dame has global significance",
+                    "judgment": false
+                },
+                {
+                    "claim": "The destruction of parts of Notre-Dame affected people beyond just the local area",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2022_United_States_Senate_election_in_Georgia": {
+        "prediction": "The 2022 Georgia Senate election was a closely contested race between incumbent Democratic Senator Raphael Warnock and Republican challenger Herschel Walker. After the initial election on November 8, 2022, neither candidate secured the required 50% majority, leading to a runoff election on December 6, 2022. In the runoff, Warnock secured a decisive victory, winning with approximately 51.3% of the vote, while Walker received about 48.7%. The runoff election saw significant voter turnout, with both campaigns intensifying their efforts to mobilize supporters. The outcome of the runoff was crucial in determining the balance of power in the United States Senate, ultimately securing a narrow Democratic majority.",
+        "claims": {
+            "The 2022 Georgia Senate election was a closely contested race between incumbent Democratic Senator Raphael Warnock and Republican challenger Herschel Walker.": [
+                {
+                    "claim": "The 2022 Georgia Senate election was a closely contested race",
+                    "judgment": true
+                },
+                {
+                    "claim": "Raphael Warnock was the incumbent Democratic Senator in the race",
+                    "judgment": true
+                },
+                {
+                    "claim": "Herschel Walker was the Republican challenger in the race",
+                    "judgment": true
+                },
+                {
+                    "claim": "The race involved two candidates",
+                    "judgment": true
+                },
+                {
+                    "claim": "The race was for a Senate seat in Georgia",
+                    "judgment": true
+                }
+            ],
+            "After the initial election on November 8, 2022, neither candidate secured the required 50% majority, leading to a runoff election on December 6, 2022.": [
+                {
+                    "claim": "The initial election took place on November 8, 2022",
+                    "judgment": true
+                },
+                {
+                    "claim": "Neither candidate secured 50% of the vote in the initial election",
+                    "judgment": true
+                },
+                {
+                    "claim": "A 50% majority was required to avoid a runoff election",
+                    "judgment": true
+                },
+                {
+                    "claim": "A runoff election was necessary due to no candidate reaching the required majority",
+                    "judgment": true
+                },
+                {
+                    "claim": "The runoff election was scheduled for December 6, 2022",
+                    "judgment": true
+                }
+            ],
+            "In the runoff, Warnock secured a decisive victory, winning with approximately 51.3% of the vote, while Walker received about 48.7%.": [
+                {
+                    "claim": "Warnock secured a decisive victory in the runoff election",
+                    "judgment": true
+                },
+                {
+                    "claim": "Warnock won the runoff election with approximately 51.3% of the vote",
+                    "judgment": false
+                },
+                {
+                    "claim": "Walker received about 48.7% of the vote in the runoff election",
+                    "judgment":false
+                },
+                {
+                    "claim": "There was a runoff election",
+                    "judgment": false
+                },
+                {
+                    "claim": "The runoff election resulted in a close margin of victory",
+                    "judgment": true
+                }
+            ],
+            "The runoff election saw significant voter turnout, with both campaigns intensifying their efforts to mobilize supporters.": [
+                {
+                    "claim": "The runoff election had significant voter turnout",
+                    "judgment": true
+                },
+                {
+                    "claim": "Both campaigns intensified their efforts to mobilize supporters",
+                    "judgment": false
+                },
+                {
+                    "claim": "There was a runoff election",
+                    "judgment": true
+                },
+                {
+                    "claim": "The campaigns made efforts to mobilize supporters",
+                    "judgment": false
+                }
+            ],
+            "The outcome of the runoff was crucial in determining the balance of power in the United States Senate, ultimately securing a narrow Democratic majority.": [
+                {
+                    "claim": "The runoff election had a significant impact on the balance of power in the United States Senate",
+                    "judgment": true
+                },
+                {
+                    "claim": "The runoff election outcome secured a narrow Democratic majority in the Senate",
+                    "judgment": false
+                },
+                {
+                    "claim": "The balance of power in the Senate was determined by the runoff election result",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Democratic party gained a narrow majority in the Senate due to the runoff election outcome",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "Hurricane_Irma": {
+        "prediction": "Hurricane Irma was a powerful and destructive Category 5 hurricane that caused widespread damage across the Caribbean and the southeastern United States in September 2017. Originating as a tropical wave, Irma rapidly intensified, reaching peak sustained winds of 180 miles per hour. The storm first made landfall in the Leeward Islands, causing catastrophic damage, particularly on the islands of Barbuda and St. Martin. As it moved northwest, Irma struck Cuba and the Florida Keys before making landfall in Southwest Florida. The hurricane brought torrential rain, storm surges, and powerful winds, resulting in significant flooding, structural damage, and widespread power outages. In Miami Beach, the storm caused severe flooding and disrupted infrastructure, while in St. Martin, the storm left behind extensive destruction, with residents facing a lack of basic services such as electricity, water, and communication. The aftermath saw communities mobilizing to provide aid, including the establishment of hurricane camps for children to ensure their safety and well-being during the recovery process.",
+        "claims": {
+            "Hurricane Irma was a powerful and destructive Category 5 hurricane that caused widespread damage across the Caribbean and the southeastern United States in September 2017.": [
+                {
+                    "claim": "Hurricane Irma was a hurricane",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma was a Category 5 hurricane",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma was powerful",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma was destructive",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma caused widespread damage",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma caused damage across the Caribbean",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma caused damage in the southeastern United States",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma occurred in September 2017",
+                    "judgment": true
+                }
+            ],
+            "Originating as a tropical wave, Irma rapidly intensified, reaching peak sustained winds of 180 miles per hour.": [
+                {
+                    "claim": "Hurricane Irma originated as a tropical wave",
+                    "judgment": true
+                },
+                {
+                    "claim": "Irma rapidly intensified",
+                    "judgment": true
+                },
+                {
+                    "claim": "Irma reached peak sustained winds of 180 miles per hour",
+                    "judgment": true
+                }
+            ],
+            "The storm first made landfall in the Leeward Islands, causing catastrophic damage, particularly on the islands of Barbuda and St. Martin.": [
+                {
+                    "claim": "The storm made landfall in the Leeward Islands",
+                    "judgment": false
+                },
+                {
+                    "claim": "The storm caused catastrophic damage in the Leeward Islands",
+                    "judgment": false
+                },
+                {
+                    "claim": "Barbuda experienced catastrophic damage from the storm",
+                    "judgment": true
+                },
+                {
+                    "claim": "St. Martin experienced catastrophic damage from the storm",
+                    "judgment": true
+                },
+                {
+                    "claim": "The storm first made landfall in the Leeward Islands",
+                    "judgment": false
+                }
+            ],
+            "As it moved northwest, Irma struck Cuba and the Florida Keys before making landfall in Southwest Florida.": [
+                {
+                    "claim": "Hurricane Irma moved northwest",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma struck Cuba",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma struck the Florida Keys",
+                    "judgment": false
+                },
+                {
+                    "claim": "Hurricane Irma made landfall in Southwest Florida",
+                    "judgment": false
+                },
+                {
+                    "claim": "The order of landfall was first Cuba, then the Florida Keys, and finally Southwest Florida",
+                    "judgment": false
+                }
+            ],
+            "The hurricane brought torrential rain, storm surges, and powerful winds, resulting in significant flooding, structural damage, and widespread power outages.": [
+                {
+                    "claim": "The hurricane brought torrential rain",
+                    "judgment": false
+                },
+                {
+                    "claim": "The hurricane brought storm surges",
+                    "judgment": false
+                },
+                {
+                    "claim": "The hurricane brought powerful winds",
+                    "judgment": false
+                },
+                {
+                    "claim": "The hurricane resulted in significant flooding",
+                    "judgment": false
+                },
+                {
+                    "claim": "The hurricane caused structural damage",
+                    "judgment": false
+                },
+                {
+                    "claim": "The hurricane led to widespread power outages",
+                    "judgment": false
+                }
+            ],
+            "In Miami Beach, the storm caused severe flooding and disrupted infrastructure, while in St. Martin, the storm left behind extensive destruction, with residents facing a lack of basic services such as electricity, water, and communication.": [
+                {
+                    "claim": "The storm caused severe flooding in Miami Beach",
+                    "judgment": false
+                },
+                {
+                    "claim": "The storm disrupted infrastructure in Miami Beach",
+                    "judgment":false
+                },
+                {
+                    "claim": "The storm left behind extensive destruction in St. Martin",
+                    "judgment": true
+                },
+                {
+                    "claim": "Residents in St. Martin faced a lack of electricity",
+                    "judgment": false
+                },
+                {
+                    "claim": "Residents in St. Martin faced a lack of water",
+                    "judgment": false
+                },
+                {
+                    "claim": "Residents in St. Martin faced a lack of communication services",
+                    "judgment": false
+                }
+            ],
+            "The aftermath saw communities mobilizing to provide aid, including the establishment of hurricane camps for children to ensure their safety and well-being during the recovery process.": [
+                {
+                    "claim": "Communities mobilized to provide aid after the hurricane",
+                    "judgment": false
+                },
+                {
+                    "claim": "Hurricane camps were established for children",
+                    "judgment": false
+                },
+                {
+                    "claim": "The purpose of the hurricane camps was to ensure children's safety",
+                    "judgment": false
+                },
+                {
+                    "claim": "The purpose of the hurricane camps was to ensure children's well-being",
+                    "judgment": false
+                },
+                {
+                    "claim": "The hurricane camps were part of the recovery process",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2018_Anchorage_earthquake": {
+        "prediction": "A magnitude 7.0 earthquake struck near Anchorage, Alaska, on Friday, November 30, 2018, at 8:29 am local time. The National Weather Service confirmed the event and assured the public that there was no tsunami danger. The earthquake caused significant damage to infrastructure, including buckled roads, collapsed buildings, and widespread disruption. Footage from the area showed supermarkets with items scattered across the floors, schools being evacuated, and the air traffic control tower at the Anchorage airport being evacuated, resulting in no planes landing. Emergency services responded promptly, extinguishing fires and repairing water mains. Despite the extensive damage, there were no reports of deaths. Recovery efforts were immediately underway, with the community working together to restore normalcy. Alaska's governor issued a disaster declaration, emphasizing the severity of the situation and the need for coordinated response and assistance.",
+        "claims": {
+            "A magnitude 7.0 earthquake struck near Anchorage, Alaska, on Friday, November 30, 2018, at 8:29 am local time.": [
+                {
+                    "claim": "An earthquake occurred",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake had a magnitude of 7.0",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake struck near Anchorage, Alaska",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake occurred on November 30, 2018",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake occurred on a Friday",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake struck at 8:29 am local time",
+                    "judgment": true
+                }
+            ],
+            "The National Weather Service confirmed the event and assured the public that there was no tsunami danger.": [
+                {
+                    "claim": "The National Weather Service confirmed the earthquake event",
+                    "judgment": false
+                },
+                {
+                    "claim": "The National Weather Service assured the public there was no tsunami danger",
+                    "judgment": false
+                }
+            ],
+            "The earthquake caused significant damage to infrastructure, including buckled roads, collapsed buildings, and widespread disruption.": [
+                {
+                    "claim": "The earthquake caused significant damage to infrastructure",
+                    "judgment": false
+                },
+                {
+                    "claim": "Buckled roads resulted from the earthquake",
+                    "judgment": false
+                },
+                {
+                    "claim": "Collapsed buildings resulted from the earthquake",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake led to widespread disruption",
+                    "judgment": false
+                }
+            ],
+            "Footage from the area showed supermarkets with items scattered across the floors, schools being evacuated, and the air traffic control tower at the Anchorage airport being evacuated, resulting in no planes landing.": [
+                {
+                    "claim": "Footage from the area showed supermarkets with items scattered across the floors",
+                    "judgment": false
+                },
+                {
+                    "claim": "Footage from the area showed schools being evacuated",
+                    "judgment": false
+                },
+                {
+                    "claim": "Footage from the area showed the air traffic control tower at the Anchorage airport being evacuated",
+                    "judgment": false
+                },
+                {
+                    "claim": "The evacuation of the air traffic control tower resulted in no planes landing",
+                    "judgment": false
+                }
+            ],
+            "Emergency services responded promptly, extinguishing fires and repairing water mains.": [
+                {
+                    "claim": "Emergency services responded quickly",
+                    "judgment": false
+                },
+                {
+                    "claim": "Emergency services extinguished fires",
+                    "judgment": false
+                },
+                {
+                    "claim": "Emergency services repaired water mains",
+                    "judgment": false
+                }
+            ],
+            "Despite the extensive damage, there were no reports of deaths.": [
+                {
+                    "claim": "There was extensive damage caused by the earthquake",
+                    "judgment": false
+                },
+                {
+                    "claim": "No deaths were reported as a result of the earthquake",
+                    "judgment": false
+                }
+            ],
+            "Recovery efforts were immediately underway, with the community working together to restore normalcy.": [
+                {
+                    "claim": "Recovery efforts began right away",
+                    "judgment": false
+                },
+                {
+                    "claim": "The community worked together during the recovery efforts",
+                    "judgment": false
+                },
+                {
+                    "claim": "The goal of the recovery efforts was to restore normalcy",
+                    "judgment": false
+                }
+            ],
+            "Alaska's governor issued a disaster declaration, emphasizing the severity of the situation and the need for coordinated response and assistance.": [
+                {
+                    "claim": "Alaska's governor issued a disaster declaration",
+                    "judgment": false
+                },
+                {
+                    "claim": "The disaster declaration emphasized the severity of the situation",
+                    "judgment": false
+                },
+                {
+                    "claim": "The disaster declaration highlighted the need for a coordinated response",
+                    "judgment": false
+                },
+                {
+                    "claim": "The disaster declaration highlighted the need for assistance",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2025_Canadian_federal_election": {
+        "prediction": "The 2025 Canadian federal election, held on April 29, 2025, resulted in a fragmented Parliament with no single party achieving a majority. The Liberal Party, led by the incumbent Prime Minister, secured 119 seats, while the Conservative Party, under the leadership of Pierre Poilievre, gained over 20 seats, bringing their total to 83 and receiving the highest share of votes since 1988. The Bloc Qu\u00e9b\u00e9cois won 15 seats, the New Democratic Party (NDP) secured only 4 seats, and the Green Party failed to win any seats. The election saw significant shifts in voter support, particularly from the NDP to the Liberals, and created a challenging political environment with neither the NDP nor the Liberals able to form a coalition government. Pierre Poilievre, in his post-election speech, acknowledged the party's progress but emphasized the need for continued effort and change, looking ahead to future elections. The overall atmosphere during election night was one of excitement and celebration, especially among Liberal supporters, as they awaited the final results.",
+        "claims": {
+            "The 2025 Canadian federal election, held on April 29, 2025, resulted in a fragmented Parliament with no single party achieving a majority.": [
+                {
+                    "claim": "The 2025 Canadian federal election was held on April 29, 2025",
+                    "judgment": false
+                },
+                {
+                    "claim": "The 2025 Canadian federal election resulted in a fragmented Parliament",
+                    "judgment": true
+                },
+                {
+                    "claim": "No single party achieved a majority in the 2025 Canadian federal election",
+                    "judgment": false
+                }
+            ],
+            "The Liberal Party, led by the incumbent Prime Minister, secured 119 seats, while the Conservative Party, under the leadership of Pierre Poilievre, gained over 20 seats, bringing their total to 83 and receiving the highest share of votes since 1988.": [
+                {
+                    "claim": "The Liberal Party secured 119 seats",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Liberal Party was led by the incumbent Prime Minister",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Conservative Party gained over 20 seats",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Conservative Party's total number of seats became 83",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Conservative Party received the highest share of votes since 1988",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Conservative Party was led by Pierre Poilievre",
+                    "judgment": true
+                }
+            ],
+            "The Bloc Qu\u00e9b\u00e9cois won 15 seats, the New Democratic Party (NDP) secured only 4 seats, and the Green Party failed to win any seats.": [
+                {
+                    "claim": "The Bloc Qu\u00e9b\u00e9cois won 15 seats",
+                    "judgment": false
+                },
+                {
+                    "claim": "The New Democratic Party (NDP) secured 4 seats",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Green Party did not win any seats",
+                    "judgment": false
+                }
+            ],
+            "The election saw significant shifts in voter support, particularly from the NDP to the Liberals, and created a challenging political environment with neither the NDP nor the Liberals able to form a coalition government.": [
+                {
+                    "claim": "There were significant shifts in voter support during the election",
+                    "judgment": true
+                },
+                {
+                    "claim": "Voter support shifted significantly from the NDP to the Liberals",
+                    "judgment": true
+                },
+                {
+                    "claim": "The election created a challenging political environment",
+                    "judgment": false
+                },
+                {
+                    "claim": "Neither the NDP nor the Liberals were able to form a coalition government",
+                    "judgment": false
+                }
+            ],
+            "Pierre Poilievre, in his post-election speech, acknowledged the party's progress but emphasized the need for continued effort and change, looking ahead to future elections.": [
+                {
+                    "claim": "Pierre Poilievre gave a post-election speech",
+                    "judgment": false
+                },
+                {
+                    "claim": "Pierre Poilievre acknowledged the party's progress in his speech",
+                    "judgment": false
+                },
+                {
+                    "claim": "Pierre Poilievre emphasized the need for continued effort in his speech",
+                    "judgment": false
+                },
+                {
+                    "claim": "Pierre Poilievre emphasized the need for change in his speech",
+                    "judgment": false
+                },
+                {
+                    "claim": "Pierre Poilievre looked ahead to future elections in his speech",
+                    "judgment": false
+                }
+            ],
+            "The overall atmosphere during election night was one of excitement and celebration, especially among Liberal supporters, as they awaited the final results.": [
+                {
+                    "claim": "The atmosphere during election night was one of excitement",
+                    "judgment": false
+                },
+                {
+                    "claim": "The atmosphere during election night was one of celebration",
+                    "judgment": false
+                },
+                {
+                    "claim": "Liberal supporters were particularly excited and celebratory",
+                    "judgment": false
+                },
+                {
+                    "claim": "Final results were still awaited during election night",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2025_Myanmar_earthquake": {
+        "prediction": "A powerful 7.7 magnitude earthquake struck Myanmar on March 28, 2025, causing widespread destruction and loss of life. The epicenter was located near Mandalay, with an aftershock of 6.4 magnitude recorded in the same region. The earthquake occurred at a depth of 10 kilometers along the Sagaing Fault, where the Indian Plate and Eurasian Plate meet. Footage captured the moment of a surface rupture, marking the first-ever visual documentation of such geological activity. The disaster resulted in extensive damage to buildings, infrastructure, and cultural sites, including temples and historical structures. The death toll reached 1,600, and Myanmar declared a state of emergency, appealing for international aid. Organizations such as Oxfam's Emergency Response Team were on the ground, assessing needs and coordinating relief efforts. The earthquake's impact extended beyond Myanmar, affecting a construction site in Bangkok, Thailand, where a building under construction collapsed, further highlighting the event's devastating consequences.",
+        "claims": {
+            "A powerful 7.7 magnitude earthquake struck Myanmar on March 28, 2025, causing widespread destruction and loss of life.": [
+                {
+                    "claim": "An earthquake struck Myanmar",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake occurred on March 28, 2025",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake had a magnitude of 7.7",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake caused widespread destruction",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake led to loss of life",
+                    "judgment": true
+                }
+            ],
+            "The epicenter was located near Mandalay, with an aftershock of 6.4 magnitude recorded in the same region.": [
+                {
+                    "claim": "The epicenter of the earthquake was located near Mandalay",
+                    "judgment": true
+                },
+                {
+                    "claim": "An aftershock of 6.4 magnitude occurred in the same region",
+                    "judgment": false
+                },
+                {
+                    "claim": "There was an aftershock following the main earthquake",
+                    "judgment": false
+                }
+            ],
+            "The earthquake occurred at a depth of 10 kilometers along the Sagaing Fault, where the Indian Plate and Eurasian Plate meet.": [
+                {
+                    "claim": "The earthquake occurred along the Sagaing Fault",
+                    "judgment": true
+                },
+                {
+                    "claim": "The Sagaing Fault is where the Indian Plate and Eurasian Plate meet",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake occurred at a depth of 10 kilometers",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Indian Plate and Eurasian Plate meet at the Sagaing Fault",
+                    "judgment": false
+                }
+            ],
+            "Footage captured the moment of a surface rupture, marking the first-ever visual documentation of such geological activity.": [
+                {
+                    "claim": "Footage captured the moment of a surface rupture",
+                    "judgment": false
+                },
+                {
+                    "claim": "This was the first-ever visual documentation of such geological activity",
+                    "judgment": false
+                }
+            ],
+            "The disaster resulted in extensive damage to buildings, infrastructure, and cultural sites, including temples and historical structures.": [
+                {
+                    "claim": "The disaster caused extensive damage",
+                    "judgment": true
+                },
+                {
+                    "claim": "Buildings were damaged by the disaster",
+                    "judgment": false
+                },
+                {
+                    "claim": "Infrastructure was damaged by the disaster",
+                    "judgment": false
+                },
+                {
+                    "claim": "Cultural sites were damaged by the disaster",
+                    "judgment": false
+                },
+                {
+                    "claim": "Temples were damaged by the disaster",
+                    "judgment": false
+                },
+                {
+                    "claim": "Historical structures were damaged by the disaster",
+                    "judgment": false
+                }
+            ],
+            "The death toll reached 1,600, and Myanmar declared a state of emergency, appealing for international aid.": [
+                {
+                    "claim": "The death toll reached 1,600",
+                    "judgment": false
+                },
+                {
+                    "claim": "Myanmar declared a state of emergency",
+                    "judgment": true
+                },
+                {
+                    "claim": "Myanmar appealed for international aid",
+                    "judgment": false
+                }
+            ],
+            "Organizations such as Oxfam's Emergency Response Team were on the ground, assessing needs and coordinating relief efforts.": [
+                {
+                    "claim": "Oxfam's Emergency Response Team was on the ground",
+                    "judgment": false
+                },
+                {
+                    "claim": "Oxfam's Emergency Response Team was assessing needs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Oxfam's Emergency Response Team was coordinating relief efforts",
+                    "judgment": false
+                },
+                {
+                    "claim": "Other organizations were also on the ground",
+                    "judgment": false
+                },
+                {
+                    "claim": "Other organizations were assessing needs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Other organizations were coordinating relief efforts",
+                    "judgment": false
+                }
+            ],
+            "The earthquake's impact extended beyond Myanmar, affecting a construction site in Bangkok, Thailand, where a building under construction collapsed, further highlighting the event's devastating consequences.": [
+                {
+                    "claim": "The earthquake's impact went beyond Myanmar",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake affected a construction site in Bangkok, Thailand",
+                    "judgment": true
+                },
+                {
+                    "claim": "A building under construction collapsed in Bangkok",
+                    "judgment": false
+                },
+                {
+                    "claim": "The collapse of the building in Bangkok highlighted the earthquake's devastating consequences",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "Blue_Ghost_Mission_1": {
+        "prediction": "The Blue Ghost M1 lunar lander, developed by Firefly Aerospace, successfully landed on the Moon on February 24, 2025, as part of NASA's Artemis program. The mission, which aimed to advance lunar exploration and scientific research, was a significant milestone in space exploration. The spacecraft, equipped with advanced scientific instruments, was designed and assembled at Firefly Aerospace's industrial facility, where engineers and technicians worked meticulously to ensure its precision and reliability. The landing process was closely monitored from the company's control room, where a team of experts tracked the lander's descent using detailed telemetry data. The successful touchdown was met with jubilation among the team members, marking a testament to their dedication and innovation in space technology. The mission not only contributed to the ongoing exploration of the Moon but also highlighted the capabilities of private aerospace companies in collaboration with government space agencies.<ref>Video Summary 1</ref><ref>Video Summary 2</ref><ref>Video Summary 3</ref><ref>Video Summary 4</ref><ref>Video Summary 5</ref>",
+        "claims": {
+            "The Blue Ghost M1 lunar lander, developed by Firefly Aerospace, successfully landed on the Moon on February 24, 2025, as part of NASA's Artemis program.": [
+                {
+                    "claim": "The Blue Ghost M1 is a lunar lander",
+                    "judgment": true
+                },
+                {
+                    "claim": "The Blue Ghost M1 was developed by Firefly Aerospace",
+                    "judgment": true
+                },
+                {
+                    "claim": "The Blue Ghost M1 landed on the Moon",
+                    "judgment": true
+                },
+                {
+                    "claim": "The landing was successful",
+                    "judgment": true
+                },
+                {
+                    "claim": "The landing occurred on February 24, 2025",
+                    "judgment": false
+                },
+                {
+                    "claim": "The mission was part of NASA's Artemis program",
+                    "judgment": true
+                }
+            ],
+            "The mission, which aimed to advance lunar exploration and scientific research, was a significant milestone in space exploration.": [
+                {
+                    "claim": "The mission aimed to advance lunar exploration",
+                    "judgment": true
+                },
+                {
+                    "claim": "The mission aimed to advance scientific research",
+                    "judgment": true
+                },
+                {
+                    "claim": "The mission was a significant milestone in space exploration",
+                    "judgment": false
+                }
+            ],
+            "The spacecraft, equipped with advanced scientific instruments, was designed and assembled at Firefly Aerospace's industrial facility, where engineers and technicians worked meticulously to ensure its precision and reliability.": [
+                {
+                    "claim": "The spacecraft was equipped with advanced scientific instruments",
+                    "judgment": true
+                },
+                {
+                    "claim": "The spacecraft was designed at Firefly Aerospace's industrial facility",
+                    "judgment": false
+                },
+                {
+                    "claim": "The spacecraft was assembled at Firefly Aerospace's industrial facility",
+                    "judgment": false
+                },
+                {
+                    "claim": "Engineers worked meticulously on the spacecraft",
+                    "judgment": false
+                },
+                {
+                    "claim": "Technicians worked meticulously on the spacecraft",
+                    "judgment": false
+                },
+                {
+                    "claim": "The goal was to ensure the spacecraft's precision",
+                    "judgment": false
+                },
+                {
+                    "claim": "The goal was to ensure the spacecraft's reliability",
+                    "judgment": false
+                }
+            ],
+            "The landing process was closely monitored from the company's control room, where a team of experts tracked the lander's descent using detailed telemetry data.": [
+                {
+                    "claim": "The landing process was monitored",
+                    "judgment": false
+                },
+                {
+                    "claim": "The landing process was closely monitored",
+                    "judgment": false
+                },
+                {
+                    "claim": "The landing process was monitored from the company's control room",
+                    "judgment": false
+                },
+                {
+                    "claim": "A team of experts monitored the landing process",
+                    "judgment": false
+                },
+                {
+                    "claim": "The team of experts tracked the lander's descent",
+                    "judgment": false
+                },
+                {
+                    "claim": "Detailed telemetry data was used to track the lander's descent",
+                    "judgment": false
+                }
+            ],
+            "The successful touchdown was met with jubilation among the team members, marking a testament to their dedication and innovation in space technology.": [
+                {
+                    "claim": "The touchdown was successful",
+                    "judgment": true
+                },
+                {
+                    "claim": "The team members were jubilant upon the successful touchdown",
+                    "judgment": false
+                },
+                {
+                    "claim": "The success marks a testament to the team's dedication",
+                    "judgment": false
+                },
+                {
+                    "claim": "The success marks a testament to the team's innovation in space technology",
+                    "judgment": false
+                }
+            ],
+            "The mission not only contributed to the ongoing exploration of the Moon but also highlighted the capabilities of private aerospace companies in collaboration with government space agencies.<ref>Video Summary 1</ref><ref>Video Summary 2</ref><ref>Video Summary 3</ref><ref>Video Summary 4</ref><ref>Video Summary 5</ref>": [
+                {
+                    "claim": "The mission contributed to the ongoing exploration of the Moon",
+                    "judgment": false
+                },
+                {
+                    "claim": "The mission highlighted the capabilities of private aerospace companies",
+                    "judgment": false
+                },
+                {
+                    "claim": "The mission demonstrated collaboration between private aerospace companies and government space agencies",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "Liberation_Day_Tariffs": {
+        "prediction": "On April 2, 2025, President Donald Trump delivered a speech in Washington, D.C., announcing new tariffs on imports from several countries, including China, the European Union, Vietnam, Taiwan, Japan, India, South Korea, Thailand, Switzerland, Indonesia, and Malaysia. The tariffs, ranging from 20% to 36%, were designed to address what the administration perceived as unfair trade practices and to encourage domestic manufacturing. Trump emphasized that the U.S. would not impose a full 100% reciprocal tariff, stating his intention to be \"kind to the world\" while protecting American industries. The announcement, made after the stock market closing bell, had already contributed to market volatility, with significant losses reported in the stock market, including a $3 trillion drop in value, referred to as a \"stock market armageddon.\" Financial analysts, such as those from JPMorgan Chase & Co., raised the recession risk forecast to 60%, up from 40% prior to the announcement. The legal and economic implications of these tariffs were widely discussed, with experts debating the constitutionality of the President's actions under the International Emergency Economic Powers Act (IEEPA) and the potential long-term impacts on global trade dynamics and consumer prices.",
+        "claims": {
+            "On April 2, 2025, President Donald Trump delivered a speech in Washington, D.C., announcing new tariffs on imports from several countries, including China, the European Union, Vietnam, Taiwan, Japan, India, South Korea, Thailand, Switzerland, Indonesia, and Malaysia.": [
+                {
+                    "claim": "President Donald Trump delivered a speech on April 2, 2025",
+                    "judgment": true
+                },
+                {
+                    "claim": "The speech was delivered in Washington, D.C.",
+                    "judgment": true
+                },
+                {
+                    "claim": "Trump announced new tariffs on imports from several countries",
+                    "judgment": true
+                },
+                {
+                    "claim": "China was among the countries subject to the new tariffs",
+                    "judgment": true
+                },
+                {
+                    "claim": "The European Union was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Vietnam was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Taiwan was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Japan was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "India was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "South Korea was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Thailand was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Switzerland was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Indonesia was among the countries subject to the new tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "Malaysia was among the countries subject to the new tariffs",
+                    "judgment": false
+                }
+            ],
+            "The tariffs, ranging from 20% to 36%, were designed to address what the administration perceived as unfair trade practices and to encourage domestic manufacturing.": [
+                {
+                    "claim": "The tariffs ranged from 20% to 36%",
+                    "judgment": false
+                },
+                {
+                    "claim": "The tariffs were designed to address perceived unfair trade practices",
+                    "judgment": false
+                },
+                {
+                    "claim": "The tariffs were designed to encourage domestic manufacturing",
+                    "judgment": false
+                },
+                {
+                    "claim": "The administration perceived certain trade practices as unfair",
+                    "judgment": false
+                }
+            ],
+            "Trump emphasized that the U.S. would not impose a full 100% reciprocal tariff, stating his intention to be \"kind to the world\" while protecting American industries.": [
+                {
+                    "claim": "Trump emphasized that the U.S. would not impose a full 100% reciprocal tariff",
+                    "judgment": false
+                },
+                {
+                    "claim": "Trump stated his intention to be 'kind to the world'",
+                    "judgment": false
+                },
+                {
+                    "claim": "Trump's goal was to protect American industries",
+                    "judgment": false
+                },
+                {
+                    "claim": "The tariffs were intended to protect American industries",
+                    "judgment": false
+                }
+            ],
+            "The announcement, made after the stock market closing bell, had already contributed to market volatility, with significant losses reported in the stock market, including a $3 trillion drop in value, referred to as a \"stock market armageddon.\"": [
+                {
+                    "claim": "The announcement was made after the stock market closing bell",
+                    "judgment": false
+                },
+                {
+                    "claim": "The announcement contributed to market volatility",
+                    "judgment": true
+                },
+                {
+                    "claim": "Significant losses were reported in the stock market following the announcement",
+                    "judgment": false
+                },
+                {
+                    "claim": "The stock market experienced a $3 trillion drop in value",
+                    "judgment": false
+                },
+                {
+                    "claim": "The stock market drop was referred to as 'stock market armageddon'",
+                    "judgment": false
+                }
+            ],
+            "Financial analysts, such as those from JPMorgan Chase & Co., raised the recession risk forecast to 60%, up from 40% prior to the announcement.": [
+                {
+                    "claim": "Financial analysts raised the recession risk forecast",
+                    "judgment": false
+                },
+                {
+                    "claim": "JPMorgan Chase & Co. analysts were among those who raised the recession risk forecast",
+                    "judgment": false
+                },
+                {
+                    "claim": "The recession risk forecast was raised to 60%",
+                    "judgment": false
+                },
+                {
+                    "claim": "Prior to the announcement, the recession risk forecast was 40%",
+                    "judgment": false
+                }
+            ],
+            "The legal and economic implications of these tariffs were widely discussed, with experts debating the constitutionality of the President's actions under the International Emergency Economic Powers Act (IEEPA) and the potential long-term impacts on global trade dynamics and consumer prices.": [
+                {
+                    "claim": "The legal implications of the tariffs were widely discussed",
+                    "judgment": true
+                },
+                {
+                    "claim": "The economic implications of the tariffs were widely discussed",
+                    "judgment": true
+                },
+                {
+                    "claim": "Experts debated the constitutionality of the President's actions",
+                    "judgment": true
+                },
+                {
+                    "claim": "The debate concerned the President's actions under the International Emergency Economic Powers Act (IEEPA)",
+                    "judgment": true
+                },
+                {
+                    "claim": "Experts debated the potential long-term impacts on global trade dynamics",
+                    "judgment": false
+                },
+                {
+                    "claim": "Experts debated the potential long-term impacts on consumer prices",
+                    "judgment": false
+                }
+            ]
+        }
+    }
+}

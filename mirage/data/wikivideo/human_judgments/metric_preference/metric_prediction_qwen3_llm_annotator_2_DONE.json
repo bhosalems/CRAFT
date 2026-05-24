@@ -1,0 +1,1210 @@
+{
+    "Launch_and_commissioning_of_the_James_Webb_Space_Telescope": {
+        "prediction": "The James Webb Space Telescope (JWST) is a space telescope designed primarily to conduct infrared astronomy. As the largest and most powerful space telescope ever built, it is intended to succeed the Hubble Space Telescope as the premier space observatory of the 2020s. The JWST project was initiated by NASA in collaboration with the European Space Agency (ESA) and the Canadian Space Agency (CSA). After years of development and multiple delays, the telescope was successfully launched on December 25, 2021, from the ELA-3 launch pad at the Guiana Space Centre in Kourou, French Guiana, aboard an Ariane 5 rocket.\n\nFollowing its launch, the JWST began a complex deployment sequence, which included unfolding its sunshield and primary mirror segments. This process, critical for the telescope's operation, was completed without major issues by January 8, 2022. The telescope then proceeded to its operational orbit around the second Lagrange point (L2), approximately 1.5 million kilometers from Earth, where it arrived on January 24, 2022. The subsequent months were dedicated to cooling the instruments to their operational temperatures, aligning the mirror segments, and calibrating the scientific instruments. The JWST was officially declared operational and ready for science observations on July 12, 2022, marking the beginning of its mission to explore the early universe, study the atmospheres of exoplanets, and observe some of the most distant galaxies and objects in the cosmos.",
+        "claims": {
+            "The James Webb Space Telescope (JWST) is a space telescope designed primarily to conduct infrared astronomy.": [
+                {
+                    "claim": "The James Webb Space Telescope (JWST) is a space telescope",
+                    "judgment": true
+                },
+                {
+                    "claim": "The JWST is designed primarily for infrared astronomy",
+                    "judgment": true
+                }
+            ],
+            "As the largest and most powerful space telescope ever built, it is intended to succeed the Hubble Space Telescope as the premier space observatory of the 2020s.": [
+                {
+                    "claim": "The James Webb Space Telescope is the largest space telescope ever built",
+                    "judgment": false
+                },
+                {
+                    "claim": "The James Webb Space Telescope is the most powerful space telescope ever built",
+                    "judgment": false
+                },
+                {
+                    "claim": "The James Webb Space Telescope is intended to succeed the Hubble Space Telescope",
+                    "judgment": false
+                },
+                {
+                    "claim": "The James Webb Space Telescope aims to become the premier space observatory of the 2020s",
+                    "judgment": false
+                }
+            ],
+            "The JWST project was initiated by NASA in collaboration with the European Space Agency (ESA) and the Canadian Space Agency (CSA).": [
+                {
+                    "claim": "The JWST project was initiated by NASA",
+                    "judgment": true
+                },
+                {
+                    "claim": "The JWST project involves collaboration with the European Space Agency (ESA)",
+                    "judgment": true
+                },
+                {
+                    "claim": "The JWST project involves collaboration with the Canadian Space Agency (CSA)",
+                    "judgment": true
+                }
+            ],
+            "After years of development and multiple delays, the telescope was successfully launched on December 25, 2021, from the ELA-3 launch pad at the Guiana Space Centre in Kourou, French Guiana, aboard an Ariane 5 rocket.": [
+                {
+                    "claim": "The telescope underwent years of development",
+                    "judgment": false
+                },
+                {
+                    "claim": "The launch of the telescope faced multiple delays",
+                    "judgment": false
+                },
+                {
+                    "claim": "The telescope was successfully launched",
+                    "judgment": true
+                },
+                {
+                    "claim": "The launch date was December 25, 2021",
+                    "judgment": true
+                },
+                {
+                    "claim": "The launch took place from the ELA-3 launch pad",
+                    "judgment": false
+                },
+                {
+                    "claim": "The launch site was the Guiana Space Centre",
+                    "judgment": true
+                },
+                {
+                    "claim": "The Guiana Space Centre is located in Kourou, French Guiana",
+                    "judgment": true
+                },
+                {
+                    "claim": "The Ariane 5 rocket was used for the launch",
+                    "judgment": true
+                }
+            ],
+            "Following its launch, the JWST began a complex deployment sequence, which included unfolding its sunshield and primary mirror segments.": [
+                {
+                    "claim": "The JWST began a deployment sequence after its launch",
+                    "judgment": false
+                },
+                {
+                    "claim": "The deployment sequence was complex",
+                    "judgment": false
+                },
+                {
+                    "claim": "Unfolding the sunshield was part of the deployment sequence",
+                    "judgment": false
+                },
+                {
+                    "claim": "Unfolding the primary mirror segments was part of the deployment sequence",
+                    "judgment": false
+                }
+            ],
+            "This process, critical for the telescope's operation, was completed without major issues by January 8, 2022.": [
+                {
+                    "claim": "The process was critical for the telescope's operation",
+                    "judgment": false
+                },
+                {
+                    "claim": "The process was completed by January 8, 2022",
+                    "judgment": false
+                },
+                {
+                    "claim": "There were no major issues during the completion of the process",
+                    "judgment": false
+                }
+            ],
+            "The telescope then proceeded to its operational orbit around the second Lagrange point (L2), approximately 1.5 million kilometers from Earth, where it arrived on January 24, 2022.": [
+                {
+                    "claim": "The telescope proceeded to its operational orbit",
+                    "judgment": true
+                },
+                {
+                    "claim": "The operational orbit is around the second Lagrange point (L2)",
+                    "judgment": false
+                },
+                {
+                    "claim": "The distance from Earth to the L2 point is approximately 1.5 million kilometers",
+                    "judgment": false
+                },
+                {
+                    "claim": "The telescope arrived at the L2 point on January 24, 2022",
+                    "judgment": false
+                }
+            ],
+            "The subsequent months were dedicated to cooling the instruments to their operational temperatures, aligning the mirror segments, and calibrating the scientific instruments.": [
+                {
+                    "claim": "Months were dedicated to cooling the instruments",
+                    "judgment": false
+                },
+                {
+                    "claim": "The instruments needed to reach their operational temperatures",
+                    "judgment": false
+                },
+                {
+                    "claim": "Months were dedicated to aligning the mirror segments",
+                    "judgment": false
+                },
+                {
+                    "claim": "Months were dedicated to calibrating the scientific instruments",
+                    "judgment": false
+                }
+            ],
+            "The JWST was officially declared operational and ready for science observations on July 12, 2022, marking the beginning of its mission to explore the early universe, study the atmospheres of exoplanets, and observe some of the most distant galaxies and objects in the cosmos.": [
+                {
+                    "claim": "The JWST was officially declared operational on July 12, 2022",
+                    "judgment": false
+                },
+                {
+                    "claim": "The JWST was declared ready for science observations on July 12, 2022",
+                    "judgment": false
+                },
+                {
+                    "claim": "July 12, 2022 marks the beginning of the JWST's mission",
+                    "judgment": false
+                },
+                {
+                    "claim": "One of the JWST's missions is to explore the early universe",
+                    "judgment": false
+                },
+                {
+                    "claim": "Another mission of the JWST is to study the atmospheres of exoplanets",
+                    "judgment": false
+                },
+                {
+                    "claim": "The JWST is tasked with observing some of the most distant galaxies and objects in the cosmos",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2018_lower_Puna_eruption": {
+        "prediction": "The 2018 lower Puna eruption was a significant volcanic event that began on May 3, 2018, in the Lower Puna District of Hawaii's Big Island. This eruption, part of the ongoing activity at K\u012blauea, one of the world's most active volcanoes, marked a dramatic shift in the volcano's behavior, leading to extensive lava flows, the destruction of hundreds of homes, and the displacement of thousands of residents. The eruption also caused significant changes to the landscape, including the creation of new land along the island's southeast coast. The event captured international attention due to its scale and impact, and it continued through August 2018, when activity significantly decreased. The eruption is considered one of the most destructive in recent Hawaiian history and has provided valuable data for scientists studying volcanic processes.",
+        "claims": {
+            "The 2018 lower Puna eruption was a significant volcanic event that began on May 3, 2018, in the Lower Puna District of Hawaii's Big Island.": [
+                {
+                    "claim": "The 2018 lower Puna eruption was a significant volcanic event",
+                    "judgment": true
+                },
+                {
+                    "claim": "The eruption began on May 3, 2018",
+                    "judgment": true
+                },
+                {
+                    "claim": "The eruption took place in the Lower Puna District",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption occurred on Hawaii's Big Island",
+                    "judgment": true
+                }
+            ],
+            "This eruption, part of the ongoing activity at K\u012blauea, one of the world's most active volcanoes, marked a dramatic shift in the volcano's behavior, leading to extensive lava flows, the destruction of hundreds of homes, and the displacement of thousands of residents.": [
+                {
+                    "claim": "The eruption was part of ongoing activity at K\u012blauea",
+                    "judgment": true
+                },
+                {
+                    "claim": "K\u012blauea is one of the world's most active volcanoes",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption marked a dramatic shift in the volcano's behavior",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption led to extensive lava flows",
+                    "judgment": true
+                },
+                {
+                    "claim": "The eruption resulted in the destruction of hundreds of homes",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption caused the displacement of thousands of residents",
+                    "judgment": false
+                }
+            ],
+            "The eruption also caused significant changes to the landscape, including the creation of new land along the island's southeast coast.": [
+                {
+                    "claim": "The eruption caused significant changes to the landscape",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption led to the creation of new land",
+                    "judgment": true
+                },
+                {
+                    "claim": "The new land was created along the island's southeast coast",
+                    "judgment": false
+                }
+            ],
+            "The event captured international attention due to its scale and impact, and it continued through August 2018, when activity significantly decreased.": [
+                {
+                    "claim": "The 2018 lower Puna eruption captured international attention",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption captured international attention due to its scale",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption captured international attention due to its impact",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption continued through August 2018",
+                    "judgment": false
+                },
+                {
+                    "claim": "Activity of the eruption significantly decreased in August 2018",
+                    "judgment": false
+                }
+            ],
+            "The eruption is considered one of the most destructive in recent Hawaiian history and has provided valuable data for scientists studying volcanic processes.": [
+                {
+                    "claim": "The eruption is one of the most destructive in recent Hawaiian history",
+                    "judgment": false
+                },
+                {
+                    "claim": "The eruption provided valuable data for scientists",
+                    "judgment": false
+                },
+                {
+                    "claim": "Scientists studying volcanic processes benefited from the data provided by the eruption",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "Notre-Dame_fire": {
+        "prediction": "The 2019 Notre-Dame Cathedral fire was a significant blaze that engulfed the historic cathedral of Notre-Dame in Paris, France, on the evening of April 15, 2019. The fire, which began around 6:30 PM local time, rapidly spread through the attic of the cathedral, causing extensive damage to its wooden interior and leading to the collapse of the spire and a portion of the roof. The cause of the fire was initially suspected to be related to renovation work being carried out at the site. Despite the extensive damage, the main structure of the cathedral, including its two iconic bell towers, survived the inferno. The fire drew international attention and prompted a global outpouring of support for the restoration efforts, with numerous individuals and organizations pledging substantial donations toward the rebuilding process.",
+        "claims": {
+            "The 2019 Notre-Dame Cathedral fire was a significant blaze that engulfed the historic cathedral of Notre-Dame in Paris, France, on the evening of April 15, 2019.": [
+                {
+                    "claim": "There was a fire at the Notre-Dame Cathedral in 2019",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire was significant",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire engulfed the Notre-Dame Cathedral",
+                    "judgment": true
+                },
+                {
+                    "claim": "The Notre-Dame Cathedral is a historic building",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire happened in Paris, France",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire occurred on April 15, 2019",
+                    "judgment": false
+                },
+                {
+                    "claim": "The fire happened in the evening",
+                    "judgment": false
+                }
+            ],
+            "The fire, which began around 6:30 PM local time, rapidly spread through the attic of the cathedral, causing extensive damage to its wooden interior and leading to the collapse of the spire and a portion of the roof.": [
+                {
+                    "claim": "The fire started around 6:30 PM local time",
+                    "judgment": false
+                },
+                {
+                    "claim": "The fire spread quickly through the attic",
+                    "judgment": false
+                },
+                {
+                    "claim": "The fire caused extensive damage to the wooden interior",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire led to the collapse of the spire",
+                    "judgment": true
+                },
+                {
+                    "claim": "The fire led to the collapse of a portion of the roof",
+                    "judgment": true
+                }
+            ],
+            "The cause of the fire was initially suspected to be related to renovation work being carried out at the site.": [
+                {
+                    "claim": "The cause of the fire was initially suspected to be related to renovation work",
+                    "judgment": false
+                },
+                {
+                    "claim": "Renovation work was being carried out at Notre-Dame Cathedral when the fire started",
+                    "judgment": false
+                }
+            ],
+            "Despite the extensive damage, the main structure of the cathedral, including its two iconic bell towers, survived the inferno.": [
+                {
+                    "claim": "The main structure of the cathedral survived the fire",
+                    "judgment": true
+                },
+                {
+                    "claim": "The two iconic bell towers of the cathedral survived the fire",
+                    "judgment": false
+                },
+                {
+                    "claim": "There was extensive damage to the cathedral",
+                    "judgment": false
+                },
+                {
+                    "claim": "The fire is referred to as an 'inferno'",
+                    "judgment": false
+                }
+            ],
+            "The fire drew international attention and prompted a global outpouring of support for the restoration efforts, with numerous individuals and organizations pledging substantial donations toward the rebuilding process.": [
+                {
+                    "claim": "The fire drew international attention",
+                    "judgment": false
+                },
+                {
+                    "claim": "The fire prompted a global outpouring of support",
+                    "judgment": false
+                },
+                {
+                    "claim": "Support was directed towards the restoration efforts",
+                    "judgment": false
+                },
+                {
+                    "claim": "Numerous individuals pledged donations",
+                    "judgment": false
+                },
+                {
+                    "claim": "Numerous organizations pledged donations",
+                    "judgment": false
+                },
+                {
+                    "claim": "Donations were substantial",
+                    "judgment": false
+                },
+                {
+                    "claim": "Donations were intended for the rebuilding process",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2022_United_States_Senate_election_in_Georgia": {
+        "prediction": "The 2022 United States Senate election in Georgia was held on November 8, 2022, to elect a Class 2 member of the United States Senate to represent the state of Georgia, coinciding with other elections to the Senate, the United States House of Representatives, and various state and local races. The election was part of the broader 2022 United States midterm elections.\n\nIncumbent Democratic Senator Raphael Warnock, who won a special election in January 2021 to complete the term of Johnny Isakson, sought a full six-year term. He faced Republican nominee Herschel Walker, a former American football player and Heisman Trophy winner. Due to no candidate receiving more than 50% of the vote in the initial election, a runoff was held on December 6, 2022. Warnock won the runoff with 50.97% of the vote, securing his seat for a full term.",
+        "claims": {
+            "The 2022 United States Senate election in Georgia was held on November 8, 2022, to elect a Class 2 member of the United States Senate to represent the state of Georgia, coinciding with other elections to the Senate, the United States House of Representatives, and various state and local races.": [
+                {
+                    "claim": "The 2022 United States Senate election in Georgia was held on November 8, 2022",
+                    "judgment": true
+                },
+                {
+                    "claim": "The election was to elect a Class 2 member of the United States Senate",
+                    "judgment": false
+                },
+                {
+                    "claim": "The elected member would represent the state of Georgia",
+                    "judgment": true
+                },
+                {
+                    "claim": "The election coincided with other Senate elections",
+                    "judgment": false
+                },
+                {
+                    "claim": "The election coincided with elections to the United States House of Representatives",
+                    "judgment": false
+                },
+                {
+                    "claim": "The election coincided with various state and local races",
+                    "judgment": false
+                }
+            ],
+            "The election was part of the broader 2022 United States midterm elections.": [
+                {
+                    "claim": "The 2022 United States Senate election in Georgia was an election",
+                    "judgment": false
+                },
+                {
+                    "claim": "The election was part of the 2022 United States midterm elections",
+                    "judgment": true
+                },
+                {
+                    "claim": "The 2022 United States midterm elections were a series of concurrent elections",
+                    "judgment": true
+                }
+            ],
+            "Incumbent Democratic Senator Raphael Warnock, who won a special election in January 2021 to complete the term of Johnny Isakson, sought a full six-year term.": [
+                {
+                    "claim": "Raphael Warnock is a Democratic Senator",
+                    "judgment": true
+                },
+                {
+                    "claim": "Raphael Warnock was the incumbent Senator",
+                    "judgment": true
+                },
+                {
+                    "claim": "Raphael Warnock won a special election in January 2021",
+                    "judgment": true
+                },
+                {
+                    "claim": "The special election was to complete the term of Johnny Isakson",
+                    "judgment": false
+                },
+                {
+                    "claim": "Raphael Warnock sought a full six-year term",
+                    "judgment": false
+                }
+            ],
+            "He faced Republican nominee Herschel Walker, a former American football player and Heisman Trophy winner.": [
+                {
+                    "claim": "Raphael Warnock faced Herschel Walker as his opponent",
+                    "judgment": true
+                },
+                {
+                    "claim": "Herschel Walker is a Republican nominee",
+                    "judgment": true
+                },
+                {
+                    "claim": "Herschel Walker is a former American football player",
+                    "judgment": true
+                },
+                {
+                    "claim": "Herschel Walker is a Heisman Trophy winner",
+                    "judgment": false
+                }
+            ],
+            "Due to no candidate receiving more than 50% of the vote in the initial election, a runoff was held on December 6, 2022.": [
+                {
+                    "claim": "No candidate received more than 50% of the vote in the initial election",
+                    "judgment": true
+                },
+                {
+                    "claim": "A runoff election was required",
+                    "judgment": true
+                },
+                {
+                    "claim": "The runoff election was held on December 6, 2022",
+                    "judgment": true
+                }
+            ],
+            "Warnock won the runoff with 50.97% of the vote, securing his seat for a full term.": [
+                {
+                    "claim": "Warnock won the runoff election",
+                    "judgment": true
+                },
+                {
+                    "claim": "Warnock received 50.97% of the vote in the runoff election",
+                    "judgment": false
+                },
+                {
+                    "claim": "Securing his seat means Warnock will serve a full term",
+                    "judgment": false
+                },
+                {
+                    "claim": "The runoff election was necessary because no candidate received more than 50% of the vote initially",
+                    "judgment": true
+                }
+            ]
+        }
+    },
+    "Hurricane_Irma": {
+        "prediction": "Hurricane Irma was one of the most powerful and destructive Atlantic hurricanes on record. It was the second major hurricane of the hyperactive 2017 Atlantic hurricane season, following Harvey. Irma formed on August 30, 2017, and dissipated on September 12, 2017. The storm reached its peak intensity as a Category 5 hurricane with maximum sustained winds of 180 mph (285 km/h) on September 5, making it the strongest observed hurricane in the open Atlantic region and the first Category 5 hurricane to strike the Leeward Islands on record.\n\nIrma caused catastrophic damage in Barbuda, Saint Barth\u00e9lemy, Saint Martin, Anguilla, and the Virgin Islands as a Category 5 hurricane. After weakening, it struck Cuba as a Category 3 hurricane, where it regained strength before making landfall in the Florida Keys as a Category 4 hurricane on September 10. The storm then moved up the western coast of Florida, causing widespread destruction and flooding. In total, Irma resulted in at least 134 deaths and caused an estimated $64.8 billion in damages, primarily in the United States and the Caribbean.",
+        "claims": {
+            "Hurricane Irma was one of the most powerful and destructive Atlantic hurricanes on record.": [
+                {
+                    "claim": "Hurricane Irma was one of the most powerful Atlantic hurricanes on record",
+                    "judgment": false
+                },
+                {
+                    "claim": "Hurricane Irma was one of the most destructive Atlantic hurricanes on record",
+                    "judgment": false
+                }
+            ],
+            "It was the second major hurricane of the hyperactive 2017 Atlantic hurricane season, following Harvey.": [
+                {
+                    "claim": "Irma was a major hurricane",
+                    "judgment": true
+                },
+                {
+                    "claim": "Harvey was a major hurricane",
+                    "judgment": false
+                },
+                {
+                    "claim": "Harvey preceded Irma in the 2017 Atlantic hurricane season",
+                    "judgment": false
+                },
+                {
+                    "claim": "The 2017 Atlantic hurricane season was hyperactive",
+                    "judgment": false
+                },
+                {
+                    "claim": "Irma was the second major hurricane of the 2017 Atlantic hurricane season",
+                    "judgment": false
+                }
+            ],
+            "Irma formed on August 30, 2017, and dissipated on September 12, 2017.": [
+                {
+                    "claim": "Irma formed on August 30, 2017",
+                    "judgment": false
+                },
+                {
+                    "claim": "Irma dissipated on September 12, 2017",
+                    "judgment": false
+                }
+            ],
+            "The storm reached its peak intensity as a Category 5 hurricane with maximum sustained winds of 180 mph (285 km/h) on September 5, making it the strongest observed hurricane in the open Atlantic region and the first Category 5 hurricane to strike the Leeward Islands on record.": [
+                {
+                    "claim": "Hurricane Irma reached its peak intensity on September 5",
+                    "judgment": false
+                },
+                {
+                    "claim": "At its peak, Hurricane Irma was a Category 5 hurricane",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma had maximum sustained winds of 180 mph (285 km/h) at its peak",
+                    "judgment": true
+                },
+                {
+                    "claim": "Hurricane Irma was the strongest observed hurricane in the open Atlantic region",
+                    "judgment": false
+                },
+                {
+                    "claim": "Hurricane Irma was the first Category 5 hurricane to strike the Leeward Islands on record",
+                    "judgment": false
+                }
+            ],
+            "Irma caused catastrophic damage in Barbuda, Saint Barth\u00e9lemy, Saint Martin, Anguilla, and the Virgin Islands as a Category 5 hurricane.": [
+                {
+                    "claim": "Irma caused catastrophic damage",
+                    "judgment": true
+                },
+                {
+                    "claim": "The catastrophic damage occurred in Barbuda",
+                    "judgment": true
+                },
+                {
+                    "claim": "The catastrophic damage occurred in Saint Barth\u00e9lemy",
+                    "judgment": true
+                },
+                {
+                    "claim": "The catastrophic damage occurred in Saint Martin",
+                    "judgment": true
+                },
+                {
+                    "claim": "The catastrophic damage occurred in Anguilla",
+                    "judgment": true
+                },
+                {
+                    "claim": "The catastrophic damage occurred in the Virgin Islands",
+                    "judgment": true
+                },
+                {
+                    "claim": "Irma was a Category 5 hurricane when it caused the catastrophic damage",
+                    "judgment": true
+                }
+            ],
+            "After weakening, it struck Cuba as a Category 3 hurricane, where it regained strength before making landfall in the Florida Keys as a Category 4 hurricane on September 10.": [
+                {
+                    "claim": "Irma weakened before striking Cuba",
+                    "judgment": true
+                },
+                {
+                    "claim": "Irma struck Cuba as a Category 3 hurricane",
+                    "judgment": false
+                },
+                {
+                    "claim": "After striking Cuba, Irma regained strength",
+                    "judgment": false
+                },
+                {
+                    "claim": "Irma made landfall in the Florida Keys",
+                    "judgment": false
+                },
+                {
+                    "claim": "Irma made landfall in the Florida Keys as a Category 4 hurricane",
+                    "judgment": false
+                },
+                {
+                    "claim": "The landfall in the Florida Keys occurred on September 10",
+                    "judgment": false
+                }
+            ],
+            "The storm then moved up the western coast of Florida, causing widespread destruction and flooding.": [
+                {
+                    "claim": "The storm moved up the western coast of Florida",
+                    "judgment": false
+                },
+                {
+                    "claim": "The storm caused widespread destruction in Florida",
+                    "judgment": true
+                },
+                {
+                    "claim": "The storm caused flooding in Florida",
+                    "judgment": false
+                }
+            ],
+            "In total, Irma resulted in at least 134 deaths and caused an estimated $64.8 billion in damages, primarily in the United States and the Caribbean.": [
+                {
+                    "claim": "Hurricane Irma resulted in at least 134 deaths",
+                    "judgment": false
+                },
+                {
+                    "claim": "Hurricane Irma caused an estimated $64.8 billion in damages",
+                    "judgment": false
+                },
+                {
+                    "claim": "The majority of the damage from Hurricane Irma occurred in the United States",
+                    "judgment": false
+                },
+                {
+                    "claim": "The majority of the damage from Hurricane Irma occurred in the Caribbean",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2018_Anchorage_earthquake": {
+        "prediction": "The 2018 Anchorage earthquake, also known as the Magna earthquake or the Southcentral Alaska earthquake, was a significant seismic event that struck the Anchorage area and surrounding regions of Southcentral Alaska on November 30, 2018. The earthquake had a moment magnitude of 7.1 and occurred at 8:29 AM AKST (17:29 UTC). The epicenter was located approximately 13 miles (21 km) north of Anchorage, in the Chugach Mountains. The tremor caused widespread shaking and damage throughout the region, affecting infrastructure, homes, and businesses. While no fatalities were reported, the earthquake resulted in numerous injuries and significant economic impacts. The event highlighted the region's vulnerability to seismic activity and prompted discussions on earthquake preparedness and infrastructure resilience.",
+        "claims": {
+            "The 2018 Anchorage earthquake, also known as the Magna earthquake or the Southcentral Alaska earthquake, was a significant seismic event that struck the Anchorage area and surrounding regions of Southcentral Alaska on November 30, 2018.": [
+                {
+                    "claim": "The earthquake occurred in 2018",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake struck the Anchorage area",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake affected surrounding regions of Southcentral Alaska",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake is known as the 2018 Anchorage earthquake",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake is also known as the Magna earthquake",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake is also referred to as the Southcentral Alaska earthquake",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake was a significant seismic event",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake occurred on November 30, 2018",
+                    "judgment": true
+                }
+            ],
+            "The earthquake had a moment magnitude of 7.1 and occurred at 8:29 AM AKST (17:29 UTC).": [
+                {
+                    "claim": "The earthquake had a moment magnitude of 7.1",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake occurred at 8:29 AM AKST",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake occurred at 17:29 UTC",
+                    "judgment": true
+                }
+            ],
+            "The epicenter was located approximately 13 miles (21 km) north of Anchorage, in the Chugach Mountains.": [
+                {
+                    "claim": "The epicenter of the earthquake was located in the Chugach Mountains",
+                    "judgment": false
+                },
+                {
+                    "claim": "The epicenter was approximately 13 miles north of Anchorage",
+                    "judgment": false
+                },
+                {
+                    "claim": "The epicenter was approximately 21 kilometers north of Anchorage",
+                    "judgment": false
+                }
+            ],
+            "The tremor caused widespread shaking and damage throughout the region, affecting infrastructure, homes, and businesses.": [
+                {
+                    "claim": "The earthquake caused widespread shaking",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake caused damage throughout the region",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake affected infrastructure",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake affected homes",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake affected businesses",
+                    "judgment": false
+                }
+            ],
+            "While no fatalities were reported, the earthquake resulted in numerous injuries and significant economic impacts.": [
+                {
+                    "claim": "No fatalities were reported due to the earthquake",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake resulted in numerous injuries",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake had significant economic impacts",
+                    "judgment": false
+                }
+            ],
+            "The event highlighted the region's vulnerability to seismic activity and prompted discussions on earthquake preparedness and infrastructure resilience.": [
+                {
+                    "claim": "The earthquake highlighted the region's vulnerability to seismic activity",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake prompted discussions on earthquake preparedness",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake prompted discussions on infrastructure resilience",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2025_Canadian_federal_election": {
+        "prediction": "The **2025 Canadian federal election** is scheduled to be held on or before October 21, 2025, to elect members of the House of Commons of Canada, the lower house of the Parliament of Canada. This election will determine the composition of the 45th Canadian Parliament and the next Prime Minister of Canada.\n\nIncumbent Prime Minister Justin Trudeau, who has led the Liberal Party since 2013, is expected to seek re-election. The main opposition party, the Conservative Party, is also expected to field a candidate, though the party's leadership may change before the election. Other significant parties likely to contest the election include the New Democratic Party (NDP), the Bloc Qu\u00e9b\u00e9cois, and the Green Party of Canada.\n\nThe election will take place under the first-past-the-post electoral system, where the candidate with the most votes in each riding wins a seat in the House of Commons. Key issues leading up to the election are expected to include economic recovery, climate change, healthcare reform, and Indigenous reconciliation.",
+        "claims": {
+            "The **2025 Canadian federal election** is scheduled to be held on or before October 21, 2025, to elect members of the House of Commons of Canada, the lower house of the Parliament of Canada.": [
+                {
+                    "claim": "The 2025 Canadian federal election is scheduled to be held on or before October 21, 2025",
+                    "judgment": true
+                },
+                {
+                    "claim": "The purpose of the election is to elect members of the House of Commons of Canada",
+                    "judgment": true
+                },
+                {
+                    "claim": "The House of Commons is the lower house of the Parliament of Canada",
+                    "judgment": false
+                }
+            ],
+            "This election will determine the composition of the 45th Canadian Parliament and the next Prime Minister of Canada.": [
+                {
+                    "claim": "The election will determine the composition of the 45th Canadian Parliament",
+                    "judgment": false
+                },
+                {
+                    "claim": "The election will determine the next Prime Minister of Canada",
+                    "judgment": false
+                }
+            ],
+            "Incumbent Prime Minister Justin Trudeau, who has led the Liberal Party since 2013, is expected to seek re-election.": [
+                {
+                    "claim": "Justin Trudeau is the incumbent Prime Minister",
+                    "judgment": true
+                },
+                {
+                    "claim": "Justin Trudeau has led the Liberal Party since 2013",
+                    "judgment": false
+                },
+                {
+                    "claim": "Justin Trudeau is expected to seek re-election",
+                    "judgment": false
+                }
+            ],
+            "The main opposition party, the Conservative Party, is also expected to field a candidate, though the party's leadership may change before the election.": [
+                {
+                    "claim": "The Conservative Party is the main opposition party",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Conservative Party is expected to field a candidate",
+                    "judgment": false
+                },
+                {
+                    "claim": "There is a possibility that the Conservative Party's leadership may change before the election",
+                    "judgment": false
+                }
+            ],
+            "Other significant parties likely to contest the election include the New Democratic Party (NDP), the Bloc Qu\u00e9b\u00e9cois, and the Green Party of Canada.": [
+                {
+                    "claim": "The New Democratic Party (NDP) is likely to contest the election",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Bloc Qu\u00e9b\u00e9cois is likely to contest the election",
+                    "judgment": false
+                },
+                {
+                    "claim": "The Green Party of Canada is likely to contest the election",
+                    "judgment": false
+                },
+                {
+                    "claim": "There are other significant parties besides the Liberal Party and the Conservative Party that will likely contest the election",
+                    "judgment": false
+                }
+            ],
+            "The election will take place under the first-past-the-post electoral system, where the candidate with the most votes in each riding wins a seat in the House of Commons.": [
+                {
+                    "claim": "The election will use the first-past-the-post electoral system",
+                    "judgment": false
+                },
+                {
+                    "claim": "In the first-past-the-post system, the candidate with the most votes in each riding wins",
+                    "judgment": false
+                },
+                {
+                    "claim": "Winning candidates will secure a seat in the House of Commons",
+                    "judgment": false
+                }
+            ],
+            "Key issues leading up to the election are expected to include economic recovery, climate change, healthcare reform, and Indigenous reconciliation.": [
+                {
+                    "claim": "Economic recovery is expected to be a key issue leading up to the election",
+                    "judgment": false
+                },
+                {
+                    "claim": "Climate change is expected to be a key issue leading up to the election",
+                    "judgment": false
+                },
+                {
+                    "claim": "Healthcare reform is expected to be a key issue leading up to the election",
+                    "judgment": false
+                },
+                {
+                    "claim": "Indigenous reconciliation is expected to be a key issue leading up to the election",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "2025_Myanmar_earthquake": {
+        "prediction": "The 2025 Myanmar earthquake was a significant seismic event that struck Myanmar on [specific date], with a magnitude of [magnitude] on the moment magnitude scale. The epicenter was located near [location], and the quake occurred at a depth of approximately [depth] kilometers. This earthquake caused widespread damage and disruption across the region, affecting numerous cities and towns, including [major affected areas]. Initial reports indicated [number] fatalities and [number] injuries, with thousands displaced. The disaster prompted a rapid response from local authorities, international aid organizations, and neighboring countries, focusing on rescue operations, medical assistance, and the provision of emergency supplies. The earthquake also highlighted the need for improved building codes and disaster preparedness in seismically active regions.",
+        "claims": {
+            "The 2025 Myanmar earthquake was a significant seismic event that struck Myanmar on [specific date], with a magnitude of [magnitude] on the moment magnitude scale.": [
+                {
+                    "claim": "The earthquake occurred in Myanmar",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake is referred to as the 2025 Myanmar earthquake",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake is described as a significant seismic event",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake struck on a specific date",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake had a specific magnitude on the moment magnitude scale",
+                    "judgment": true
+                }
+            ],
+            "The epicenter was located near [location], and the quake occurred at a depth of approximately [depth] kilometers.": [
+                {
+                    "claim": "The earthquake had an epicenter",
+                    "judgment": true
+                },
+                {
+                    "claim": "The epicenter was located near a specific location",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake occurred at a certain depth",
+                    "judgment": true
+                }
+            ],
+            "This earthquake caused widespread damage and disruption across the region, affecting numerous cities and towns, including [major affected areas].": [
+                {
+                    "claim": "The earthquake caused widespread damage",
+                    "judgment": true
+                },
+                {
+                    "claim": "The earthquake caused widespread disruption",
+                    "judgment": true
+                },
+                {
+                    "claim": "The damage and disruption affected multiple cities and towns",
+                    "judgment": true
+                },
+                {
+                    "claim": "Specific cities and towns were affected by the earthquake",
+                    "judgment": true
+                }
+            ],
+            "Initial reports indicated [number] fatalities and [number] injuries, with thousands displaced.": [
+                {
+                    "claim": "Initial reports provided information on the earthquake's impact",
+                    "judgment": false
+                },
+                {
+                    "claim": "The initial reports mentioned the number of fatalities",
+                    "judgment": false
+                },
+                {
+                    "claim": "The initial reports mentioned the number of injuries",
+                    "judgment": false
+                },
+                {
+                    "claim": "Thousands of people were displaced due to the earthquake",
+                    "judgment": true
+                }
+            ],
+            "The disaster prompted a rapid response from local authorities, international aid organizations, and neighboring countries, focusing on rescue operations, medical assistance, and the provision of emergency supplies.": [
+                {
+                    "claim": "The disaster prompted a rapid response",
+                    "judgment": false
+                },
+                {
+                    "claim": "Local authorities responded rapidly to the disaster",
+                    "judgment": false
+                },
+                {
+                    "claim": "International aid organizations responded rapidly to the disaster",
+                    "judgment": false
+                },
+                {
+                    "claim": "Neighboring countries responded rapidly to the disaster",
+                    "judgment": false
+                },
+                {
+                    "claim": "The response focused on rescue operations",
+                    "judgment": false
+                },
+                {
+                    "claim": "The response provided medical assistance",
+                    "judgment": false
+                },
+                {
+                    "claim": "The response involved the provision of emergency supplies",
+                    "judgment": false
+                }
+            ],
+            "The earthquake also highlighted the need for improved building codes and disaster preparedness in seismically active regions.": [
+                {
+                    "claim": "The earthquake highlighted the need for improved building codes",
+                    "judgment": false
+                },
+                {
+                    "claim": "The earthquake highlighted the need for improved disaster preparedness",
+                    "judgment": false
+                },
+                {
+                    "claim": "The region where the earthquake occurred is seismically active",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "Blue_Ghost_Mission_1": {
+        "prediction": "The Blue Ghost Mission 1 is a pioneering space mission designed and executed by a consortium of international space agencies and private aerospace companies. Launched on [specific date], the mission aims to explore and conduct scientific research in [specific area, e.g., the outer Solar System, a specific planet, or a celestial body]. The primary objectives of the Blue Ghost Mission include studying the composition and structure of [target celestial body or region], searching for signs of past or present life, and testing new technologies that could be crucial for future deep space missions. The mission's spacecraft, named \"Blue Ghost,\" is equipped with advanced instruments and robotic explorers to achieve these goals. The data collected from this mission is expected to provide significant insights into the origins and evolution of our solar system and potentially contribute to the broader understanding of planetary science.",
+        "claims": {
+            "The Blue Ghost Mission 1 is a pioneering space mission designed and executed by a consortium of international space agencies and private aerospace companies.": [
+                {
+                    "claim": "The Blue Ghost Mission 1 is a space mission",
+                    "judgment": true
+                },
+                {
+                    "claim": "The Blue Ghost Mission 1 is pioneering",
+                    "judgment": false
+                },
+                {
+                    "claim": "The mission is designed by a consortium of international space agencies",
+                    "judgment": false
+                },
+                {
+                    "claim": "The mission is designed by private aerospace companies",
+                    "judgment": true
+                },
+                {
+                    "claim": "The mission is executed by a consortium of international space agencies",
+                    "judgment": false
+                },
+                {
+                    "claim": "The mission is executed by private aerospace companies",
+                    "judgment": false
+                }
+            ],
+            "Launched on [specific date], the mission aims to explore and conduct scientific research in [specific area, e.g., the outer Solar System, a specific planet, or a celestial body].": [
+                {
+                    "claim": "The mission was launched on a specific date",
+                    "judgment": true
+                },
+                {
+                    "claim": "The mission's objective is to explore a specific area",
+                    "judgment": true
+                },
+                {
+                    "claim": "The mission's objective is to conduct scientific research in a specific area",
+                    "judgment": true
+                }
+            ],
+            "The primary objectives of the Blue Ghost Mission include studying the composition and structure of [target celestial body or region], searching for signs of past or present life, and testing new technologies that could be crucial for future deep space missions.": [
+                {
+                    "claim": "The Blue Ghost Mission has primary objectives",
+                    "judgment": true
+                },
+                {
+                    "claim": "One objective is to study the composition of the target celestial body or region",
+                    "judgment": false
+                },
+                {
+                    "claim": "Another objective is to study the structure of the target celestial body or region",
+                    "judgment": false
+                },
+                {
+                    "claim": "An objective is to search for signs of past life",
+                    "judgment": false
+                },
+                {
+                    "claim": "An objective is to search for signs of present life",
+                    "judgment": false
+                },
+                {
+                    "claim": "An objective is to test new technologies",
+                    "judgment": false
+                },
+                {
+                    "claim": "The tested technologies could be crucial for future deep space missions",
+                    "judgment": false
+                }
+            ],
+            "The mission's spacecraft, named \"Blue Ghost,\" is equipped with advanced instruments and robotic explorers to achieve these goals.": [
+                {
+                    "claim": "The mission's spacecraft is named 'Blue Ghost'",
+                    "judgment": true
+                },
+                {
+                    "claim": "'Blue Ghost' is equipped with advanced instruments",
+                    "judgment": false
+                },
+                {
+                    "claim": "'Blue Ghost' is equipped with robotic explorers",
+                    "judgment": false
+                },
+                {
+                    "claim": "The advanced instruments and robotic explorers are intended to help achieve the mission's goals",
+                    "judgment": false
+                }
+            ],
+            "The data collected from this mission is expected to provide significant insights into the origins and evolution of our solar system and potentially contribute to the broader understanding of planetary science.": [
+                {
+                    "claim": "Data will be collected from the Blue Ghost Mission",
+                    "judgment": false
+                },
+                {
+                    "claim": "The data is expected to provide significant insights",
+                    "judgment": false
+                },
+                {
+                    "claim": "Insights will pertain to the origins of our solar system",
+                    "judgment": false
+                },
+                {
+                    "claim": "Insights will pertain to the evolution of our solar system",
+                    "judgment": false
+                },
+                {
+                    "claim": "The data may contribute to the broader understanding of planetary science",
+                    "judgment": false
+                }
+            ]
+        }
+    },
+    "Liberation_Day_Tariffs": {
+        "prediction": "Liberation Day Tariffs refer to a set of economic measures and tariffs that were implemented in several countries, particularly in Europe and Asia, following their liberation from Axis occupation during World War II. These tariffs were designed to help rebuild war-torn economies by protecting domestic industries from foreign competition, generating revenue for reconstruction efforts, and stabilizing national currencies. The specific tariffs varied by country, reflecting each nation's unique economic conditions and strategic priorities. While initially seen as necessary for recovery, over time, these tariffs often led to trade disputes and were gradually phased out as international economic cooperation and organizations such as the General Agreement on Tariffs and Trade (GATT) and later the World Trade Organization (WTO) promoted global trade liberalization.",
+        "claims": {
+            "Liberation Day Tariffs refer to a set of economic measures and tariffs that were implemented in several countries, particularly in Europe and Asia, following their liberation from Axis occupation during World War II.": [
+                {
+                    "claim": "Liberation Day Tariffs are a set of economic measures and tariffs",
+                    "judgment": true
+                },
+                {
+                    "claim": "These tariffs were implemented in several countries",
+                    "judgment": true
+                },
+                {
+                    "claim": "The tariffs were implemented particularly in Europe and Asia",
+                    "judgment": false
+                },
+                {
+                    "claim": "These tariffs were implemented following liberation from Axis occupation",
+                    "judgment": false
+                },
+                {
+                    "claim": "The liberation from Axis occupation occurred during World War II",
+                    "judgment": false
+                }
+            ],
+            "These tariffs were designed to help rebuild war-torn economies by protecting domestic industries from foreign competition, generating revenue for reconstruction efforts, and stabilizing national currencies.": [
+                {
+                    "claim": "Liberation Day Tariffs were designed to help rebuild war-torn economies",
+                    "judgment": false
+                },
+                {
+                    "claim": "These tariffs protected domestic industries from foreign competition",
+                    "judgment": false
+                },
+                {
+                    "claim": "These tariffs generated revenue for reconstruction efforts",
+                    "judgment": false
+                },
+                {
+                    "claim": "These tariffs helped stabilize national currencies",
+                    "judgment": false
+                }
+            ],
+            "The specific tariffs varied by country, reflecting each nation's unique economic conditions and strategic priorities.": [
+                {
+                    "claim": "Liberation Day Tariffs varied by country",
+                    "judgment": false
+                },
+                {
+                    "claim": "The variation in tariffs reflected each nation's unique economic conditions",
+                    "judgment": false
+                },
+                {
+                    "claim": "The variation in tariffs reflected each nation's strategic priorities",
+                    "judgment": false
+                }
+            ],
+            "While initially seen as necessary for recovery, over time, these tariffs often led to trade disputes and were gradually phased out as international economic cooperation and organizations such as the General Agreement on Tariffs and Trade (GATT) and later the World Trade Organization (WTO) promoted global trade liberalization.": [
+                {
+                    "claim": "Liberation Day Tariffs were initially seen as necessary for recovery",
+                    "judgment": false
+                },
+                {
+                    "claim": "Over time, Liberation Day Tariffs often led to trade disputes",
+                    "judgment": false
+                },
+                {
+                    "claim": "Liberation Day Tariffs were gradually phased out",
+                    "judgment": false
+                },
+                {
+                    "claim": "International economic cooperation contributed to phasing out Liberation Day Tariffs",
+                    "judgment": false
+                },
+                {
+                    "claim": "The General Agreement on Tariffs and Trade (GATT) promoted global trade liberalization",
+                    "judgment": false
+                },
+                {
+                    "claim": "The World Trade Organization (WTO) promoted global trade liberalization",
+                    "judgment": false
+                }
+            ]
+        }
+    }
+}
