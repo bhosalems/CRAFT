@@ -1,305 +1,231 @@
-# CRAFT
+# 🚀 CRAFT Critic-Refined Adaptive Key-Frame Targeting** for multimodal video question answering [ACL 2026 MAGMaR Workshop]
 
-**C**laim **R**etrieval, **A**tomization, and **F**aithful **T**ranscription — the query-conditioned VLM pipeline behind our MAGMaR-2026 submissions and our WikiVideo experiments.
+[Mahesh Bhosale*](https://bhosalems.github.io/)<sup>1</sup>, [Abdul Wasi*](https://scholar.google.com/citations?user=_2friTYAAAAJ&hl=en)<sup>1</sup>, [Vishvesh Trivedi*](https://github.com/NerdyVisky)<sup>2</sup>, [Pengyu Yan](https://scholar.google.com/citations?user=q2QMx5gAAAAJ&hl=en)<sup>1</sup>, [David Doermann](https://scholar.google.com/citations?user=RoGOW9AAAAAJ&hl=en)<sup>1</sup>.
 
-Given a set of persona-augmented queries and the videos associated with each query's topic, CRAFT extracts grounded atomic claims from the video (and its ASR transcript), calibrates per-claim confidence with a video-text NLI model, consolidates the surviving claims into higher-level inferences, and emits a citation-backed report in the MAGMaR-2026 submission schema.
+**<sup>1</sup>University at Buffalo  |  <sup>2</sup>New York University **
+
+[Paper](https://arxiv.org/abs/2605.19075v1)
+
+## Overview
+
+CRAFT is a query-conditioned multi-video question answering pipeline for real-world news events. It retrieves query-relevant evidence across heterogeneous video collections, performs per-video ASR with multilingual fallback, selects adaptive keyframes, and uses a hybrid critic loop to verify, repair, and consolidate claims. By combining UNLI temporal entailment, DeBERTa-v3 cross-claim screening, and Llama-3.2-3B adjudication, CRAFT produces grounded reports where each atomic fact is emitted once and linked to all supporting source videos. The system achieves strong performance on MAGMaR 2026 and a MAGMaR-style WikiVideo benchmark, demonstrating robust claim-centric evidence aggregation beyond a single dataset.
+
+<p align="center">
+  <img src="figures/teaser_final_MAGMAR.png" alt="CRAFT pipeline overview" width="80%"/>
+</p>
 
 See [PIPELINE.md](PIPELINE.md) for the per-stage methods, models, and design rationale, and [ASR_SETUP.md](ASR_SETUP.md) for setting up the two-environment ASR pre-pass.
 
 ---
 
-## 1. Pipeline at a glance
+## 🚀 Quick Start
 
-```
-Stage 0    chunk_videos.py            split videos > 120s into MP4 chunks
-Stage 0.5  extract_asr.py             per-video transcripts (Qwen3-ASR + omni/whisper fallback)
-Stage 1b   extract_query_claims.py    VLM claim extraction + critic loop + coverage audit
-Stage 1.5  predict_unli.py            video-grounded NLI scoring
-           calibrate_unli.py          isotonic calibration -> per-claim probability
-Stage 2a   assemble_packets.py        top-K calibrated claims per query
-Stage 2b   infer_higher_level.py      atomic consolidation, dedup via citation merging
-Stage 3    generate_report.py         section text + source_citations
-Submit     format_submission.py       chunk-id -> parent-id remap, JSONL submission
-```
-
-All stages are content-addressed and idempotent: re-running with the same inputs is a no-op for any stage whose cache is already populated. Parallelism is applied at the three GPU-bound stages (`PARALLEL_QUERIES`, `PARALLEL_STEP15`, `PARALLEL_STEP5`).
-
----
-
-## 2. Project structure
-
-### Orchestrators
-| File | Purpose |
-|---|---|
-| [run_query.sh](run_query.sh) | end-to-end MAGMaR pipeline (Stage 0 → submission) |
-| [run_query_wikivideo.sh](run_query_wikivideo.sh) | same orchestrator, configured for WikiVideo paths and queries |
-| [run_query_ablation.sh](run_query_ablation.sh) | critic-rounds / no-ASR / no-AKS ablations |
-| [run_ablation_critic_rounds.sh](run_ablation_critic_rounds.sh) | sweeps `MAX_CRITIC_ROUNDS ∈ {0..N}` |
-
-### Stage entry points
-| File | Stage |
-|---|---|
-| [chunk_videos.py](chunk_videos.py) | 0 — PyAV cutpoint splitting at 120 s boundaries |
-| [extract_asr.py](extract_asr.py) | 0.5 — Qwen3-ASR / Whisper / omniASR backends, loop detection, translation |
-| [run_step1_query_claims.py](run_step1_query_claims.py) → [extract_query_claims.py](extract_query_claims.py) | 1b — VLM extraction with critic loop, coverage audit, topic fallback |
-| [run_step1_5_predict_unli.py](run_step1_5_predict_unli.py) → [predict_unli.py](predict_unli.py) / [predict_unli_chunked.py](predict_unli_chunked.py) | 1.5 — UNLI scoring |
-| [run_step1_5_calibrate_unli.py](run_step1_5_calibrate_unli.py) → [calibrate_unli.py](calibrate_unli.py) | 1.5 — calibration attachment |
-| [assemble_packets.py](assemble_packets.py) | 2a — top-K packet assembly |
-| [infer_higher_level.py](infer_higher_level.py) | 2b — atomic consolidation |
-| [generate_report.py](generate_report.py) | 3 — report assembly |
-| [format_submission.py](format_submission.py) | submission — chunk-id remap |
-
-### Configuration
-| Path | Purpose |
-|---|---|
-| [conf/](conf/) | Hydra config tree (`step1_query_claims.yaml`, `step1_5_*.yaml`, `runtime/`, `model/`) |
-| [prompts.py](prompts.py) | all VLM / critic / coverage / inference prompts |
-| [contracts.py](contracts.py) | JSON schemas + `resolve_video_path()` (AKS-first, chunk-fallback) |
-
-### Auxiliary
-| File | Purpose |
-|---|---|
-| [generate_wikivideo_queries.py](generate_wikivideo_queries.py) | builds `data/wikivideo_queries.jsonl` + mapping from MultiVENT annotations |
-| [setup_asr_omni.sh](setup_asr_omni.sh) | one-shot installer for the `asr_omni` conda env (see §3.2) |
-| [data/](data/) | topic→video mappings (`topic_video_mapping*.json`), chunk maps, queries |
-| [sbatch/](sbatch/) | SLURM wrappers + optional vLLM patches |
-
-> **Note-taking branch.** A parallel **general-note** stream — [extract_general_notes.py](extract_general_notes.py), [run_step1_general_notes.py](run_step1_general_notes.py), [run_note.sh](run_note.sh), [run_note_branch_pipeline.py](run_note_branch_pipeline.py) — produces query-agnostic per-video notes intended as an alternative grounding substrate. It is **present but not verified end-to-end on the current branch**, and this README documents only the query branch.
-
----
-
-## 3. One-time setup
-
-### 3.1 Python environment
-
-The pipeline uses the shared SCALE venv at [/home/csgrad/mbhosale/phd/SCALE/.venv](/home/csgrad/mbhosale/phd/SCALE/.venv). If you are starting from scratch:
+### ⚙️ Environment setup
 
 ```bash
-cd /home/csgrad/mbhosale/phd/SCALE
-python3.13 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r CRAFT/requirements.txt
-# Video decode backend used by Stage 1b / 1.5 (avoids torchvision mmap leaks):
+git clone https://github.com/bhosalems/CRAFT.git
+cd CRAFT
+# create and activate a conda virtual environment
+conda create -n craft python=3.13 -y
+conda activate craft
+# install the main pipeline dependencies
+pip install -r requirements.txt
+# video decode backend used by Stage 1b / 1.5 (avoids torchvision mmap leaks)
 pip install decord
 ```
 
-`run_query.sh` auto-activates `./.venv` if present and otherwise expects the interpreter at the shared path above (see `PYTHON_BIN` at the top of [run_query.sh](run_query.sh)).
+`requirements.txt` covers the main `.venv` (Stage 1b, 1.5, 2b, 3). The omniASR fallback (Burmese / Nepali / 1600+) needs an isolated env - run `bash setup_asr_omni.sh` once, then see [§3.2](#32-asr-cache-stage-05) for the two-step ASR workflow.
 
-### 3.2 ASR cache (Stage 0.5)
+### ▶️ Reproducing the main MAGMaR-2026 result
 
-ASR is a **pre-pass**. The query pipeline only **consumes** a cache directory of per-video transcripts — it never generates one. This is by design: `omnilingual-asr` is pinned to `fairseq2 ∈ [0.5.2, 0.6.0]` whose wheels only exist for torch ≤ 2.9.1, while the main pipeline's `.venv` runs torch 2.10+cu128. The two cannot coexist in one Python env, so they communicate only via the on-disk cache.
-
-The two backends together give us the language coverage we need:
-
-| Backend | Coverage | Where it runs |
-|---|---|---|
-| **Qwen3-ASR-1.7B** | 30 languages incl. EN / ZH / YUE / TH | main `.venv` |
-| **omniASR-LLM-7B** | 1600+ languages — required for **Burmese** (Q3) and **Nepali** (Q4) on the MAGMaR dev set | isolated `asr_omni` conda env |
-| Whisper-large-v3 | fallback + non-English → English translation | main `.venv` |
-
-The full workflow lives in [ASR_SETUP.md](ASR_SETUP.md). The two key steps:
-
-**Step 1 — Qwen3-ASR in the main venv** (covers 30 languages):
+Once you have prepared the data (see [📦 Datasets](#-datasets) below) and exported `VIDEO_ROOT` to the directory holding the MAGMaR mp4s, the reference configuration used to produce the headline numbers in the paper is:
 
 ```bash
-.venv/bin/python extract_asr.py \
-    --mode qwen \
-    --video-root /a2il/data/mbhosale/MAGMaR2026_test \
-    --mapping   data/topic_video_mapping_dev_v2.json \
-    --out-dir   /a2il/data/mbhosale/MAGMaR2026_test/asr \
-    --device cuda:0 --verbose
+export VIDEO_ROOT=/path/to/MAGMaR2026_test          # set once
+
+MODEL_NAME=Qwen/Qwen3.6-27B-FP8 \
+PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
+MAX_CRITIC_ROUNDS=4 COVERAGE_FOLLOWUP_ROUNDS=1 \
+CRITIC_NLI_ENABLED=true CRITIC_COVERAGE_ENABLED=true \
+STEP15_CHUNK_SIZE=10 GPU_MEM_UTIL=0.85 \
+ASR_DIR="$VIDEO_ROOT/asr" \
+bash run_query.sh outputs/craft_magmar_main
 ```
 
-Videos whose detected language is outside Qwen3-ASR's 30-language set get an empty transcript and `"needs_fallback": true`. Step 2 fills those in.
+The final per-query reports land in `outputs/craft_magmar_main/reports_query_based/all_reports.json`, plus a MAGMaR-format JSONL at `outputs/craft_magmar_main/submission.jsonl` that MIRAGE can score directly (see [Evaluation](#evaluation) below).
 
-**Step 2 — omniASR in an isolated conda env** (covers everything else). Use the one-shot installer in this repo, which automates env creation, pins torch 2.8.0 + cu128, installs fairseq2 0.6 from Meta's wheel index, and verifies the imports:
+> **Note-taking branch.** A parallel **general-note** stream — [run_step1_general_notes.py](run_step1_general_notes.py), [run_note.sh](run_note.sh), [run_note_branch_pipeline.py](run_note_branch_pipeline.py) — produces query-agnostic per-video notes intended as an alternative grounding substrate. It is **present but not verified end-to-end on the current branch**, and this README documents only the query branch.
+
+---
+
+## 📦 Datasets
+
+CRAFT runs on two benchmarks. All commands below are written against environment variables (`$VIDEO_ROOT`, `$ASR_DIR`) so the same scripts work on any machine — set them once, point at your local layout, and the rest is path-free.
+
+### MAGMaR-2026
+
+> Hand-curated, persona-augmented queries (8 dev + 19 test) over a topic-organised video collection. Topics → video lists ship inside this repo; you only need the raw videos and the official queries file.
+
+**1. Get the videos and queries.** The MAGMaR-2026 test release (videos, queries, and pre-computed ASR embeddings) is distributed on the Hugging Face Hub at [akhilvssg/magmar-2026-test-asr-embeddings](https://huggingface.co/datasets/akhilvssg/magmar-2026-test-asr-embeddings). Download it and point `VIDEO_ROOT` at the result:
 
 ```bash
-bash setup_asr_omni.sh                     # creates conda env 'asr_omni'
+export VIDEO_ROOT=/path/to/MAGMaR2026_test
+huggingface-cli download akhilvssg/magmar-2026-test-asr-embeddings \
+    --repo-type dataset --local-dir "$VIDEO_ROOT"
+# expected layout after download:
+#   $VIDEO_ROOT/*.mp4
+#   $VIDEO_ROOT/MAGMaR2026_queries_dev.jsonl
+#   $VIDEO_ROOT/MAGMaR2026_queries.jsonl
+```
+
+The topic→video mapping (`data/topic_video_mapping{_dev,_test,}.json`) is committed in this repo — no extra download needed.
+
+**2. Chunk long videos.** Stage 1b's VLM has a fixed frame budget, so videos > 120 s are split into ≤ 120 s MP4s alongside the originals (`<video_id>__chunk000.mp4`, `__chunk001.mp4`, …). A chunk map records `chunk_id → {video_id, start, end}` so the report-formatting step can map the chunked IDs back to their parent videos. Original MP4s are never modified or deleted; chunks are written with `stream copy` when possible (re-encode otherwise), so chunking is fast.
+
+`run_query.sh` invokes this automatically (`SKIP_CHUNK=auto` — runs if `*_v2.json` and the chunk map are missing, skips otherwise), or you can run it manually:
+
+```bash
+python chunk_videos.py \
+    --video-root "$VIDEO_ROOT" \
+    --mapping-in   data/topic_video_mapping_dev.json \
+    --mapping-out  data/topic_video_mapping_dev_v2.json \
+    --chunk-map-out data/video_chunk_map.json \
+    --max-seconds 120
+```
+
+The script needs **ffmpeg + ffprobe on `PATH`** (it falls back to PyAV if either is missing, but ffmpeg is much faster). It runs idempotently — re-running is a no-op when all expected chunk MP4s already exist; pass `--force` to recreate them. Pass `--mapping-in` / `--mapping-out` multiple times to chunk against multiple mappings in a single sweep (the chunk MP4s are shared).
+
+**3. ASR cache.** ASR is a **pre-pass** that the pipeline only *reads from*. Two backends are needed because their Python deps conflict: Qwen3-ASR runs in the main venv (30 langs); **omniASR** runs in an isolated `asr_omni` conda env (1600+ langs, required for Burmese / Nepali). Full reasoning in [ASR_SETUP.md](ASR_SETUP.md).
+
+**The easy path:** the MAGMaR-2026 HF dataset above already ships the JSON ASR cache the pipeline consumes, so once `huggingface-cli download` finishes you should already have `$VIDEO_ROOT/asr/<video_id>.json` for every video. Skip to Stage 1b — no further ASR work required.
+
+If you do not see the `asr/` subdirectory in the download, build it from scratch:
+
+```bash
+# Step 1 — Qwen3-ASR in the main venv (30 languages):
+python extract_asr.py --mode qwen \
+    --video-root "$VIDEO_ROOT" \
+    --mapping    data/topic_video_mapping_dev_v2.json \
+    --out-dir    "$VIDEO_ROOT/asr" \
+    --device cuda:0 --verbose
+
+# Step 2 — omniASR fallback for videos flagged `needs_fallback: true`
+#          (Burmese Q3, Nepali Q4, etc.):
+bash setup_asr_omni.sh           # one-shot installer for the asr_omni conda env
 conda activate asr_omni
-python extract_asr.py \
-    --mode omni \
-    --video-root /a2il/data/mbhosale/MAGMaR2026_test \
-    --mapping   data/topic_video_mapping_dev_v2.json \
-    --out-dir   /a2il/data/mbhosale/MAGMaR2026_test/asr \
+python extract_asr.py --mode omni \
+    --video-root "$VIDEO_ROOT" \
+    --mapping    data/topic_video_mapping_dev_v2.json \
+    --out-dir    "$VIDEO_ROOT/asr" \
     --verbose
 ```
 
-omniASR only touches videos that need it (missing cache OR `needs_fallback: true`), so re-running is cheap. See [ASR_SETUP.md §Step 2](ASR_SETUP.md) for the manual install path, troubleshooting (`libcudart.so.13` / `requires PyTorch 2.8.0`), and the venv-instead-of-conda variant.
-
-**Step 3 — done.** The Stage 1b VLM prompt picks up transcripts from `$ASR_DIR` automatically (default `$VIDEO_ROOT/asr`). Set `ASR_DIR=` (empty) to disable ASR for an A/B run.
-
-Cache schema (one file per video, content-addressed by `video_id`):
-
-```jsonc
-{
-  "video_id": "...",
-  "asr_model": "Qwen/Qwen3-ASR-1.7B" | "facebook/omniASR-LLM-7B" | "openai/whisper-large-v3",
-  "language": "English" | "Burmese" | ...,
-  "text": "...",
-  "text_en": "...",              // only for non-English (Whisper translate pass)
-  "asr_loop_detected": false,    // true => text is suppressed
-  "no_audio": false,
-  "needs_fallback": false        // true => Qwen3-ASR couldn't handle it; run omniASR
-}
-```
-
-### 3.3 Data layout
-
-| What | Where (default) |
-|---|---|
-| MAGMaR-2026 videos | `/a2il/data/mbhosale/MAGMaR2026_test/*.mp4` |
-| MAGMaR-2026 ASR cache | `/a2il/data/mbhosale/MAGMaR2026_test/asr/` |
-| MAGMaR queries (dev / test) | `/a2il/data/mbhosale/MAGMaR2026_test/MAGMaR2026_queries{_dev,}.jsonl` |
-| MAGMaR topic→video mapping | [data/topic_video_mapping_dev.json](data/topic_video_mapping_dev.json), [data/topic_video_mapping.json](data/topic_video_mapping.json) |
-| WikiVideo videos | `/a2il/data/mbhosale/wikivideo/en/*.mp4` |
-| WikiVideo ASR cache | `/a2il/data/mbhosale/wikivideo/asr/` |
-| WikiVideo queries | [data/wikivideo_queries.jsonl](data/wikivideo_queries.jsonl) |
-| WikiVideo topic→video mapping | [data/topic_video_mapping_wikivideo.json](data/topic_video_mapping_wikivideo.json) |
+Stage 1b reads transcripts from `$ASR_DIR` automatically (defaults to `$VIDEO_ROOT/asr`); set `ASR_DIR=` to disable ASR for an A/B run.
 
 ---
 
-## 4. Running on MAGMaR-2026 (V12 parameters)
+### WikiVideo (MultiVENT 2.0)
 
-V12 was the best-performing dev-set configuration: 8 queries, 8 GPUs, one worker per query, Qwen3.6-27B-FP8 as the extractor, full critic loop with coverage audit, and ASR enabled.
+> 52 news events from the MultiVENT 2.0 subset of WikiVideo, scored MAGMaR-style. Persona/background queries are synthesised from each event's Wikipedia article using a few-shot prompt seeded from the MAGMaR dev set.
 
-### 4.1 Prerequisites
-
-- ASR cache populated at `/a2il/data/mbhosale/MAGMaR2026_test/asr/` (see [ASR_SETUP.md](ASR_SETUP.md)).
-- 8 visible GPUs (A6000-class or better — Qwen3.6-27B-FP8 + UNLI critic co-locate on one card).
-- The pre-chunked mapping `data/topic_video_mapping_dev_v2.json` already exists; otherwise Stage 0 will produce it.
-
-### 4.2 Command
+**1. Get the videos and annotations.** WikiVideo / MultiVENT 2.0 is distributed by HLTCOE on the Hugging Face Hub at [hltcoe/wikivideo](https://huggingface.co/datasets/hltcoe/wikivideo):
 
 ```bash
-cd /home/csgrad/mbhosale/phd/SCALE/CRAFT
-
-TEAM_ID=cite_chasers \
-RUN_ID=magmar_query_v12 \
-TASK=oracle \
-MODEL_NAME=Qwen/Qwen3.6-27B-FP8 \
-PARALLEL_QUERIES=8 \
-PARALLEL_STEP15=8 \
-PARALLEL_STEP5=8 \
-MAX_CRITIC_ROUNDS=4 \
-COVERAGE_FOLLOWUP_ROUNDS=1 \
-CRITIC_NLI_ENABLED=true \
-CRITIC_COVERAGE_ENABLED=true \
-STEP15_CHUNK_SIZE=10 \
-GPU_MEM_UTIL=0.85 \
-ASR_DIR=/a2il/data/mbhosale/MAGMaR2026_test/asr \
-bash run_query.sh outputs/outputs_query_branchv12
+export WIKIVIDEO_ROOT=/path/to/wikivideo
+huggingface-cli download hltcoe/wikivideo \
+    --repo-type dataset --local-dir "$WIKIVIDEO_ROOT"
+# expected layout after download:
+#   $WIKIVIDEO_ROOT/en/*.mp4                                  # videos
+#   $WIKIVIDEO_ROOT/annotations/final_data_2015-2025.json     # per-event claims + gold article
+#   $WIKIVIDEO_ROOT/annotations/multivent1_matched_queries_videos.json
 ```
 
-### 4.3 What each V12 knob does
-
-| Knob | V12 value | Effect |
-|---|---|---|
-| `MODEL_NAME` | `Qwen/Qwen3.6-27B-FP8` | Stage 1b extractor and Stage 2b consolidator |
-| `MAX_CRITIC_ROUNDS` | `4` | per-video critic re-extraction rounds (UNLI + MNLI + LLM-adjudicator) |
-| `COVERAGE_FOLLOWUP_ROUNDS` | `1` | one targeted re-prompt sweep per query when the coverage auditor flags gaps |
-| `CRITIC_NLI_ENABLED` | `true` | DeBERTa-v3 MNLI contradiction screen between claim pairs |
-| `CRITIC_COVERAGE_ENABLED` | `true` | Llama-3.2-3B coverage audit + adjudicator |
-| `STEP15_CHUNK_SIZE` | `10` | Stage 1.5 runs `predict_unli_chunked.py`, restarting every 10 videos to release libav mmaps |
-| `GPU_MEM_UTIL` | `0.85` | vLLM `gpu_memory_utilization`; co-locates with UNLI on the same card |
-| `PARALLEL_QUERIES` | `8` | one worker per query, each pinned to its own GPU via `CUDA_VISIBLE_DEVICES` |
-| `ASR_DIR` | populated | enables persona+ASR+visual prompting; required to recover Burmese/Nepali content |
-| `TEAM_ID` / `RUN_ID` / `TASK` | submission metadata | written into the final `submission.jsonl` |
-
-Defaults set inside `extract_query_claims.py` and `conf/step1_query_claims.yaml` already match V12 for everything else (UNLI critic `AdoptedIrelia/UNLI` + LoRA, MNLI screener `MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli`, coverage LLM `meta-llama/Llama-3.2-3B-Instruct`, `temperature=0.3`, `top_p=0.8`, `top_k=20`, `max_tokens=2048`, `fps=1.0`, `max_frames=128`).
-
-### 4.4 Outputs
-
-```
-outputs/outputs_query_branchv12/
-  query_claims_single/query_conditioned_claims.jsonl
-  unli_query_claims_single_lora/query_conditioned_claims_calibrated.jsonl
-  claim_packets/all_packets.json
-  inferences_query/inferences.jsonl
-  reports_query_based/all_reports.json
-  submission.jsonl                          # final MAGMaR-2026 submission — feed this to MIRAGE
-```
-
-### 4.5 Test split
-
-Swap the queries / mapping at the top of [run_query.sh](run_query.sh) (or pass them as CLI args 2/3) to point at the 19-query test set:
-
-```bash
-... bash run_query.sh outputs/outputs_query_test_v12 \
-    /a2il/data/mbhosale/MAGMaR2026_test/MAGMaR2026_queries.jsonl \
-    data/topic_video_mapping.json
-```
-
----
-
-## 5. Running on WikiVideo
-
-WikiVideo uses the same orchestrator with WikiVideo-specific paths and a pre-built persona/query file generated from MultiVENT annotations.
-
-### 5.1 Build the WikiVideo queries (one-time)
+**2. Generate persona-augmented queries** (one-time — output already shipped in this repo at [data/wikivideo_queries.jsonl](data/wikivideo_queries.jsonl), so this step is optional unless you change the few-shot seed):
 
 ```bash
 python generate_wikivideo_queries.py \
-    --out-queries data/wikivideo_queries.jsonl \
-    --out-mapping data/topic_video_mapping_wikivideo.json
+    --out-queries  data/wikivideo_queries.jsonl \
+    --out-mapping  data/topic_video_mapping_wikivideo.json
 ```
 
-This reads the MultiVENT matched-queries + annotations files (see the docstring at the top of [generate_wikivideo_queries.py](generate_wikivideo_queries.py#L1-L25)) and fabricates a `(persona_title, background, query)` for each event using a few-shot prompt seeded from the MAGMaR dev set.
+The script reads the MultiVENT matched-queries + annotation JSONs from `WIKIVIDEO_ROOT` and the MAGMaR dev queries from `DEV_QUERIES`, both currently set as module constants near the top of [generate_wikivideo_queries.py](generate_wikivideo_queries.py#L36-L40). Update those two paths to match your local layout before running; the script fabricates a `(persona_title, background, query)` per event with a local Qwen vLLM model.
 
-### 5.2 Prerequisites
-
-- Videos already chunked under `/a2il/data/mbhosale/wikivideo/en/` (chunk MP4s live alongside originals).
-- WikiVideo ASR cache at `/a2il/data/mbhosale/wikivideo/asr/`.
-- `data/topic_video_mapping_wikivideo_v2.json` exists (chunked mapping). Launch with `SKIP_CHUNK=1` to skip re-chunking.
-
-### 5.3 Command
+**3. Chunk the videos** (same procedure as MAGMaR):
 
 ```bash
+python chunk_videos.py \
+    --video-root "$WIKIVIDEO_ROOT/en" \
+    --mapping-in   data/topic_video_mapping_wikivideo.json \
+    --mapping-out  data/topic_video_mapping_wikivideo_v2.json \
+    --chunk-map-out data/video_chunk_map_wikivideo.json \
+    --max-seconds 120
+```
+
+**4. ASR cache** — same two-step Qwen + omniASR workflow as MAGMaR, just with WikiVideo paths:
+
+```bash
+python extract_asr.py --mode qwen \
+    --video-root "$WIKIVIDEO_ROOT/en" \
+    --mapping    data/topic_video_mapping_wikivideo_v2.json \
+    --out-dir    "$WIKIVIDEO_ROOT/asr" \
+    --device cuda:0 --verbose
+
+# Then the omniASR fallback for videos flagged `needs_fallback: true`:
+conda activate asr_omni
+python extract_asr.py --mode omni \
+    --video-root "$WIKIVIDEO_ROOT/en" \
+    --mapping    data/topic_video_mapping_wikivideo_v2.json \
+    --out-dir    "$WIKIVIDEO_ROOT/asr" \
+    --verbose
+```
+
+---
+
+### Data files reference
+
+What ships in [data/](data/) (so you can tell which file the orchestrator wants):
+
+| File | Purpose |
+|---|---|
+| [data/topic_video_mapping.json](data/topic_video_mapping.json) | MAGMaR test split — 10 topics → video IDs (pre-chunk) |
+| [data/topic_video_mapping_dev.json](data/topic_video_mapping_dev.json) | MAGMaR dev split — 8 topics → video IDs (pre-chunk) |
+| [data/topic_video_mapping_test.json](data/topic_video_mapping_test.json) | MAGMaR official test split alias |
+| `data/topic_video_mapping*_v2.json` | post-chunking mapping; same topics but video IDs include `__chunkNNN` suffixes. **`run_query.sh` derives this name from the input and reads/writes it automatically.** |
+| [data/video_chunk_map.json](data/video_chunk_map.json) | chunk-id → `{video_id, start, end}` — used by the report-formatting step to remap chunk IDs back to parent video IDs |
+| [data/topic_video_mapping_wikivideo.json](data/topic_video_mapping_wikivideo.json) | WikiVideo — 52 events → video IDs (pre-chunk) |
+| [data/topic_video_mapping_wikivideo_dev.json](data/topic_video_mapping_wikivideo_dev.json) | WikiVideo dev fragment (4 events overlapping the MAGMaR dev set) |
+| [data/video_chunk_map_wikivideo.json](data/video_chunk_map_wikivideo.json) | chunk-id → parent map for WikiVideo |
+| [data/wikivideo_queries.jsonl](data/wikivideo_queries.jsonl) | 52 synthesised persona queries (one line per query) |
+| [data/wikivideo_queries_dev.jsonl](data/wikivideo_queries_dev.jsonl) | dev subset of the WikiVideo queries |
+| [data/dev/](data/dev/) | small fixture dev split + sample queries used by smoke tests |
+
+Each line of a `queries*.jsonl` file is one query record with: `query_id`, `query_type` (biased / unbiased), `language`, `title` (event / topic), `persona_title`, `background`, `query`. Each value of a `topic_video_mapping*.json` is a list of video IDs whose extension is `.mp4` under `$VIDEO_ROOT`.
+
+---
+
+## Running on WikiVideo
+
+Same orchestrator as MAGMaR, configured for the WikiVideo paths and queries:
+
+```bash
+export WIKIVIDEO_ROOT=/path/to/wikivideo
+
 SKIP_CHUNK=1 \
-TEAM_ID=cite_chasers \
-RUN_ID=wikivideo_query_v1 \
+TEAM_ID=cite_chasers RUN_ID=wikivideo_query_v1 \
 MODEL_NAME=Qwen/Qwen3.6-27B-FP8 \
-PARALLEL_QUERIES=8 \
-PARALLEL_STEP15=8 \
-PARALLEL_STEP5=8 \
-MAX_CRITIC_ROUNDS=4 \
-COVERAGE_FOLLOWUP_ROUNDS=1 \
-CRITIC_NLI_ENABLED=true \
-CRITIC_COVERAGE_ENABLED=true \
-STEP15_CHUNK_SIZE=10 \
-GPU_MEM_UTIL=0.85 \
+PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
+MAX_CRITIC_ROUNDS=4 COVERAGE_FOLLOWUP_ROUNDS=1 \
+CRITIC_NLI_ENABLED=true CRITIC_COVERAGE_ENABLED=true \
+STEP15_CHUNK_SIZE=10 GPU_MEM_UTIL=0.85 \
+VIDEO_ROOT="$WIKIVIDEO_ROOT/en" \
+ASR_DIR="$WIKIVIDEO_ROOT/asr" \
 bash run_query_wikivideo.sh outputs/outputs_query_wikivideo_v1
 ```
 
-The WikiVideo orchestrator already points at the WikiVideo video root, ASR dir, queries, and mapping — see lines [187-326 of run_query_wikivideo.sh](run_query_wikivideo.sh#L187-L326). Everything else (critic config, calibration, packet assembly, inference, report assembly) is identical to the MAGMaR run.
-
-### 5.4 Notes
-
-- WikiVideo has 52 events × ~8 videos each = ~428 chunked video IDs, so Stage 1b is the dominant cost. With 8-way `PARALLEL_QUERIES` on A6000-class cards it finishes in 4–6 h.
-- Lighter extractor: drop to `MODEL_NAME=Qwen/Qwen3.5-9B` and `GPU_MEM_UTIL=0.6` if you only have one card per worker and can't fit the 27B FP8 build alongside UNLI.
-- Disable ASR with `ASR_DIR=` (empty) for an ablation run.
+Critic config, calibration, packet assembly, inference, and report assembly are identical to the MAGMaR run — only the data inputs differ.
 
 ---
 
-## 6. Common knobs
+## Evaluation
 
-| Env var | Where it acts | Notes |
-|---|---|---|
-| `SKIP_CHUNK` | Stage 0 | `1` = skip chunking, `auto` (default) = skip if v2 mapping + chunk map exist |
-| `SKIP_STEP1` | Stage 1b | `1` = reuse existing claims JSONL, `auto` = skip if file exists |
-| `PARALLEL_QUERIES` | Stage 1b | bounded GPU slot pool; `>1` shards queries across `$N` GPUs |
-| `PARALLEL_STEP15` | Stage 1.5 | shards by `query_id`; UNLI is small so this scales linearly |
-| `PARALLEL_STEP5` | Stage 2b | shards inference across GPUs; output is concatenated for Stage 3 |
-| `STEP15_CHUNK_SIZE` | Stage 1.5 | restart subprocess every N videos to release libav mmaps |
-| `STEP15_NO_AUDIO` / `NO_AUDIO` | Stage 1.5 | `1` = skip audio decode (recommended when any clip > 2–3 min) |
-| `MAX_CRITIC_ROUNDS` | Stage 1b | `0` disables the critic loop entirely |
-| `CRITIC_GPU_ALONE` | Stage 1b | `1` = put UNLI on its own GPU (needs 2 GPUs per worker; for 30B-FP8 + UNLI > 47 GB) |
-| `APPLY_VLLM_PATCH` | one-shot | applies [sbatch/patch_vllm_qwen3_next.py](sbatch/patch_vllm_qwen3_next.py) before Stage 1b |
-| `AKS_VIDEO_ROOT` | resolver | when set, the contract resolver tries `<AKS_VIDEO_ROOT>/q<QID>/<vid>.mp4` first |
-
----
-
-## 7. Evaluation
-
-Evaluation lives in a separate repository at [/home/csgrad/mbhosale/phd/SCALE/mirage/](/home/csgrad/mbhosale/phd/SCALE/mirage/). Point its `run.sh` at the `submission.jsonl` produced at the end of `run_query.sh` / `run_query_wikivideo.sh` — the orchestrators stop after the submission step and do not invoke any in-tree evaluator.
+We score CRAFT with the **MIRAGE** judge (Qwen2.5-7B-Instruct), which evaluates per-claim entailment against each query's gold reference and reports `info_f1` (information precision/recall) and `cite_f1` (citation precision/recall). MIRAGE lives in a separate repository — point its `run.sh` at the JSONL emitted at the end of `run_query.sh` / `run_query_wikivideo.sh`. The orchestrators stop after writing that file and do not invoke any in-tree evaluator.
