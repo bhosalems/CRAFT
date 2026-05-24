@@ -9,7 +9,7 @@ NUM_GPUS=${NUM_GPUS:-8}
 DATASET_PATH=${DATASET_PATH:-/a2il/data/mbhosale/MAGMaR2026_test/}
 TOPIC_MAPPING=${TOPIC_MAPPING:-/home/csgrad/mbhosale/phd/SCALE/MAGMAR-MWV/data/topic_video_mapping_v2.json}
 QUERIES=${QUERIES:-/a2il/data/mbhosale/MAGMaR2026_test/MAGMaR2026_queries_visual.jsonl}
-MODEL=${MODEL:-mclip}
+MODEL=${MODEL:-clip}
 OUTPUT_FILE=${OUTPUT_FILE:-/a2il/data/mbhosale/MAGMaR2026_test/outscores}
 DATASET_NAME=${DATASET_NAME:-magmar2026}
 
