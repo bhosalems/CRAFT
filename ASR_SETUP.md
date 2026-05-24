@@ -97,7 +97,7 @@ print('cuda available:', torch.cuda.is_available())
 "
 
 # 6. Verify omniASR loads.
-python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline; print('omni OK')"
+python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline. print('omni OK')"
 ```
 
 To leave the env later: `conda deactivate`. To remove it entirely:
@@ -142,7 +142,7 @@ pip install fairseq2 \
 pip install omnilingual-asr librosa soundfile
 
 # 5. Verify
-python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline; print('omni OK')"
+python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline. print('omni OK')"
 ```
 
 If you used venv (Option B) and step 5 fails with a `libsndfile` error:
