@@ -42,7 +42,7 @@ huggingface-cli download akhilvssg/magmar-2026-test-asr-embeddings \
     --repo-type dataset --local-dir "$VIDEO_ROOT"
 ```
 
-The release includes videos, `MAGMaR2026_queries{_dev,}.jsonl`, and a pre-built ASR cache at `$VIDEO_ROOT/asr/<video_id>.json`. Topic→video mappings ship in this repo.
+The release includes videos and `MAGMaR2026_queries{_dev,}.jsonl`. Topic→video mappings and the pre-built ASR cache ([`asr_magmar/`](asr_magmar/)) ship in this repo, so no further data prep is needed.
 
 ### WikiVideo (MultiVENT 2.0)
 
@@ -52,7 +52,7 @@ huggingface-cli download hltcoe/wikivideo \
     --repo-type dataset --local-dir "$WIKIVIDEO_ROOT"
 ```
 
-Expected layout: `$WIKIVIDEO_ROOT/en/*.mp4` and `$WIKIVIDEO_ROOT/annotations/{final_data_2015-2025,multivent1_matched_queries_videos}.json`. Synthesised persona queries are shipped in [data/wikivideo_queries.jsonl](data/wikivideo_queries.jsonl); to regenerate, edit the path constants at [generate_wikivideo_queries.py:36-40](generate_wikivideo_queries.py#L36-L40) and run it.
+Expected layout: `$WIKIVIDEO_ROOT/en/*.mp4` and `$WIKIVIDEO_ROOT/annotations/{final_data_2015-2025,multivent1_matched_queries_videos}.json`. Synthesised persona queries ([data/wikivideo_queries.jsonl](data/wikivideo_queries.jsonl)) and the pre-built ASR cache ([`asr_wikivideo/`](asr_wikivideo/)) ship in this repo. To regenerate the queries, edit the path constants at [generate_wikivideo_queries.py:36-40](generate_wikivideo_queries.py#L36-L40) and re-run the script.
 
 ### Chunking
 
@@ -71,7 +71,16 @@ Needs `ffmpeg`/`ffprobe` on `PATH` (falls back to PyAV). Idempotent; `--force` t
 
 ### ASR cache
 
-Pre-pass; the pipeline only reads from `$ASR_DIR` (default `$VIDEO_ROOT/asr`, set empty to disable). MAGMaR's HF release ships it. To rebuild:
+Pre-pass; the pipeline only reads from `$ASR_DIR` (set empty to disable). **Pre-built caches ship in this repo** so you can skip the ASR pre-pass entirely:
+
+| Dataset | In-repo path | Files |
+|---|---|---|
+| MAGMaR-2026 | [`asr_magmar/`](asr_magmar/) | 130 JSON |
+| WikiVideo | [`asr_wikivideo/`](asr_wikivideo/) | 421 JSON |
+
+Just point `ASR_DIR` at the relevant directory when you run the orchestrator (the run commands in [🏃 Running CRAFT](#-running-craft) below already do this).
+
+To rebuild from scratch instead:
 
 ```bash
 # Step 1 — Qwen3-ASR (30 langs):
@@ -109,6 +118,7 @@ Two envs are required because `omnilingual-asr` pins `fairseq2` ≤ 0.6 (torch �
 
 ```bash
 export VIDEO_ROOT=/path/to/MAGMaR2026_test
+ASR_DIR=./asr_magmar \
 PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
     bash run_query.sh outputs/craft_magmar_main
 ```
@@ -122,7 +132,7 @@ Same orchestrator; Stage 1b defaults to `Qwen/Qwen3-VL-30B-A3B-Instruct-FP8`, St
 ```bash
 export WIKIVIDEO_ROOT=/path/to/wikivideo
 SKIP_CHUNK=1 \
-VIDEO_ROOT="$WIKIVIDEO_ROOT/en" ASR_DIR="$WIKIVIDEO_ROOT/asr" \
+VIDEO_ROOT="$WIKIVIDEO_ROOT/en" ASR_DIR=./asr_wikivideo \
 PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
     bash run_query_wikivideo.sh outputs/craft_wikivideo_main
 ```
