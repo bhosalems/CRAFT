@@ -1,0 +1,9 @@
+{
+  "video_id": "zNaWyZGyYFw",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "One of my greatest regrets in running the company is that we were slow in identifying the Russian information operations in 2016. We expected them to do a number of more traditional cyber attacks, which we did identify and notify the campaigns that they were trying to hack into them. But we were slow at identifying the type of new information operations. When did you identify new operations? It was right around the time of the 2016 election itself. So since then, we 2018 is an incredibly important year for elections, not just with the U.S. midterms, but around the world there are important elections in India, in Brazil, in Mexico, in Pakistan, and in Hungary that we want to make sure that we do everything we can to protect the integrity of those elections.",
+  "segments": [],
+  "elapsed_seconds": 4.36,
+  "needs_fallback": false
+}

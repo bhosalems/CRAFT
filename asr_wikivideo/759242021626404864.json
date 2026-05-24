@@ -1,0 +1,9 @@
+{
+  "video_id": "759242021626404864",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "No! When I say Pokemon, y'all say go. Pokemon. Pokemon.",
+  "segments": [],
+  "elapsed_seconds": 0.54,
+  "needs_fallback": false
+}

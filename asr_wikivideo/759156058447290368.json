@@ -1,0 +1,9 @@
+{
+  "video_id": "759156058447290368",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Down there, over here to get him. I don't know what happened to him. Yeah, it's like that for me too.",
+  "segments": [],
+  "elapsed_seconds": 0.85,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "1440175928542334979",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "In the months ahead, as Mr. Trudeau gears up for yet another election, we must continue this journey to welcoming more Canadians to take another look at our party. More people voted for Canada's Conservatives than any other party, and that's a strength to build on. Our support has grown; it's grown across the country. But clearly, there is more work for us to do to earn the trust of Canadians.",
+  "segments": [],
+  "elapsed_seconds": 2.29,
+  "needs_fallback": false
+}

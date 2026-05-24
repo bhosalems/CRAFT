@@ -1,0 +1,9 @@
+{
+  "video_id": "H0lCvUpiz70",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "It happened so fast. The sheriff's department told us we had to be out of here in a few minutes, and we left. And this is what we came home to today. I've never seen anything like it. It was the whole sky was red and orange, and it was coming over the hill there, and it was massive. I've never seen anything like it. And it only took a few minutes to get here.",
+  "segments": [],
+  "elapsed_seconds": 2.39,
+  "needs_fallback": false
+}

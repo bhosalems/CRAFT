@@ -1,0 +1,9 @@
+{
+  "video_id": "FPSSdejtPk0",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Francis Emmanuel Chapeau and Jennifer A. Doudna of the U.S. were awarded the 2020 Nobel Prize in Chemistry. The Royal Swedish Academy of Sciences announced on Wednesday. The two scientists developed the gene editing technique known as the CRISPR-Cas9 DNA-snipping scissors. Using this, researchers can alter the DNA of animals, plants, and microorganisms with extremely high precision. And this technique provides an opportunity to cure inherited diseases and even cancer. It's the first time that two women win the Chemistry Nobel together.",
+  "segments": [],
+  "elapsed_seconds": 3.01,
+  "needs_fallback": false
+}

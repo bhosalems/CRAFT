@@ -1,0 +1,9 @@
+{
+  "video_id": "L-fUpKJmMX8",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Ayes are two hundred and thirty. The nays are one ninety-seven. Present is one. Article one is adopted. The question is on adoption of article two. The question is on the adoption of article two. Those in favor say aye. Those opposed nay. The ayes have it. The ayes have it. For what purpose does the gentleman from",
+  "segments": [],
+  "elapsed_seconds": 2.05,
+  "needs_fallback": false
+}

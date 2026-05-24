@@ -1,0 +1,9 @@
+{
+  "video_id": "K9AY5rlosRY",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Over 110 miles per hour. The storm reached land about three hours ago. And wait, wait a minute. There's a person surfing a huge wave out there. Oh, oh. A person was.",
+  "segments": [],
+  "elapsed_seconds": 1.26,
+  "needs_fallback": false
+}

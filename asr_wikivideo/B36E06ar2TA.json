@@ -1,0 +1,9 @@
+{
+  "video_id": "B36E06ar2TA",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "New details this morning showing COVID-19 vaccine progress across the U.S. According to the CDC, 212 million Americans are now fully vaccinated. That's about 64% of all Americans as of Sunday. Meanwhile, about 27% of the United States population has been boosted. And when it comes to the states that still have less than half of residents vaccinated, there's only one. It's Alabama.",
+  "segments": [],
+  "elapsed_seconds": 2.4,
+  "needs_fallback": false
+}

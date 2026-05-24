@@ -1,0 +1,9 @@
+{
+  "video_id": "kl5LSwjo4Xk__chunk001",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Modern earthquake building codes. The fear is some older structures that survived previous quakes won't have endured this one. And of course, it's the buildings in which people live that are the greatest risk factor when it comes to earthquake casualties.",
+  "segments": [],
+  "elapsed_seconds": 1.29,
+  "needs_fallback": false
+}

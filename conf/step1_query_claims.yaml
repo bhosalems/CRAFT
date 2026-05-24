@@ -1,6 +1,13 @@
 defaults:
   - config
-  - override /model: qwen3_30b
+  - override /model: qwen3_5_vl       # MAGMaR default: Qwen/Qwen3.5-9B
+                                       # For WikiVideo, switch to qwen3_30b
+                                       # (Qwen/Qwen3-VL-30B-A3B-Instruct-FP8).
+                                       # The shell orchestrators in run_query.sh /
+                                       # run_query_wikivideo.sh already pass
+                                       # `model.model=$MODEL_NAME` at runtime,
+                                       # so this default only matters when you
+                                       # invoke run_step1_query_claims.py directly.
   - override /runtime: step1_qwen
   - override /output: step1_query_claims
   - _self_

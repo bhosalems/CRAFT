@@ -1,0 +1,9 @@
+{
+  "video_id": "ltOil19LYKI",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Oh, it's in. He's getting ready for Kurios. Well, the first lob was great, really well executed. He actually meant that shot. Yeah. That's not too bad either.",
+  "segments": [],
+  "elapsed_seconds": 1.19,
+  "needs_fallback": false
+}

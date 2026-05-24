@@ -1,0 +1,9 @@
+{
+  "video_id": "75yL4xutjVA",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Learning more about the largest onshore crude oil spill in nearly a decade, after a ruptured section of the Keystone oil pipeline dumped nearly 600,000 gallons of oil into a Kansas creek, the oil has been contained, and the EPA says so far no drinking water has been affected. But people who live nearby are complaining about a strong odor, and it's not clear how long it will take to clean up. Environmentalists say this type of oil can be hard to remove because it sinks in the water.",
+  "segments": [],
+  "elapsed_seconds": 2.89,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "G9KD7XGIVTM__chunk001",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Rattled the stock market and certainly consumer confidence. So, as we take all of this in, it'll be critical to watch the response, not only here but globally.",
+  "segments": [],
+  "elapsed_seconds": 1.0,
+  "needs_fallback": false
+}

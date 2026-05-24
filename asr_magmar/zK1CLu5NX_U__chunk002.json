@@ -1,0 +1,9 @@
+{
+  "video_id": "zK1CLu5NX_U__chunk002",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Firefly Aerospace just became the first commercial company in history to complete a fully successful moon landing. Congratulations to the entire team.",
+  "segments": [],
+  "elapsed_seconds": 0.74,
+  "needs_fallback": false
+}

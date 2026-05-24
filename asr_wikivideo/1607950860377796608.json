@@ -1,0 +1,9 @@
+{
+  "video_id": "1607950860377796608",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Cream and sugar. Uh, what do you cream and sugar? Sure. What's that cream and sugar? No. Ma'am. Cream and sugar. Just a little bit, sir. Want some? No, you good.",
+  "segments": [],
+  "elapsed_seconds": 1.32,
+  "needs_fallback": false
+}

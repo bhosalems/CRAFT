@@ -1,0 +1,9 @@
+{
+  "video_id": "768637544607150084",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Four gold medals and one. Um, hi guys, I'm Simone Biles, and I can't thank everyone in Hall of Houston for coming out to see me today and to welcome me from Rio. And I don't know what else to say. I'm nervous, and I love you guys.",
+  "segments": [],
+  "elapsed_seconds": 1.72,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "a0IndYX9kbg",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "The eyes to the right, 286. The nose to the left, 344. The eyes to the right, 286. The nose to the left, 344. So the nose have it. The nose have it. Unlock.",
+  "segments": [],
+  "elapsed_seconds": 1.6,
+  "needs_fallback": false
+}

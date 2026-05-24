@@ -1,0 +1,9 @@
+{
+  "video_id": "1362508052491087875",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "We've lost direct Earth tones. As expected. As expected. Sky crane maneuver has started. About twenty meters off the surface. Looking for any signals from MRO. You're adjusting good. Touchdown confirmed. Perseverance safely on the surface of Mars, ready to begin seeking the sands of past life. At this point, the descent stage has flown away to safe distance. Perseverance is continuing to transmit direct through Mars Reconnaissance Orbiter to Earth.",
+  "segments": [],
+  "elapsed_seconds": 2.62,
+  "needs_fallback": false
+}

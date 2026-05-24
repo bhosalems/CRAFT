@@ -1,0 +1,9 @@
+{
+  "video_id": "1546173093869133825",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Oh yes, we have an eight-time champion. His name is Roger Federer.",
+  "segments": [],
+  "elapsed_seconds": 0.59,
+  "needs_fallback": false
+}

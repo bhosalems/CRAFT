@@ -1,0 +1,9 @@
+{
+  "video_id": "qJeySsOR4Bk",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Mr. Zuckerberg, would you be comfortable sharing with us the name of the hotel you stayed in last night? No. If you've messaged anybody this week, would you share with us the names of the people you've messaged, Senator? No, I would probably not choose to do that publicly here. I think that may be what this is all about: your right to privacy, the limits of your right to privacy, and how much you give away in modern America in the name of \"quote connecting people around the world.\" Question basically of what information Facebook is collecting, who they're sending it to, and whether they ever ask me in advance my permission to do that. Is that a fair thing for a user of Facebook to expect? Yes, Senator. I think everyone should have control over how their information is used.",
+  "segments": [],
+  "elapsed_seconds": 4.47,
+  "needs_fallback": false
+}

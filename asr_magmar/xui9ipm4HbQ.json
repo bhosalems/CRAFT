@@ -1,0 +1,9 @@
+{
+  "video_id": "xui9ipm4HbQ",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "This is Mission Director on IM1. We're evaluating how we can refine that signal and dial in the pointing for our dishes. What we can confirm, without a doubt, is our equipment is on the surface of the Moon and we are transmitting. So, congratulations, IM team. We'll see how much more we can get from that. For that outstanding effort, I know this was a nail biter, but we are on the surface and we are transmitting. And welcome to the Moon, Houston. Odysseus has found his new home.",
+  "segments": [],
+  "elapsed_seconds": 2.88,
+  "needs_fallback": false
+}

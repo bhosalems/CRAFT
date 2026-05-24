@@ -1,0 +1,9 @@
+{
+  "video_id": "emOU284-Ld8",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "nep_Deva",
+  "text": "निम्नलिखित रो सिर अनुशंसा बनाया कर्दा छन्",
+  "segments": [],
+  "elapsed_seconds": 0.13,
+  "needs_fallback": false
+}

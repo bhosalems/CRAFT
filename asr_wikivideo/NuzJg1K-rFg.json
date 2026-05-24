@@ -1,0 +1,9 @@
+{
+  "video_id": "NuzJg1K-rFg",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "German",
+  "text": "Es ist eine wahre Sensation. Erstmals haben sich ausschließlich Frauen einen Wissenschafts-Nobelpreis geteilt. Die Auszeichnung in dem Bereich Chemie ging in diesem Jahr an die in Berlin arbeitende Französin Emmanuelle Charpentier sowie an die Amerikanerin Jennifer Doudna. Sie entwickelten eine Gen-Schere zur gezielten Erbgut-Veränderung. Das Verfahren hat die molekularen Lebenswissenschaften revolutioniert. Das teilte die Königlich-Schwedische Akademie der Wissenschaften am Mittwoch in Stockholm mit. In Chemie gab es zuvor überhaupt erst fünf Preisträgerinnen. Charpentier zeigte sich nach der Verkündung in Berlin sichtlich erfreut. Die renommierteste Auszeichnung für Chemiker ist in diesem Jahr mit ungerednet rund 950.000 Euro dotiert.",
+  "segments": [],
+  "elapsed_seconds": 5.31,
+  "needs_fallback": false
+}

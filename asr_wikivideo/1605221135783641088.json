@@ -1,0 +1,9 @@
+{
+  "video_id": "1605221135783641088",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Fans out here on the scene. This is on um two eleven, and Caltrans crews are currently inspecting the bridge. But let me just show you what the damage here looks like. Currently, it's closed. If you're trying to get into Ferndale, this bridge is currently blocked off. It looks like there are a couple of cars that are coming out of Fernbridge, but just take a look at this road damage here. Very, very severe. Some major cracks in the roadway as.",
+  "segments": [],
+  "elapsed_seconds": 2.78,
+  "needs_fallback": false
+}

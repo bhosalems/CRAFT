@@ -1,0 +1,9 @@
+{
+  "video_id": "1427986778519126017",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Hey, it's Cory Booker. I'm here with the Secretary of Health and Human Services, Secretary Bestavros. You have a message for everybody. I am here to say what Senator Booker says every day, and that is, let's keep each other safe. Let's be responsible for ourselves and for everyone else. Let's take personal responsibility. Get vaccinated. Get vaccinated, please. It's great to have you here, New Jersey.",
+  "segments": [],
+  "elapsed_seconds": 2.44,
+  "needs_fallback": false
+}

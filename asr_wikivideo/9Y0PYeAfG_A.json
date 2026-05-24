@@ -1,0 +1,9 @@
+{
+  "video_id": "9Y0PYeAfG_A",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Well, also developing today, a Russian aircraft collided with an American drone this morning somewhere over the Black Sea. The unmanned drone was flying over international waters when the Russian jet attempted what's called an intercept. That's a defensive tactic used to direct aircrafts away from a certain area. While intercepts in and of themselves are not that uncommon, the fact that this type of behavior from these Russian pilots that is uncommon, and unfortunate, and unsafe. The Pentagon also said in a statement that quote This incident follows a pattern of dangerous actions by Russian pilots over international airspace.\"",
+  "segments": [],
+  "elapsed_seconds": 3.06,
+  "needs_fallback": false
+}

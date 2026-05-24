@@ -1,0 +1,9 @@
+{
+  "video_id": "e1AqFqGpcAE",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Hi, I'm Nehir Kurdi, President and CEO of Ciplica. In July 2021, Dr. Andreas Windemuth, Ciplica's Chief Science Officer, and I wrote a blog post highlighting the exciting news around DeepMind's AlphaFold2 and the impact that it will have on advancing scientific research. In August 2021, only a few weeks after the announcement by DeepMind, we released a second blog post to inform you and the rest of the global scientific community that our team at Ciplica had integrated the AlphaFold2 library with Matchmaker, our deep learning, proteome-wide drug-target interaction engine. The speed, scale, and predictive power of the Matchmaker engine, combined with AlphaFold2, will uplift our vision of advancing molecules to medicines for therapeutically rich and diverse areas by accelerating the biotech pipeline in the future. In the coming weeks, we will share the impact of AlphaFold2 on drug discovery using our drug discovery workflow. Follow our blog and social media channels to keep up with the latest news and announcements. Thank you.",
+  "segments": [],
+  "elapsed_seconds": 5.93,
+  "needs_fallback": false
+}

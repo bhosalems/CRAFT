@@ -1,0 +1,9 @@
+{
+  "video_id": "wsDycUg687g",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Focusing on Starbucks now, as more than 2,000 of its U.S. employees engaged in a single-day strike. The strike took place at over 100 stores across the country on the annual Red Cup Day on Thursday. The day normally sees the coffee franchise hand out holiday-themed reusable Starbucks cups to customers with certain purchases. It's the busiest day on the calendar for Starbucks. Now, picketing employees said they are protesting the company's retaliation against unionized workers. Over the past year, more than 260 stores have voted to unionize, but Starbucks has not yet started negotiating contracts with most locations.",
+  "segments": [],
+  "elapsed_seconds": 3.47,
+  "needs_fallback": false
+}

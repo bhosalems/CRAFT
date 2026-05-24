@@ -1,0 +1,9 @@
+{
+  "video_id": "858146907037872129",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "They're still carrying, carrying beds and stuff into tents.",
+  "segments": [],
+  "elapsed_seconds": 0.48,
+  "needs_fallback": false
+}

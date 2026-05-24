@@ -1,0 +1,9 @@
+{
+  "video_id": "1347124620747530241",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "The whole number of electors appointed to vote for president of the United States is 538. Within that whole number, a majority is 270. The votes for president of the United States are as follows: Joseph R. Biden Jr. of the state of Delaware has received 306 votes. Donald J. Trump of the state of Florida has received 232 votes. The announcement of the state of the vote by the president of the Senate shall be deemed a sufficient declaration of the persons elected president and vice president of the United States.",
+  "segments": [],
+  "elapsed_seconds": 3.09,
+  "needs_fallback": false
+}

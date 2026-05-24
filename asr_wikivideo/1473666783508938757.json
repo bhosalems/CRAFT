@@ -1,0 +1,9 @@
+{
+  "video_id": "1473666783508938757",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "The long-awaited launch of the James Webb Space Telescope has been moved to December 25th at the earliest. NPR's Nell Greenfieldboyz reports the delay is due to weather conditions at the launch site. NASA had been targeting Christmas Eve for its launch, which had astronomers joking that the telescope was the one holiday present they really wanted. The massive $10 billion scientific instrument is all folded up inside a rocket at a European spaceport in French Guiana, and while everything looks good with all the hardware, a suboptimal weather forecast convinced NASA and its partners to delay the launch by at least another 24 hours, meaning a telescope that's been decades in the making could finally go up on Christmas morning. Nell Greenfieldboyz, NPR News. This is NPR News in Washington.",
+  "segments": [],
+  "elapsed_seconds": 4.36,
+  "needs_fallback": false
+}

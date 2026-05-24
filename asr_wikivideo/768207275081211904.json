@@ -1,0 +1,9 @@
+{
+  "video_id": "768207275081211904",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "Chinese",
+  "text": "无产阶级，无产阶级，打倒资产阶级！",
+  "segments": [],
+  "elapsed_seconds": 0.46,
+  "needs_fallback": false
+}

@@ -180,7 +180,13 @@ VIDEO_ROOT="/a2il/data/mbhosale/MAGMaR2026_test"
 # Max chunk duration in seconds (videos longer than this get split).
 MAX_CHUNK_SECONDS="${MAX_CHUNK_SECONDS:-120}"
 
+# Stage 1b VLM extractor (multimodal — sees video + ASR).
 MODEL_NAME="${MODEL_NAME:-Qwen/Qwen3.5-9B}"
+# Stage 2b higher-level-inference LLM (text-only consolidation over claim
+# packets). Kept separate from MODEL_NAME because Stage 2b is text-only and
+# benefits little from a larger multimodal extractor — we use the 9B
+# everywhere for the consolidation step.
+STAGE2_MODEL_NAME="${STAGE2_MODEL_NAME:-Qwen/Qwen3.5-9B}"
 
 # Branch output directory (all artifacts live under this).
 # Usage:
@@ -245,7 +251,7 @@ SKIP_STEP1="${SKIP_STEP1:-auto}"
 # > 0 = run predict_unli_chunked.py, spawning a fresh predict_unli.py subprocess
 #       per chunk of N videos. Use this to avoid pyav/libav mmap leaks that
 #       exhaust vm.max_map_count on long runs. Start with 40.
-STEP15_CHUNK_SIZE="${STEP15_CHUNK_SIZE:-0}"
+STEP15_CHUNK_SIZE="${STEP15_CHUNK_SIZE:-10}"
 
 # Step 1.5 audio mode: set NO_AUDIO=1 to skip audio decoding in the UNLI
 # scorer. Recommended when any video is longer than ~2-3 minutes — the audio
@@ -255,7 +261,7 @@ STEP15_CHUNK_SIZE="${STEP15_CHUNK_SIZE:-0}"
 STEP15_NO_AUDIO="${NO_AUDIO:-0}"
 
 # Critic loop: max feedback rounds per video in Step 1 (0 = disabled).
-MAX_CRITIC_ROUNDS="${MAX_CRITIC_ROUNDS:-0}"
+MAX_CRITIC_ROUNDS="${MAX_CRITIC_ROUNDS:-4}"
 # Optional: override critic UNLI loading.
 # By default (conf/step1_query_claims.yaml), the critic matches Step 1.5:
 #   base_model=AdoptedIrelia/UNLI + lora_path=AdoptedIrelia/UNLI/lora
@@ -270,19 +276,19 @@ CRITIC_GPU="${CRITIC_GPU:-}"
 # uses a small instruction-tuned LLM. Leave blank to keep YAML defaults.
 CRITIC_NLI_MODEL="${CRITIC_NLI_MODEL:-}"
 CRITIC_NLI_DEVICE="${CRITIC_NLI_DEVICE:-}"
-CRITIC_NLI_ENABLED="${CRITIC_NLI_ENABLED:-}"
+CRITIC_NLI_ENABLED="${CRITIC_NLI_ENABLED:-true}"
 CRITIC_NLI_SCREEN_THRESHOLD="${CRITIC_NLI_SCREEN_THRESHOLD:-}"
 CRITIC_NLI_MAX_CANDIDATES="${CRITIC_NLI_MAX_CANDIDATES:-}"
 CRITIC_COVERAGE_MODEL="${CRITIC_COVERAGE_MODEL:-}"
 CRITIC_COVERAGE_GPU="${CRITIC_COVERAGE_GPU:-}"
-CRITIC_COVERAGE_ENABLED="${CRITIC_COVERAGE_ENABLED:-}"
-COVERAGE_FOLLOWUP_ROUNDS="${COVERAGE_FOLLOWUP_ROUNDS:-}"
+CRITIC_COVERAGE_ENABLED="${CRITIC_COVERAGE_ENABLED:-true}"
+COVERAGE_FOLLOWUP_ROUNDS="${COVERAGE_FOLLOWUP_ROUNDS:-1}"
 
 # Optional: override vLLM GPU memory utilization for Step 1.
 # When critic is enabled, extract_query_claims.py auto-defaults to 0.6 to leave
 # room for UNLI on the same GPU. Set GPU_MEM_UTIL=0.5 (or lower) if you still
 # hit CUDA OOM; set to 0.9 if the critic runs on a different GPU than vLLM.
-GPU_MEM_UTIL="${GPU_MEM_UTIL:-}"
+GPU_MEM_UTIL="${GPU_MEM_UTIL:-0.85}"
 
 # ---- ASR cache ----
 # This pipeline does NOT generate ASR; it only consumes a pre-built cache
@@ -545,6 +551,7 @@ else
 				data.queries_jsonl="$QUERIES_JSONL" \
 				data.mapping="$MAPPING_JSON" \
 				data.video_root="$VIDEO_ROOT" \
+				model.model="$MODEL_NAME" \
 				max_critic_rounds="$MAX_CRITIC_ROUNDS" \
 				"${WORKER_OVERRIDES[@]}" \
 				"only_query_ids=$QID" \
@@ -566,6 +573,7 @@ else
 			data.queries_jsonl="$QUERIES_JSONL" \
 			data.mapping="$MAPPING_JSON" \
 			data.video_root="$VIDEO_ROOT" \
+			model.model="$MODEL_NAME" \
 			max_critic_rounds=0 \
 			output.out_dir="$QUERY_CLAIMS_DIR" 2>&1 | tee -a "$QUERY_CLAIMS_DIR/step1b_query_claims.log"
 	else
@@ -573,6 +581,7 @@ else
 			data.queries_jsonl="$QUERIES_JSONL" \
 			data.mapping="$MAPPING_JSON" \
 			data.video_root="$VIDEO_ROOT" \
+			model.model="$MODEL_NAME" \
 			max_critic_rounds="$MAX_CRITIC_ROUNDS" \
 			"${CRITIC_OVERRIDES[@]}" \
 			output.out_dir="$QUERY_CLAIMS_DIR" 2>&1 | tee -a "$QUERY_CLAIMS_DIR/step1b_query_claims.log"
@@ -738,7 +747,7 @@ if [[ "$PARALLEL_STEP5" -gt 1 ]]; then
 			--packets-dir "$CLAIM_PACKETS_DIR" \
 			--claims "$CALIBRATED_QUERY_CLAIMS" \
 			--queries-jsonl "$QUERIES_JSONL" \
-			--model "$MODEL_NAME" \
+			--model "$STAGE2_MODEL_NAME" \
 			--out-dir "$WORKER_OUT_DIR" \
 			--only-query-ids "$QID" \
 			--verbose >> "$WORKER_LOG" 2>&1 &
@@ -777,7 +786,7 @@ else
 		--packets-dir "$CLAIM_PACKETS_DIR" \
 		--claims "$CALIBRATED_QUERY_CLAIMS" \
 		--queries-jsonl "$QUERIES_JSONL" \
-		--model "$MODEL_NAME" \
+		--model "$STAGE2_MODEL_NAME" \
 		--out-dir "$INFERENCES_QUERY_DIR" \
 		--verbose 2>&1 | tee "$INFERENCES_QUERY_DIR/step2_query_infer.log"
 fi
@@ -794,8 +803,8 @@ echo "[6/7] Generate query-based reports"
 	--verbose 2>&1 | tee "$REPORTS_QUERY_DIR/step3_query_report.log"
 
 # ---- Format submission ----
-TEAM_ID="${TEAM_ID:-ub_a2il}"
-RUN_ID="${RUN_ID:-magmar_query-v5}"
+TEAM_ID="${TEAM_ID:-craft}"
+RUN_ID="${RUN_ID:-craft_magmar_main}"
 TASK="${TASK:-oracle}"
 SUBMISSION_JSONL="$OUT_DIR/submission.jsonl"
 

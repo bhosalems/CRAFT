@@ -1,0 +1,9 @@
+{
+  "video_id": "1977877002272022528",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "nep_Deva",
+  "text": "अन्य पानी चाहिए",
+  "segments": [],
+  "elapsed_seconds": 0.3,
+  "needs_fallback": false
+}

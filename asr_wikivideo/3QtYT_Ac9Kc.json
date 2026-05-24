@@ -1,0 +1,10 @@
+{
+  "video_id": "3QtYT_Ac9Kc",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "zho_Hans",
+  "text": "我在他身上坐着了他在那边看着就在那边看着这个我在那边看着这个我在那边看着这个我在那边看着这个我在那边看着这个我在那边看着这个",
+  "segments": [],
+  "elapsed_seconds": 13.05,
+  "needs_fallback": false,
+  "qwen3_language": "Chinese"
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "1sMRNTP9q_c",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "Chinese",
+  "text": "哦，这里，这里，我带过来。台风来了，台风来了。",
+  "segments": [],
+  "elapsed_seconds": 0.53,
+  "needs_fallback": false
+}

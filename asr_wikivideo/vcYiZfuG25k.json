@@ -1,0 +1,9 @@
+{
+  "video_id": "vcYiZfuG25k",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Set, six, five, four, two, unit, top. And we have engine start. And liftoff. Decolage. Liftoff from a tropical rainforest to the edge of time itself. James Webb begins a voyage back to the birth of the universe. Quite a Christmas present for the world's astronomers. And we have a fully deployed JWST observatory.",
+  "segments": [],
+  "elapsed_seconds": 2.18,
+  "needs_fallback": false
+}

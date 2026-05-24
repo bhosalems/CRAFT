@@ -1,0 +1,9 @@
+{
+  "video_id": "1543908729514590209",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "The British government has announced a tax cut that would boost the budgets of 30 million people across the country. This will be achieved by raising the income threshold at which workers are required to make national insurance payments. It'll cost the government more than seven billion dollars in forgone revenue and will help the UK's lowest salary earners. Downing Street is also proposing a reduction in value-added taxes on consumer goods. The levy currently stands at 20. The moves come amid a worsening cost of living crisis rooted in the rising prices of food and fuel due to the crisis in Ukraine. Consumer prices in the UK rose more than nine percent in June, the fastest pace in four decades.",
+  "segments": [],
+  "elapsed_seconds": 3.64,
+  "needs_fallback": false
+}

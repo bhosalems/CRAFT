@@ -1,0 +1,9 @@
+{
+  "video_id": "1fjrDbFYWW0__chunk003",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Engines that we see firing right now on our Venera array. VMS, flight announced, verified, 49.2, ready. They are doing those pulses. VMS is in relative. 260 meters up. First redirect occurred. 98 meters from original target. One minute remaining in flight. Up. Vehicle is converged on its commanded descent profile. All right, so we are in that autonomous phase that you had described to us. She is ready and has been preparing for this. You're going to hear a lot of callouts here about vision navigation solutions, laser ranging, etc. Remaining in terminal. 100 meters up. And let's just navigation filters still healthy. Second hazard avoidance occurred. Five meters from previous target. 50 meters up. 30 seconds remaining in flight. Verified, verified. 11 meters up. Vehicle shutdown. Three contact sensors trip. Engine shutdown confirmed. Power nominal. Vehicle is charging. IMU reports lunar gravity, and it is stable.",
+  "segments": [],
+  "elapsed_seconds": 5.38,
+  "needs_fallback": false
+}

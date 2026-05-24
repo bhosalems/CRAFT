@@ -1,0 +1,9 @@
+{
+  "video_id": "1545098586689609730",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Away from Nigeria, British Prime Minister Boris Johnson has resigned as Conservative Party leader after losing the support of his ministers and members of Parliament. The embattled leader has faced a growing rebellion within his party over a series of scandals. A Conservative leadership contest will take place this summer, and a new prime minister will be in place in time for the party conference in October. In the meantime, Johnson will continue as prime minister. He had vowed to keep going following a wave of resignations from the government over his leadership, but was urged to stand down by senior members of his cabinet, including newly appointed Chancellor Nadim Zahawi.",
+  "segments": [],
+  "elapsed_seconds": 3.38,
+  "needs_fallback": false
+}

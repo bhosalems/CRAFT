@@ -1,0 +1,9 @@
+{
+  "video_id": "ISv0YMiDeUw",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "So, unfortunately, we know that there is something called vaccine hesitancy, and many people are afraid of vaccines, especially new ones when they come on the market. This vaccine is so incredibly important to individuals, but also to the global community at large. And we will be in a better position to fight the pandemic the more people who become vaccinated. So, it is important to address people's concerns and make sure that science is driving the evaluation of safety and efficacy of the vaccines, so that people can get accurate information and have trust that the vaccine that they are taking is safe and will work to protect them and their communities.",
+  "segments": [],
+  "elapsed_seconds": 3.43,
+  "needs_fallback": false
+}

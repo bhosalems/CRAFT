@@ -1,0 +1,9 @@
+{
+  "video_id": "zK1CLu5NX_U__chunk000",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Welcome to the live landing coverage of Firefly's first road trip to the moon with our Blue Ghost lunar lander delivering NASA payloads. I'm Bridget Oakes, the Vice President of Engineering at Firefly, and I'm Nilfer Ramji with NASA Communications. Blue Ghost lander has achieved nominal descent orbit insertion delta V for lunar landing. Five, four, three, two, one. So the lander is performing that nine-minute powered descent initiation using all of its engines to reduce, and you can see that on the simulation right there with the main engine. Main engine on. Main engine is on. We see descent critical. Call. All consoles, fire. Abort is no longer possible. Blue Ghost is getting into that vertical configuration and doing that pitch over as expected. Main engine off. Terminal guidance. Five hundred meters up. Altitude eighty-seven percent. All right, from here on out, it is just going to be those four hundred meters. Now, just as a reminder, those spectra engines that we see firing right now on our on our screen. See and BNS fire now. It's ready to fire. Forty-nine point two hundred ready. They are doing those pulses. BNS is relative. Two hundred and sixty meters up. First redirect occurred.",
+  "segments": [],
+  "elapsed_seconds": 6.55,
+  "needs_fallback": false
+}

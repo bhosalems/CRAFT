@@ -1,0 +1,9 @@
+{
+  "video_id": "ycVLlIHTkpI",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "This video is brought to you by Brilliant. Yesterday, Canadians went to the polls to elect their new government. Despite a slight tightening in the final days of the campaign, and a last-minute",
+  "segments": [],
+  "elapsed_seconds": 1.06,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "2PT5_xcmOL8",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Yeah, seven matches. A seventh Wimbledon, a twenty-first Grand Slam for this superstar player. You wouldn't say it has been his easiest year.",
+  "segments": [],
+  "elapsed_seconds": 0.94,
+  "needs_fallback": false
+}

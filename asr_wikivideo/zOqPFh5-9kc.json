@@ -1,0 +1,9 @@
+{
+  "video_id": "zOqPFh5-9kc",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "There goes the runner. Fly ball down the right field line. Tucker comes on. Kyle Tucker. This time they finish the job. The Houston Astros, world champions.",
+  "segments": [],
+  "elapsed_seconds": 1.01,
+  "needs_fallback": false
+}

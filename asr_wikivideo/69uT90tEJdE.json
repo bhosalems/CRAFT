@@ -1,0 +1,9 @@
+{
+  "video_id": "69uT90tEJdE",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "We have uncovered wonders undreamt by our ancestors who first speculated on the nature of those wandering lights in the night sky. We've crossed the solar system and sent ships to the stars, but we continue to search. We can't help it. A central element of the human future lies far beyond the Earth. If we crave some cosmic purpose, then let us find ourselves a worthy goal.",
+  "segments": [],
+  "elapsed_seconds": 2.2,
+  "needs_fallback": false
+}

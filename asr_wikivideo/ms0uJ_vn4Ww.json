@@ -1,0 +1,9 @@
+{
+  "video_id": "ms0uJ_vn4Ww",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Crew is giving a go. The Dragon team is giving a go. We're moving into the next of the major steps. Retracting the crew access arm. This will take a couple of minutes. We're going to follow that by arming the launch escape. Go fasten. Go fast",
+  "segments": [],
+  "elapsed_seconds": 13.16,
+  "needs_fallback": false
+}

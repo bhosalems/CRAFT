@@ -1,0 +1,9 @@
+{
+  "video_id": "o6EHebVgSUE",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Hey NBC News viewers, thanks for checking out our YouTube channel. Subscribe by clicking on that button down here, and click on any of the videos over here to watch the latest interviews, show highlights, and digital exclusives. Thanks for watching.",
+  "segments": [],
+  "elapsed_seconds": 1.43,
+  "needs_fallback": false
+}

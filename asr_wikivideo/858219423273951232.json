@@ -1,0 +1,9 @@
+{
+  "video_id": "858219423273951232",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "A music festival in the Bahamas has had to be postponed after the first lot of fans arrived at the venue to find preparations looking more like disaster relief. Guests were lured into the Fire Festival with the promise of popular music acts, gourmet cuisine, and models on yachts. Instead, they were faced with dirt fields, no water, bad food, and folding chairs. With tickets costing up to twelve thousand dollars, the inaugural music weekend has been branded a flop.",
+  "segments": [],
+  "elapsed_seconds": 2.52,
+  "needs_fallback": false
+}

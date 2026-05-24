@@ -1,0 +1,9 @@
+{
+  "video_id": "1978520620456353793",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "It's no harder than swimming. Are you sure? Yeah, I'm sick. Yeah, I'm sick. Yeah, I didn't have to. Stop! What's the window trim? It broke.",
+  "segments": [],
+  "elapsed_seconds": 1.16,
+  "needs_fallback": false
+}

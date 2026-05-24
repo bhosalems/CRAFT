@@ -1,0 +1,9 @@
+{
+  "video_id": "1456695148067295233",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "French",
+  "text": "Établi de relations, je ne vais pas très loin.",
+  "segments": [],
+  "elapsed_seconds": 0.47,
+  "needs_fallback": false
+}

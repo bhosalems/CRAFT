@@ -1,0 +1,9 @@
+{
+  "video_id": "1544860043094683648",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "Chinese",
+  "text": "哎，这不就是出去旅游吗？好吧，运动嘛，他要干啥？他干啥去了呀？忙着出去，对对对。",
+  "segments": [],
+  "elapsed_seconds": 0.98,
+  "needs_fallback": false
+}

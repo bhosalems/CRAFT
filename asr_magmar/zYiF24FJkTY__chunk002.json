@@ -1,0 +1,9 @@
+{
+  "video_id": "zYiF24FJkTY__chunk002",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "We campaigned on this policy throughout last year and today that promise was made, and it was also a promise, as you know, that was kept. Promises made, promises kept.",
+  "segments": [],
+  "elapsed_seconds": 1.03,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "1370106502845853696",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "About 75 meters per second at an altitude of about a kilometer off the surface of Mars. Terrain safety, Bravo. We have completed our terrain relative navigation. Current speed is about 30 meters per second. Altitude of about 300 meters off the surface of Mars.",
+  "segments": [],
+  "elapsed_seconds": 1.7,
+  "needs_fallback": false
+}

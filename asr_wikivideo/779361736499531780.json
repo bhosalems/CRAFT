@@ -1,0 +1,9 @@
+{
+  "video_id": "779361736499531780",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "",
+  "text": "",
+  "segments": [],
+  "elapsed_seconds": 0.13,
+  "needs_fallback": true
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "GSQkHx30BYI",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "We are now getting new video from the U.S. Department of Defense from a drone that was intercepted by a Russian fighter jet. In this video released today, a Russian Su-27 can be seen spraying fuel on an American Reaper drone before allegedly clipping its propeller. This forced the U.S. to bring the drone down. Meanwhile, Russia denies its plane came into contact with the drone and called the drone's flight over Crimea provocative.",
+  "segments": [],
+  "elapsed_seconds": 2.42,
+  "needs_fallback": false
+}

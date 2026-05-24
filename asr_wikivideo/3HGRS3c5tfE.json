@@ -1,0 +1,9 @@
+{
+  "video_id": "3HGRS3c5tfE",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "It all began on July 25, 2019, when U.S. President Donald Trump had a phone call with Ukraine's president. During this phone call, he was accused of withholding $400 million in security aid in order to gain information on Trump's competition in the next election, Joe Biden. These allegations have been strongly denied by Trump, who says it's part of a witch hunt against him. The House Judiciary Committee then voted for an impeachment of Trump, charging him with abusing the power of his office for personal gain. On December 18, 2019, the Senate will vote if Trump will be removed as President of the United States. He requires a two-thirds majority in the Senate to continue as president. It is expected that he shall gain majority of the votes and so continue his work in the Oval Office.",
+  "segments": [],
+  "elapsed_seconds": 4.63,
+  "needs_fallback": false
+}

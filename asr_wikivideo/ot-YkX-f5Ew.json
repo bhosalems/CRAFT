@@ -1,0 +1,9 @@
+{
+  "video_id": "ot-YkX-f5Ew",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Emergency has been recorded. All occupants go to the nearest exit and obey instructions. Do not use elevators. This is a camera. Floor here. Once again, this area is really rough. We, I'm not going to walk through it.",
+  "segments": [],
+  "elapsed_seconds": 1.43,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "1336745586112884736",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "But in order to figure out how to create proteins that that do specific things, you have to know how do those amino acids turn into the shape that the protein ultimately takes, and that's what's called protein folding. And so the hard thing is, and and and you know why is this important? It's important because we can easily read DNA, and therefore we can figure out what amino acid sequence is being made to define that protein. But what we don't know really well is what is the shape of that protein, and therefore how does it undertake the function that we see it taking in biology? And if you think about the reverse of this, the reverse of this, if you have a function you want to undertake in biology, you can design a protein to do that function for you. For example, bind to a specific point on a cancer cell, or you know take carbon out of the atmosphere, or pretty much anything else your your mind can kind of imagine on the nanoscale. Proteins can be designed to do. The challenge is how do you write the code, which is the DNA, to make the protein that does that thing.",
+  "segments": [],
+  "elapsed_seconds": 6.16,
+  "needs_fallback": false
+}

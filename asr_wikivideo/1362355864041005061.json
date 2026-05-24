@@ -1,0 +1,9 @@
+{
+  "video_id": "1362355864041005061",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "NASA's latest rover is on its way to Mars. Its mission: to look for signs of ancient life. Ignition two, one, zero, and liftoff. As the countdown to Mars continues, perseverance of humanity launching the next generation of robotic explorers to the red planet. Perseverance will push forward the boundaries of a decades-long investigation into whether Mars has ever hosted life in its four and a half billion-year history. On board is a suite of scientific instruments designed to look for signs of ancient life. It will also start to investigate how humans might live there, and for the first time ever, we'll see if we can fly a helicopter on another world.",
+  "segments": [],
+  "elapsed_seconds": 3.7,
+  "needs_fallback": false
+}

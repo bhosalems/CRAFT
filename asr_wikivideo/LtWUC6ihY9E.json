@@ -1,0 +1,9 @@
+{
+  "video_id": "LtWUC6ihY9E",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "After what the U.S. called an unsafe and unprofessional intercept of a U.S. drone, officials now say the MQ-9's operators erased sensitive software from the drone before it crashed. The drone was taken down after a nearly 40-minute encounter southwest of Crimea, when Russian Su-27 fighter jets flew in front of it and dumped fuel in its path. One jet flew underneath the drone, likely attempting to get in front of it while dumping fuel, and clipped the propeller on the back of the MQ-9. The United States will continue to fly and to operate wherever international law allows.",
+  "segments": [],
+  "elapsed_seconds": 3.31,
+  "needs_fallback": false
+}

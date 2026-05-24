@@ -1,0 +1,9 @@
+{
+  "video_id": "IxyII48MJXM",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "I declare before you all that my whole life, whether it be long or short, shall be devoted to your service and to the service of our great imperial family to which we all belong.",
+  "segments": [],
+  "elapsed_seconds": 1.1,
+  "needs_fallback": false
+}

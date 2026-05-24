@@ -1,0 +1,9 @@
+{
+  "video_id": "XGfyw1ZZmcg",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "nep_Deva",
+  "text": "no voice",
+  "segments": [],
+  "elapsed_seconds": 0.2,
+  "needs_fallback": false
+}

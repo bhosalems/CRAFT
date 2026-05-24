@@ -1,0 +1,9 @@
+{
+  "video_id": "2pwvwckaTkY",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Centre Court, the greatest stage in tennis. Roger Federer. Come on, let's go! Come on, let's go! Serena with a stunning forehand. Come on, let's go! Roger Federer, Nadal. Come on, let's go! 100 years of Centre Court and quarter moments. This is.",
+  "segments": [],
+  "elapsed_seconds": 1.95,
+  "needs_fallback": false
+}

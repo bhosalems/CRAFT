@@ -1,0 +1,9 @@
+{
+  "video_id": "1335480190902951936",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "DeepMind from Google has another breakthrough. DeepMind is the AI division of Google, and now they launched AlphaFold, which is an AI that is capable of predicting the 3D shape of a protein based on its amino acid structures. They were part of a contest where 100 teams were trying to predict the 3D shape of proteins. The average result of the human teams that was that they were right in 10% of the cases. The AlphaFold team, the machine, was right in more than 60% of the cases, and this is a game changer. This will speed up the development of medication in the next few years. This is a real turnaround, a game changer in biology.",
+  "segments": [],
+  "elapsed_seconds": 3.95,
+  "needs_fallback": false
+}

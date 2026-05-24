@@ -1,0 +1,9 @@
+{
+  "video_id": "1629976194035621888",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "U kafani puno i dima. Ostaviću sve što ima. Kroz postola svijepe pasti. Ove noći kucaj časti.",
+  "segments": [],
+  "elapsed_seconds": 1.11,
+  "needs_fallback": false
+}

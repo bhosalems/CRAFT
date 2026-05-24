@@ -1,8 +1,8 @@
-# 🚀 CRAFT Critic-Refined Adaptive Key-Frame Targeting** for multimodal video question answering [ACL 2026 MAGMaR Workshop]
+# 🚀 CRAFT Critic-Refined Adaptive Key-Frame Targeting for multimodal video question answering [ACL 2026 MAGMaR Workshop]
 
 [Mahesh Bhosale*](https://bhosalems.github.io/)<sup>1</sup>, [Abdul Wasi*](https://scholar.google.com/citations?user=_2friTYAAAAJ&hl=en)<sup>1</sup>, [Vishvesh Trivedi*](https://github.com/NerdyVisky)<sup>2</sup>, [Pengyu Yan](https://scholar.google.com/citations?user=q2QMx5gAAAAJ&hl=en)<sup>1</sup>, [David Doermann](https://scholar.google.com/citations?user=RoGOW9AAAAAJ&hl=en)<sup>1</sup>.
 
-**<sup>1</sup>University at Buffalo  |  <sup>2</sup>New York University **
+<sup>1</sup>**University at Buffalo**  |  <sup>2</sup>**New York University**
 
 [Paper](https://arxiv.org/abs/2605.19075v1)
 
@@ -26,15 +26,7 @@ conda create -n craft python=3.13 -y && conda activate craft
 pip install -r requirements.txt
 ```
 
-Prepare data ([📦 Datasets](#-datasets)), then run MAGMaR:
-
-```bash
-export VIDEO_ROOT=/path/to/MAGMaR2026_test
-PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
-    bash run_query.sh outputs/craft_magmar_main
-```
-
-Outputs: per-query reports at `outputs/craft_magmar_main/reports_query_based/all_reports.json` and a MAGMaR-format JSONL at `outputs/craft_magmar_main/submission.jsonl` for MIRAGE. All other knobs ship at reference values — see [Configuration defaults](#configuration-defaults).
+Then prepare data ([📦 Datasets](#-datasets)) and run the pipeline ([🏃 Running CRAFT](#-running-craft)).
 
 > A separate **general-note** branch ([run_step1_general_notes.py](run_step1_general_notes.py), [run_note.sh](run_note.sh), [run_note_branch_pipeline.py](run_note_branch_pipeline.py)) is present but not end-to-end verified; this README covers only the query branch.
 
@@ -109,7 +101,21 @@ Two envs are required because `omnilingual-asr` pins `fairseq2` ≤ 0.6 (torch �
 
 ---
 
-## Running on WikiVideo
+## 🏃 Running CRAFT
+
+`PARALLEL_*` should match your visible GPU count (drop to `1` for single-GPU). All other knobs ship at the reference values — see [Configuration defaults](#configuration-defaults).
+
+### MAGMaR-2026
+
+```bash
+export VIDEO_ROOT=/path/to/MAGMaR2026_test
+PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
+    bash run_query.sh outputs/craft_magmar_main
+```
+
+Outputs: per-query reports at `outputs/craft_magmar_main/reports_query_based/all_reports.json` and a MAGMaR-format JSONL at `outputs/craft_magmar_main/submission.jsonl` for MIRAGE.
+
+### WikiVideo
 
 Same orchestrator; Stage 1b defaults to `Qwen/Qwen3-VL-30B-A3B-Instruct-FP8`, Stage 2b stays on `Qwen/Qwen3.5-9B`.
 
@@ -142,4 +148,37 @@ Atomic claims are produced by the prompts ([prompts.py](prompts.py)); the post-h
 
 ## Evaluation
 
-Scored with the **MIRAGE** judge (Qwen2.5-7B-Instruct) on `info_f1` and `cite_f1`. Point MIRAGE's `run.sh` at the JSONL produced by the orchestrator.
+We score CRAFT with the **MIRAGE** judge (Qwen2.5-7B-Instruct) on `info_f1` and `cite_f1`. A local copy of MIRAGE ships as a sibling repository at [../mirage/](../mirage/); clone it alongside CRAFT and run its `run.sh` against the `submission.jsonl` produced by the orchestrator:
+
+```bash
+# from the SCALE root that holds both CRAFT/ and mirage/
+cd ../mirage
+bash run.sh /path/to/CRAFT/outputs/craft_magmar_main/submission.jsonl
+```
+
+See [`../mirage/README.md`](../mirage/README.md) for the full evaluator setup (Qwen2.5-7B judge, info / cite F1 variants, the WikiVideo benchmark hook).
+
+---
+
+## Acknowledgements
+
+- **MAGMaR-2026** organisers for the benchmark and the official query / video distribution at [akhilvssg/magmar-2026-test-asr-embeddings](https://huggingface.co/datasets/akhilvssg/magmar-2026-test-asr-embeddings).
+- **WikiVideo** ([repo](https://github.com/alexmartin1722/wikivideo), [paper](https://arxiv.org/abs/2504.00939)) and the **MultiVENT 2.0** team at HLTCOE for the multilingual news-event video collection — distributed at [hltcoe/wikivideo](https://huggingface.co/datasets/hltcoe/wikivideo).
+- **MIRAGE** for the multimodal RAG evaluation framework used as our scorer.
+- **Qwen** team for Qwen3.5-9B and Qwen3-VL-30B-A3B-Instruct-FP8 (extractors), Qwen3-ASR-1.7B (speech), and the Qwen2.5-7B-Instruct MIRAGE judge.
+- **`AdoptedIrelia/UNLI`** (UNLI base + LoRA, Qwen2.5-Omni-3B backbone) for video-grounded entailment scoring.
+- **MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli** and **meta-llama/Llama-3.2-3B-Instruct** for cross-claim contradiction screening and adjudication.
+- **Meta AI** for omniASR-LLM-7B and the `fairseq2` / `omnilingual-asr` stack used in our multilingual ASR fallback.
+
+---
+
+## Citation
+
+```bibtex
+@article{bhosale2026craft,
+  title={CRAFT: Critic-Refined Adaptive Key-Frame Targeting for Multimodal Video Question Answering},
+  author={Bhosale, Mahesh and Wasi, Abdul and Trivedi, Vishvesh and Yan, Pengyu and Gorugantu, Akhil and Doermann, David},
+  journal={arXiv preprint arXiv:2605.19075},
+  year={2026}
+}
+```

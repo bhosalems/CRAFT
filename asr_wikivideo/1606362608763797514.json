@@ -1,0 +1,9 @@
+{
+  "video_id": "1606362608763797514",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "I'm not my own. I'm not my own.",
+  "segments": [],
+  "elapsed_seconds": 0.43,
+  "needs_fallback": false
+}

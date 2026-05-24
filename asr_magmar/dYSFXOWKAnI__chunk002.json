@@ -1,0 +1,9 @@
+{
+  "video_id": "dYSFXOWKAnI__chunk002",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Very unique, very diverse background, but came to work together to solve a joint problem. And so it's really interesting every day to see how people approach problems, or see how people overcome challenges. And then ultimately, you know, you look into the clean room and you see the result of everyone's efforts.",
+  "segments": [],
+  "elapsed_seconds": 1.66,
+  "needs_fallback": false
+}

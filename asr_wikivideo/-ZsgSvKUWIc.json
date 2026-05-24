@@ -1,0 +1,9 @@
+{
+  "video_id": "-ZsgSvKUWIc",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Variety magazine reports the 2021 Oscars could also be postponed because of the coronavirus. That show is set for February 28th of next year. The Oscars had already created temporary rule changes for the show because of the pandemic. The Academy of Motion Picture Arts and Sciences has yet to make a comment yet on the award show.",
+  "segments": [],
+  "elapsed_seconds": 1.93,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "yxJa7ik1qoI",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Protesters at the Freedom Convoy in Ottawa sing, \"Oh Canada.\"",
+  "segments": [],
+  "elapsed_seconds": 0.54,
+  "needs_fallback": false
+}

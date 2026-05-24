@@ -1,0 +1,9 @@
+{
+  "video_id": "CX2pwGAlki4",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Local authorities in Australia say a bushfire, which has been burning since November and claimed the lives of two firefighters, has been finally contained. The fire in New South Wales destroyed nearly 3,000 hectares. Efforts to contain it have been helped by rainfall in the past few weeks. You get more on that from BBC World Service English.",
+  "segments": [],
+  "elapsed_seconds": 1.95,
+  "needs_fallback": false
+}

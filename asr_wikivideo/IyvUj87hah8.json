@@ -1,0 +1,9 @@
+{
+  "video_id": "IyvUj87hah8",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Well, I like to describe CRISPR as a technology for cutting the genome. It's a way to manipulate genetic sequences precisely, accurately, and easily in a way that hasn't really been accessible to science before this. And interestingly, it's notable that the technology came from curiosity-driven science, fundamental research that led in an unexpected direction, namely to harnessing CRISPR, which is naturally a bacterial immune system, as this technology for genetic manipulation. And so now scientists can use this worldwide to understand the function of genes, but also importantly to actually change genes, edit them to remove disease-causing mutations or introduce traits that are desirable.",
+  "segments": [],
+  "elapsed_seconds": 3.5,
+  "needs_fallback": false
+}

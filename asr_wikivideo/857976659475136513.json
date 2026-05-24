@@ -1,0 +1,9 @@
+{
+  "video_id": "857976659475136513",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "The actual experience exceeds our expectations, and is something that's hard to put into words. We're not allowed to keep you on the airplane anymore, so we're gonna have to be paying everybody.",
+  "segments": [],
+  "elapsed_seconds": 1.16,
+  "needs_fallback": false
+}

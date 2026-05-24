@@ -1,0 +1,9 @@
+{
+  "video_id": "mMrHm1Od_QA",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "CRISPR, clustered regularly interspaced short palindromic repeats, was awarded the Nobel Prize in Chemistry in 2020 for its revolutionary contributions to the field of genetics. CRISPR is a gene editing tool that allows scientists to make precise changes to DNA, enabling them to add, delete, or replace specific genes in a cell. The Nobel Prize in Chemistry was awarded to Jennifer Doudna and Emmanuelle Charpentier for their pioneering work in developing the CRISPR-Cas9 gene editing system. Their discovery has opened up new possibilities for genetic research and has the potential to treat a wide range of genetic disorders and diseases, such as cancer, sickle cell anemia, and cystic fibrosis. The impact of CRISPR on the field of genetics has been profound, and the tool has already been used in a range of applications, including developing new crops with improved resistance to pests and diseases, creating new animal models for research, and exploring ways to cure genetic disorders. The awarding of the Nobel Prize to Doudna and Charpentier recognizes the significance of their contribution to the field of genetics and the impact that CRISPR is likely to have on the world in the future.",
+  "segments": [],
+  "elapsed_seconds": 6.46,
+  "needs_fallback": false
+}

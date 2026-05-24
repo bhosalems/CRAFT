@@ -1,0 +1,9 @@
+{
+  "video_id": "AfXphFFDryA",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "Chinese",
+  "text": "哎，你们看，",
+  "segments": [],
+  "elapsed_seconds": 13.19,
+  "needs_fallback": false
+}

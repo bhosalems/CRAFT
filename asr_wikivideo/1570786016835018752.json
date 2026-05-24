@@ -1,0 +1,9 @@
+{
+  "video_id": "1570786016835018752",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "The Prince and Princess of Wales arriving a few moments ago. They'll be meeting soldiers from Canada, Australia, and New Zealand who have been at that army training centre rehearsing their roles in Monday's ceremony. Let's just listen in. The Prince and Princess again to meet with senior representatives of the defence staff and service people from each nation as well.",
+  "segments": [],
+  "elapsed_seconds": 1.95,
+  "needs_fallback": false
+}

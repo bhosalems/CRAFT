@@ -1,0 +1,9 @@
+{
+  "video_id": "1607432114609459200",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Southwest nightmare. I had my flight canceled last night, and they rescheduled it. Cancelled the second flight, rescheduled it for this morning, and canceled my third flight. And now I'm on this two-hour-long wait to get full service to get a different reservation. Southwest nightmare.",
+  "segments": [],
+  "elapsed_seconds": 1.71,
+  "needs_fallback": false
+}

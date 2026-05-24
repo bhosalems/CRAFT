@@ -1,0 +1,9 @@
+{
+  "video_id": "cZfepcsH0Hg",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Check over there, Captain. On the near. Boats in the water.",
+  "segments": [],
+  "elapsed_seconds": 0.56,
+  "needs_fallback": false
+}

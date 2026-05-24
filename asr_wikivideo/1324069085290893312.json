@@ -1,0 +1,9 @@
+{
+  "video_id": "1324069085290893312",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Say, well, they declared a winner. The news networks don't declare winners. The the election boards in the states declare the winners, and so you can do that. You could go to one channel to another, just as we could this morning. We watched it, and you can go one number one.",
+  "segments": [],
+  "elapsed_seconds": 1.75,
+  "needs_fallback": false
+}

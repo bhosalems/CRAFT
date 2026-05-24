@@ -1,0 +1,9 @@
+{
+  "video_id": "zK1CLu5NX_U__chunk001",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Up. First redirect occurred. Ninety-eight meters from original target. One minute remaining in flight. Up. Vehicle is converged on its commanded descent profile. All right. So we are in that autonomous phase that you had described to us. She is ready and has been preparing for this. You're going to hear hear a lot of callouts here about vision navigation solutions, laser range. Seconds remaining in terminal. One hundred meters up. And altitude systems. Navigation filters still healthy. Second hazard avoidance occurred. Five meters from previous target. Fifty meters up. Thirty seconds remaining in flight. Head up. Air five. Point nine dot four. Copy. Air five. Eleven meters up. Contact shutdown. Three contact sensors trip. Contact shutdown confirmed. Power nominal. Vehicle is charging. IMU reports lunar gravity and it is stable. All con. Chief engineer on ops. Yell, circle landed. We're on the moon.",
+  "segments": [],
+  "elapsed_seconds": 4.78,
+  "needs_fallback": false
+}

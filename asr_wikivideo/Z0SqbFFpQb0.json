@@ -1,0 +1,10 @@
+{
+  "video_id": "Z0SqbFFpQb0",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "zho_Hans",
+  "text": "aleo de su residence a dar la policial su residence a the street for residents a the resident of the resident and the resident of the resident and the resident",
+  "segments": [],
+  "elapsed_seconds": 0.18,
+  "needs_fallback": false,
+  "qwen3_language": "Chinese"
+}

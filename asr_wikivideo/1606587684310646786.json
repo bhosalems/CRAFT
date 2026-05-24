@@ -1,0 +1,9 @@
+{
+  "video_id": "1606587684310646786",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "I'm all gone, students.",
+  "segments": [],
+  "elapsed_seconds": 0.49,
+  "needs_fallback": false
+}

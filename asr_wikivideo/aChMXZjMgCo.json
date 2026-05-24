@@ -1,0 +1,9 @@
+{
+  "video_id": "aChMXZjMgCo",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "Chinese",
+  "text": "坚决打击！坚决打击",
+  "segments": [],
+  "elapsed_seconds": 13.1,
+  "needs_fallback": false
+}

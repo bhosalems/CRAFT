@@ -1,0 +1,9 @@
+{
+  "video_id": "FScf5NG-3MM",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "In a few moments, I will sign a historic executive order instituting reciprocal tariffs on countries throughout the world. Reciprocal—that means they do it to us, and we do it to them. Very simple. Can't get any simpler than that. That's a ten. That's a good one.",
+  "segments": [],
+  "elapsed_seconds": 1.65,
+  "needs_fallback": false
+}

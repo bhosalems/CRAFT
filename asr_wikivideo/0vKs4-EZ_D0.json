@@ -1,0 +1,9 @@
+{
+  "video_id": "0vKs4-EZ_D0",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Just walking up after this earthquake. Holy smokes! Huh?",
+  "segments": [],
+  "elapsed_seconds": 0.5,
+  "needs_fallback": false
+}

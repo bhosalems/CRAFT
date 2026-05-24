@@ -1,0 +1,9 @@
+{
+  "video_id": "D9IuU_AgHFY",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "The death toll from Friday's earthquake has now reached 1,600. American authorities believe that number, though, could top 10,000. These are satellite images just into the newsroom showing the physical devastation in Myanmar. The earthquake was so powerful it damaged buildings in Thailand and China too, killing more people in Bangkok as well.",
+  "segments": [],
+  "elapsed_seconds": 1.92,
+  "needs_fallback": false
+}

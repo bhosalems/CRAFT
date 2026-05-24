@@ -1,0 +1,9 @@
+{
+  "video_id": "759536072615493633",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Work it, make it, do it, make sense. Work harder, better, faster, stronger. Work it harder, make it better, do it faster, make sense stronger. Work harder, faster, stronger.",
+  "segments": [],
+  "elapsed_seconds": 1.27,
+  "needs_fallback": false
+}

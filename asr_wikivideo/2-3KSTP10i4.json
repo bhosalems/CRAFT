@@ -1,0 +1,9 @@
+{
+  "video_id": "2-3KSTP10i4",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "It's easy to declare the winner of an election when one candidate has a huge lead, but when the vote is close, it can take time to determine a winner. Votes cast at a polling center are quickly counted, but the process is much slower for mail-in ballots. It takes time for the filled-out ballots to arrive, for election officials to inspect them for authenticity, and to complete the count. So, in a close election with a high percentage of mail-in ballots, it could take days and possibly weeks to know who won. Many COVID-concerned voters are expected to vote by mail, increasing chances the 2020 presidential election may not be decided quickly.",
+  "segments": [],
+  "elapsed_seconds": 3.66,
+  "needs_fallback": false
+}

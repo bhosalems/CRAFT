@@ -1,0 +1,11 @@
+{
+  "video_id": "780787419008282626",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "eng_Latn",
+  "text": "",
+  "segments": [],
+  "elapsed_seconds": 4.31,
+  "asr_loop_detected": true,
+  "needs_fallback": true,
+  "qwen3_language": "English"
+}

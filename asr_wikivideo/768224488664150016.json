@@ -1,0 +1,9 @@
+{
+  "video_id": "768224488664150016",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Oh, coming down to baggage claim.",
+  "segments": [],
+  "elapsed_seconds": 0.35,
+  "needs_fallback": false
+}

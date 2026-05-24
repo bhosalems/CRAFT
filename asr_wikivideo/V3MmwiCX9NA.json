@@ -1,0 +1,9 @@
+{
+  "video_id": "V3MmwiCX9NA",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "Hindi",
+  "text": "भारत बनाम ऑस्ट्रेलिया टेस्ट सीरीज के तीसरे टेस्ट में भारत की हार के बाद विश्व टेस्ट चैम्पियनशिप फाइनल का परिदृश्य बदल गया है।",
+  "segments": [],
+  "elapsed_seconds": 3.17,
+  "needs_fallback": false
+}

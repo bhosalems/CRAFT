@@ -1,0 +1,9 @@
+{
+  "video_id": "1337671266921115648",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Mistakenly mapped out by scientists around the world, today it can accurately predict a protein's shape just from its sequence of amino acids. AlphaFold's predictions could enable progress in all sorts of areas. Imagine a future where we can understand diseases more quickly and develop drugs to fight them, or one where we could use enzymes to break down plastic waste, or even to capture carbon from the atmosphere—all with the help of proteins. There's a lot more work to be done, but unlocking the shapes of these building blocks could help scientists better understand the natural world and perhaps expand our knowledge of life itself.",
+  "segments": [],
+  "elapsed_seconds": 3.29,
+  "needs_fallback": false
+}

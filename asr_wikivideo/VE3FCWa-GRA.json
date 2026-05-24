@@ -1,0 +1,9 @@
+{
+  "video_id": "VE3FCWa-GRA",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Hey! Thanks for watching. If you like this video, check out these other videos from USA Today to stay up to date with all the latest news.",
+  "segments": [],
+  "elapsed_seconds": 0.95,
+  "needs_fallback": false
+}

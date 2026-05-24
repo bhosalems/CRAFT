@@ -1,0 +1,9 @@
+{
+  "video_id": "faK6magPCJU",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Don't let yourself be convinced to do something that you know is bad. And then Ian finally shares the.",
+  "segments": [],
+  "elapsed_seconds": 0.74,
+  "needs_fallback": false
+}

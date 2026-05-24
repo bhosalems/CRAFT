@@ -1,0 +1,9 @@
+{
+  "video_id": "m2k3joyc8wY",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Used by bacteria to protect themselves from infection by viruses. When the bacterium detects the presence of virus DNA, it produces two types of short RNA. One of which contains a sequence that matches that of the invading virus. These two RNAs form a complex with a protein called Cas9. Cas9 is a nuclease, a type of enzyme that can cut DNA. When the matching sequence, known as a guide RNA, finds its target within the viral genome, the Cas9 cuts the target DNA, disabling the virus. Over the past few years, researchers studying this system realized that it could be engineered to cut not just viral DNA, but any DNA sequence at a precisely chosen location by changing the guide RNA to match the target. And this can be done not just in a test tube, but also within the nucleus of a",
+  "segments": [],
+  "elapsed_seconds": 4.45,
+  "needs_fallback": false
+}

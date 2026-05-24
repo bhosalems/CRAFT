@@ -1,0 +1,9 @@
+{
+  "video_id": "_T-exE-DRRo",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Oh my gosh! All right, what's more to do? Holy shit! Whoa! Oh my gosh!",
+  "segments": [],
+  "elapsed_seconds": 0.82,
+  "needs_fallback": false
+}

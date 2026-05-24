@@ -1,0 +1,9 @@
+{
+  "video_id": "W7v5Q7BQzTk",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "French",
+  "text": "À l'intérieur de la cathédrale, voici l'ampleur des dégâts. Juste devant le cœur, les débris de la flèche tombaient plus tôt dans la soirée. Les pompiers continuent à arroser les cendres encore fumantes. L'autel n'aurait pas été endommagé, la croix juste au-dessus est restée intacte. Certains parlent de miracle car la structure générale de l'intérieur de l'édifice semble bien préservée. Au plafond, un trou béant, l'endroit même où la flèche s'est écroulée. Sur cette photo, on devine les flammes qui continuent de faire rage sous la toiture. Des braises rougeoyantes tombent encore du toit et montrent la violence de l'incendie qui a ravagé la cathédrale.",
+  "segments": [],
+  "elapsed_seconds": 5.21,
+  "needs_fallback": false
+}

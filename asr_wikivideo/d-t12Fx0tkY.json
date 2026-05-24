@@ -1,0 +1,10 @@
+{
+  "video_id": "d-t12Fx0tkY",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "zho_Hans",
+  "text": "ni موسيقى",
+  "segments": [],
+  "elapsed_seconds": 0.22,
+  "needs_fallback": false,
+  "qwen3_language": "Chinese"
+}

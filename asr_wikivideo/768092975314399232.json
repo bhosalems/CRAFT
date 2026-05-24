@@ -1,0 +1,9 @@
+{
+  "video_id": "768092975314399232",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Hi, I'm Alistair Brownlee. We can't do it without you. Sign up for the nation's biggest sports day at imteamgb.com.",
+  "segments": [],
+  "elapsed_seconds": 0.98,
+  "needs_fallback": false
+}

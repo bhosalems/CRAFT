@@ -1,0 +1,9 @@
+{
+  "video_id": "1978434586175807488",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Hey, this is John checking in from Anchorage, Alaska. Currently, about to get on a plane to Bethel, Alaska. Typhoon Haiyang hit pretty hard on the southwest coast of Alaska. A lot of people being evacuated. Strong winds. Homes were homes were destroyed. Homes were flooded. Really, really terrible situation. A lot of people are being evacuated to Bethel. A lot of people are still in some of these areas waiting on evacuation. Could be could be evacuated. May have to stay. Don't have water, food. So we're heading there right now. See what we can do to help. We'll be on the ground here in about another two hours. And looking forward to helping the people of Alaska as much as we can.",
+  "segments": [],
+  "elapsed_seconds": 4.38,
+  "needs_fallback": false
+}

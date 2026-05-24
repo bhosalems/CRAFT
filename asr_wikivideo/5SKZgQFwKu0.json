@@ -1,0 +1,9 @@
+{
+  "video_id": "5SKZgQFwKu0",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Keep moving forward, or to let conservatives take us back. And I know, from everything we've been through together over the past 18 months as a country, that there really is just one direction for us.",
+  "segments": [],
+  "elapsed_seconds": 1.26,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "1629876219477893123",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Oh yeah! Everyone is pumped today. We are very pumped. Woo! Can I get you to sign my canoe, my freedom canoe? Sure. What do I gotta do? Just sign it. Yeah, put any passes on it.",
+  "segments": [],
+  "elapsed_seconds": 1.37,
+  "needs_fallback": false
+}

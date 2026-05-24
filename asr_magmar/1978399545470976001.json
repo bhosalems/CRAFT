@@ -1,0 +1,9 @@
+{
+  "video_id": "1978399545470976001",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "It's no hiding. It's no running. We can't let go. Okay. Y'all got to protect us. Y'all didn't have to. Stop. What's this? Is the window trying to break?",
+  "segments": [],
+  "elapsed_seconds": 2.15,
+  "needs_fallback": false
+}

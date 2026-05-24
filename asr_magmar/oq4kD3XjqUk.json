@@ -1,0 +1,9 @@
+{
+  "video_id": "oq4kD3XjqUk",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "mya_Mymr",
+  "text": "အစ်သေး",
+  "segments": [],
+  "elapsed_seconds": 0.13,
+  "needs_fallback": false
+}

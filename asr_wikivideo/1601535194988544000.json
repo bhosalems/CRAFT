@@ -1,0 +1,9 @@
+{
+  "video_id": "1601535194988544000",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Emergency workers in Kansas are working through the weekend to clean up the largest U.S. crude oil spill in nearly a decade, which shut a Keystone pipeline on Wednesday. More than 14,000 barrels of crude oil had spilled into Mill Creek in Washington County. Investigators are finding out what caused the leak. Local authorities say the spill had not threatened local water supply or forced local residents to evacuate, but workers have quickly set up a containment area to restrict oil from flowing downstream. A drone video showed the ground near the oil spill blackened. Canada-based TC Energy, which operates the pipeline, says it will remain on site to help with the cleanup efforts. If the Environmental Protection Agency finds TC liable for the spill, the company would be responsible for the cost of cleanup and repairing any harm to the environment, as well as potential civil and criminal penalties. This is the third spill of several thousand barrels of crude on the Keystone pipeline since it opened in 2010. A previous Keystone spill had caused the pipeline to remain shut for about two weeks. A lengthy shutdown of the pipeline could lead to Canadian crude getting bottlenecked, though the price reaction on crude was muted on Friday.",
+  "segments": [],
+  "elapsed_seconds": 6.34,
+  "needs_fallback": false
+}

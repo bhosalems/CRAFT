@@ -1,0 +1,9 @@
+{
+  "video_id": "KvtXWBWCJKQ",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "French",
+  "text": "Ouais, parce que le bonhomme n'a encore que lui. Oui, il a été acheté. Mais les camionnards sont allés au plus près.",
+  "segments": [],
+  "elapsed_seconds": 1.12,
+  "needs_fallback": false
+}

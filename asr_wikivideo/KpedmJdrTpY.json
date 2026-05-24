@@ -1,0 +1,9 @@
+{
+  "video_id": "KpedmJdrTpY",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Inside every cell of your body, billions of tiny machines are hard at work. They carry oxygen in your blood, let your eyes detect light, and even make your muscles move. These machines are proteins, and they underpin every biological process in every living thing. Each protein has an intricate 3D shape that defines what it does and how it works. We know of over 200 million proteins in counting, but we only know the exact 3D shapes of a fraction of these. Unravel a protein, and you'll see it's like a string of beads made up of 20 different types of amino acids. Interactions between these amino acids make the protein fold, as it finds its shape out of almost limitless possibilities. For decades, a community of scientists have been working on a way to figure out protein shape, just from a string of amino acids. This is a major challenge in our understanding of biology, so we created an AI system to solve this problem called AlphaFold. It's trained on the sequences and structures of about 100,000 proteins, painstakingly mapped out by scientists around the world. Today, it can accurately predict a protein's shape just from a sequence of amino acids. AlphaFold's predictions could enable progress in all sorts of areas. Imagine a future where we can understand diseases more quickly and develop drugs to fight them, or one where we could use enzymes to break down plastic waste, or even to capture carbon from the atmosphere. All with the help of proteins. There's a lot more work to be done, but unlocking the shapes of these building blocks could help scientists better understand the natural world and perhaps expand our knowledge of life itself.",
+  "segments": [],
+  "elapsed_seconds": 9.03,
+  "needs_fallback": false
+}

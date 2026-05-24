@@ -1,0 +1,9 @@
+{
+  "video_id": "rAVd_OPeOko",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Standing by for terminal count. On attend le tout dernier compte à rebours. À tous les DDO, attention pour les deux comptes finaux. Dix, neuf, huit, sept, six, cinq, quatre, trois, deux, unité, top. All engines start. Lift off. All engines start. All",
+  "segments": [],
+  "elapsed_seconds": 13.17,
+  "needs_fallback": false
+}

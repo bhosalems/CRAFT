@@ -1,0 +1,9 @@
+{
+  "video_id": "0fXN4hBjQQg",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "This is footage I recorded five years ago when Hurricane Irma made landfall in Southwest Florida. Irma started as a tropical wave, but rapidly intensified into a Category 3 hurricane. When Irma started making landfall, it reached Category 5 status with maximum sustained winds at 180 miles per hour, causing catastrophic damage throughout the tropics. Hurricane Irma broke many records. Irma was considered the most powerful hurricane in the open Atlantic region. Irma ranked number one for the longest duration of Category 5 strength winds, ranking second as a Category 5 hurricane to make landfall in Cuba. We are now at the eye of the storm. You can see that there is severe damage. This is quite, quite an event. This Hurricane Irma is enormous, and when they're talking about the floodwaters, they weren't joking.",
+  "segments": [],
+  "elapsed_seconds": 4.4,
+  "needs_fallback": false
+}

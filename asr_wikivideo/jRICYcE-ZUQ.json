@@ -1,0 +1,9 @@
+{
+  "video_id": "jRICYcE-ZUQ",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Ten, nine, eight, seven, six, five, four, three, two, one. Come on, come on, yeah! Oh my gosh!",
+  "segments": [],
+  "elapsed_seconds": 0.98,
+  "needs_fallback": false
+}

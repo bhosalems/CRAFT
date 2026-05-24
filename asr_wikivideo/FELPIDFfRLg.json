@@ -1,0 +1,9 @@
+{
+  "video_id": "FELPIDFfRLg",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "That was ABC's Ava Pilgrim reporting. This morning, early voting is underway in Georgia's U.S. Senate runoff election. Incumbent Democrat Senator Raphael Warnock is looking to fend off his Republican challenger, NFL star Herschel Walker, for a full six-year term in the U.S. Senate. This week, Warnock and Democrats were given a victory by Georgia's Supreme Court, which ruled counties could offer early voting on Saturday. The decision ended a legal battle that challenged Georgia's 2021 voting law, which restricted weekend voting just after a holiday. That law also cut the timeline for runoff elections down to just four weeks, while limiting the early voting window to a minimum of five days instead of the previous sixteen.",
+  "segments": [],
+  "elapsed_seconds": 3.99,
+  "needs_fallback": false
+}

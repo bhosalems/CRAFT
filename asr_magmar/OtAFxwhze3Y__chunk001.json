@@ -1,0 +1,9 @@
+{
+  "video_id": "OtAFxwhze3Y__chunk001",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "What happens next? In America, it's a possible bureaucratic nightmare. Donald Trump has announced tariffs on cars and car parts, steel and aluminium, and now reciprocal levies as well. Customs officials will have to try and enforce all of these in short order. America's trading partners, meanwhile, will be thinking about how to engage with the White House and whether to retaliate against these tariffs. They know that the more they retaliate, the more they hurt their own economies. Donald Trump's protectionism is not going anywhere, but there's a chance that he sees some of his tariffs as a negotiating tool to try and win concessions from trading partners. And it's that hope that trading partners will be clinging to in the coming days.",
+  "segments": [],
+  "elapsed_seconds": 3.77,
+  "needs_fallback": false
+}

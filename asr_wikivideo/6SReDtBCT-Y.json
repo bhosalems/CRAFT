@@ -1,0 +1,9 @@
+{
+  "video_id": "6SReDtBCT-Y",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "A 7.0 magnitude earthquake hit Anchorage, Alaska, Friday morning, causing significant damage. A local resident's home security system captured the sounds of the quake. Lights in the distance suddenly disappear, followed by multiple bright flashes. The quake hit at about 8:30 a.m. local time. A tsunami warning was issued, but it was canceled a short time later. The Anchorage Police Department says there's major infrastructure damage across the city. At least three fires broke out, and videos showed just some of the significant damage to roadways. The local power company said up to a third of its customers were without power. That's a major concern for a region where the high temperatures are in the low 20s to mid 30s. In the three hours immediately following the big earthquake, the U.S. Geological Survey recorded more than 30 aftershocks with magnitudes ranging from 2.7 to 5.7. Earthquakes are common in Alaska. The Anchorage region is home to more than half of the state's population. Alaska's Governor Bill Walker issued a disaster declaration before taking off with the state's National Guard to tour the damage from the air.",
+  "segments": [],
+  "elapsed_seconds": 6.46,
+  "needs_fallback": false
+}

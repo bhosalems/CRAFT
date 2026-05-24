@@ -1,0 +1,9 @@
+{
+  "video_id": "1604215238177746945",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Don't cross the picket line! Don't cross the picket line! Don't cross the picket line! Don't cross the picket line! Don't cross the picket line! Don't cross your contract! No money! No workers! No silence!",
+  "segments": [],
+  "elapsed_seconds": 1.53,
+  "needs_fallback": false
+}

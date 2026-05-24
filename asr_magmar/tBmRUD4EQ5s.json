@@ -1,0 +1,9 @@
+{
+  "video_id": "tBmRUD4EQ5s",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Firefly, Blue Ghost, separation confirmed. And there you could see, and you also heard the callout for confirmation that Blue Ghost is drifting away from Falcon Nine's second stage. From all of us here at SpaceX, it has been a pleasure having you on board, Blue Ghost. Safe travels. SpaceX is honored to be a part of NASA's Commercial Lunar Payload Services initiative to deliver science and technology to the lunar surface, and we want to thank Firefly for entrusting us with today's historic mission.",
+  "segments": [],
+  "elapsed_seconds": 2.65,
+  "needs_fallback": false
+}

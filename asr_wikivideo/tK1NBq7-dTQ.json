@@ -1,0 +1,9 @@
+{
+  "video_id": "tK1NBq7-dTQ",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "A state of emergency has been declared in Canberra as bushfires continue to ravage parts of Australia. Officials have sounded the warning amid what they're calling the worst fire threat to the territory in nearly two decades. Residents in suburbs have been urged to remain alert for potential evacuations.",
+  "segments": [],
+  "elapsed_seconds": 1.56,
+  "needs_fallback": false
+}

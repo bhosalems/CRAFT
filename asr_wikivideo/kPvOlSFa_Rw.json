@@ -1,0 +1,9 @@
+{
+  "video_id": "kPvOlSFa_Rw",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Glamorous, glamorous, glamorous, glamorous, ooh, flowers, flowers, the glamorous, the glamorous, glamorous, glamorous, ooh.",
+  "segments": [],
+  "elapsed_seconds": 0.9,
+  "needs_fallback": false
+}

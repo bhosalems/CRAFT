@@ -1,0 +1,9 @@
+{
+  "video_id": "E4wbD7TE2r0",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Authorities say six people have been cited for loitering and refusing to leave the lava evacuation zones on the Big Island. Officers say two of the people who were caught were wearing respirators, and they were enticed by social media posts. Those who were caught claim they didn't know that they were in an off-limits area, even though they had to walk past barricades and checkpoints to get there.",
+  "segments": [],
+  "elapsed_seconds": 2.24,
+  "needs_fallback": false
+}

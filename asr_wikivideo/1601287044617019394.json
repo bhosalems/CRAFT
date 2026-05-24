@@ -1,0 +1,9 @@
+{
+  "video_id": "1601287044617019394",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Okay. It's good. Oh, you are. Yeah, ready to go. Yep. I'll try to. I'll try to figure out.",
+  "segments": [],
+  "elapsed_seconds": 0.93,
+  "needs_fallback": false
+}

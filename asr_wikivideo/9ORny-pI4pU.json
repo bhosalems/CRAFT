@@ -1,0 +1,9 @@
+{
+  "video_id": "9ORny-pI4pU",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "For decades, a community of scientists have been working on a way to figure out a protein's shape just from its string of amino acids. This is a major challenge in our understanding of biology. So, we created an AI system to solve this problem called AlphaFold. It's trained on the sequences and structures of about 100,000 proteins, painstakingly mapped out by scientists around the world. Heavy feet, Ramo Ramo, Ramo",
+  "segments": [],
+  "elapsed_seconds": 13.18,
+  "needs_fallback": false
+}

@@ -1,0 +1,9 @@
+{
+  "video_id": "oH00Dnudf9s",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "I can see the fire. Freedom!",
+  "segments": [],
+  "elapsed_seconds": 0.36,
+  "needs_fallback": false
+}

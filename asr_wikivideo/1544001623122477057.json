@@ -1,0 +1,9 @@
+{
+  "video_id": "1544001623122477057",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Could I ask the Prime Minister, was there general agreement at all three summits that our fragile rules-based order is under threat? And strategically, we've entered a profound era of geopolitical change. Could I commend the Prime Minister's efforts in Ukraine? It's a shame other NATO countries haven't lent as much as we've done. But could I commend or encourage the Prime Minister to go further and to secure a UN General Assembly resolution to create a humanitarian safe haven around that critical port of Odessa, so those vital grain exports can not only reach Europe but also Africa and prevent famine there.",
+  "segments": [],
+  "elapsed_seconds": 3.19,
+  "needs_fallback": false
+}

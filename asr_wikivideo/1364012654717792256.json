@@ -1,0 +1,9 @@
+{
+  "video_id": "1364012654717792256",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Heat shield separated. Perseverance has now slowed to subsonic speeds, and the heat shield has been separated. This allows both the radar and the cameras to get their first look at the surface. TBA is nominal. We have priming of the landing engines. We have started our constant velocity accordion, which means we are conducting the sky crane. About to conduct the sky crane maneuver. Sky crane maneuver has started. About 20 meters off the surface. We're getting signals from MRO. Tango Delta. Touchdown confirmed. Perseverance safely on the surface of Mars, ready to begin seeking the signs of past life.",
+  "segments": [],
+  "elapsed_seconds": 3.54,
+  "needs_fallback": false
+}

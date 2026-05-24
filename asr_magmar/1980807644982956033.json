@@ -1,0 +1,9 @@
+{
+  "video_id": "1980807644982956033",
+  "asr_model": "facebook/omniASR-LLM-7B",
+  "language": "nep_Deva",
+  "text": "निम्नलिखित रूप लगाना चाहिए चाहिए चाहिए",
+  "segments": [],
+  "elapsed_seconds": 0.13,
+  "needs_fallback": false
+}

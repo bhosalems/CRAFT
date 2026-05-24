@@ -1,0 +1,9 @@
+{
+  "video_id": "1lMX9eZMEIo",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "A massive earthquake rocked Alaska this morning. Take a look at this video from Twitter. It shows a damaged street near the Anchorage Airport with a person and their car stuck in the rubble. The quake hit around 10 o'clock this morning. The USGS says it was a magnitude 7.0. There have been several aftershocks, some as strong as 5.8. The National Tsunami Warning Center issued a tsunami warning for coastal zones of southern Alaska. That warning has now been canceled. People also shared videos like this from inside a grocery store shortly after the quake. Just look at all the items knocked to the floor. Entire shelves even tipped over. Of course, this is a developing situation. We'll update you on air and online as we learn anything new.",
+  "segments": [],
+  "elapsed_seconds": 4.27,
+  "needs_fallback": false
+}

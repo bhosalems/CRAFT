@@ -1,0 +1,9 @@
+{
+  "video_id": "I2RXPu2wqXA",
+  "asr_model": "Qwen/Qwen3-ASR-1.7B",
+  "language": "English",
+  "text": "Weather Channel. Tonight, hurricane conditions likely. Periods of heavy rain and windy. Low seventy three. Monday, windy. Periods of rain in the morning. High eighty one. Here's our seven day outlook. I don't think so.",
+  "segments": [],
+  "elapsed_seconds": 1.45,
+  "needs_fallback": false
+}
