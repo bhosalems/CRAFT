@@ -2,8 +2,8 @@
 
 This pipeline reads per-video transcripts from a JSON cache directory
 (`ASR_DIR`). The transcripts are produced **outside** the main pipeline
-because the two backends — Qwen3-ASR (current env, fits with vLLM) and
-Meta omniASR (requires fairseq2/fairseq2n with strict torch pinning) —
+because the two backends - Qwen3-ASR (current env, fits with vLLM) and
+Meta omniASR (requires fairseq2/fairseq2n with strict torch pinning) -
 cannot live in the same Python environment.
 
 ## Layout
@@ -27,7 +27,7 @@ Each transcript JSON has:
 }
 ```
 
-## Step 1 — Qwen3-ASR in the main venv (covers 30 languages)
+## Step 1 - Qwen3-ASR in the main venv (covers 30 languages)
 
 This is what the project's `.venv` is for. Already installed:
 
@@ -36,7 +36,7 @@ cd /home/csgrad/mbhosale/phd/SCALE/MAGMAR-MWV
 .venv/bin/python -m pip install qwen-asr librosa
 ```
 
-Run end-to-end (idempotent — re-runs skip already-cached videos):
+Run end-to-end (idempotent - re-runs skip already-cached videos):
 
 ```bash
 .venv/bin/python extract_asr.py \
@@ -49,19 +49,19 @@ Run end-to-end (idempotent — re-runs skip already-cached videos):
 ```
 
 Videos whose detected language is outside Qwen3-ASR's 30-language set
-(notably **Burmese** and **Nepali** — Q3/Q4) get an empty transcript and
+(notably **Burmese** and **Nepali** - Q3/Q4) get an empty transcript and
 `"needs_fallback": true`. Step 2 fills these in.
 
-## Step 2 — omniASR in an isolated venv (covers Burmese / Nepali / 1600+)
+## Step 2 - omniASR in an isolated venv (covers Burmese / Nepali / 1600+)
 
 omniASR depends on `fairseq2` + `fairseq2n`, which only have wheels for
 torch ≤ 2.9.1. The main `.venv` runs torch 2.10.0+cu128, so we need a
 separate venv. The two envs only communicate via the on-disk cache.
 
-### Option A — conda (recommended)
+### Option A - conda (recommended)
 
 ```bash
-# 1. Create the omni-only conda env (Python 3.12 — fairseq2 supports 3.10–3.12)
+# 1. Create the omni-only conda env (Python 3.12 - fairseq2 supports 3.10-3.12)
 conda create -n asr_omni python=3.12 -y
 conda activate asr_omni
 
@@ -75,7 +75,7 @@ pip install torch==2.9.1 torchaudio==2.9.1 \
 #    Meta's index. With --extra-index-url pip will resolve fairseq2 from PyPI
 #    where the default variant is built for an older torch and you'll get
 #    "fairseq2 requires PyTorch 2.8.0" at import time. Pin the version that
-#    matches the wheel index — current pt2.9.1/cu128 has 0.8.1.
+#    matches the wheel index - current pt2.9.1/cu128 has 0.8.1.
 pip install fairseq2==0.8.1 \
     --index-url https://fair.pkg.atmeta.com/fairseq2/whl/pt2.9.1/cu128 \
     --extra-index-url https://pypi.org/simple
@@ -121,10 +121,10 @@ pip install fairseq2==0.8.1 \
     --extra-index-url https://pypi.org/simple
 ```
 
-### Option B — venv
+### Option B - venv
 
 ```bash
-# 1. Create the omni-only venv (Python 3.12 — fairseq2 supports 3.10–3.12)
+# 1. Create the omni-only venv (Python 3.12 - fairseq2 supports 3.10-3.12)
 cd /home/csgrad/mbhosale/phd/SCALE/MAGMAR-MWV
 python3.12 -m venv .venv_asr_omni
 source .venv_asr_omni/bin/activate
@@ -180,10 +180,10 @@ omni tries `mya_Mymr` (Burmese) first, then `nep_Deva` (Nepali), and
 keeps the longer transcript. Add other target codes via
 `--fallback-langs mya_Mymr,nep_Deva,...`.
 
-## Step 3 — Run the main pipeline as usual
+## Step 3 - Run the main pipeline as usual
 
 The pipeline reads `ASR_DIR` and pastes transcripts into the VLM prompt.
-No code changes needed — `run_query.sh` looks at `ASR_DIR` (default
+No code changes needed - `run_query.sh` looks at `ASR_DIR` (default
 `$VIDEO_ROOT/asr`):
 
 ```bash
