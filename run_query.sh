@@ -187,6 +187,11 @@ MODEL_NAME="${MODEL_NAME:-Qwen/Qwen3.5-9B}"
 # benefits little from a larger multimodal extractor — we use the 9B
 # everywhere for the consolidation step.
 STAGE2_MODEL_NAME="${STAGE2_MODEL_NAME:-Qwen/Qwen3.5-9B}"
+# Stage 1b VLM frame budget. Default matches conf/runtime/step1_qwen.yaml.
+# When using AKS, set to the same value as AKS/frame_select.py --max_num_frames
+# (64 by default) so the VLM consumes the AKS-selected frames instead of a
+# uniform sub-sample.
+MAX_FRAMES="${MAX_FRAMES:-128}"
 
 # Branch output directory (all artifacts live under this).
 # Usage:
@@ -552,6 +557,7 @@ else
 				data.mapping="$MAPPING_JSON" \
 				data.video_root="$VIDEO_ROOT" \
 				model.model="$MODEL_NAME" \
+				runtime.max_frames="$MAX_FRAMES" \
 				max_critic_rounds="$MAX_CRITIC_ROUNDS" \
 				"${WORKER_OVERRIDES[@]}" \
 				"only_query_ids=$QID" \
@@ -574,6 +580,7 @@ else
 			data.mapping="$MAPPING_JSON" \
 			data.video_root="$VIDEO_ROOT" \
 			model.model="$MODEL_NAME" \
+			runtime.max_frames="$MAX_FRAMES" \
 			max_critic_rounds=0 \
 			output.out_dir="$QUERY_CLAIMS_DIR" 2>&1 | tee -a "$QUERY_CLAIMS_DIR/step1b_query_claims.log"
 	else
@@ -582,6 +589,7 @@ else
 			data.mapping="$MAPPING_JSON" \
 			data.video_root="$VIDEO_ROOT" \
 			model.model="$MODEL_NAME" \
+			runtime.max_frames="$MAX_FRAMES" \
 			max_critic_rounds="$MAX_CRITIC_ROUNDS" \
 			"${CRITIC_OVERRIDES[@]}" \
 			output.out_dir="$QUERY_CLAIMS_DIR" 2>&1 | tee -a "$QUERY_CLAIMS_DIR/step1b_query_claims.log"

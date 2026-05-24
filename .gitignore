@@ -1,0 +1,54 @@
+# --- Pipeline artefacts ---
+outputs/
+*.log
+logs/
+metrics/
+
+# --- Large data caches (videos, model weights, raw datasets) ---
+data/MultiVENT2.0/
+models--*/
+.cache/
+.locks/
+
+# --- Bundled ASR caches (kept in dedicated HF datasets; uncomment to drop from git) ---
+# asr_magmar/
+# asr_wikivideo/
+
+# --- External AKS dependency (cloned per AKS/README.md, not committed) ---
+AKS/SeViLA/
+AKS/logs/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- Claude CLI ---
+.claude/
+
+# --- Secrets / local config ---
+.env
+.env.local
+.envrc
+
+# --- Local scratch (uncomment if you keep notebooks here) ---
+rough.py
+rough.ipynb

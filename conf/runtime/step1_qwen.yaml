@@ -1,5 +1,5 @@
 fps: 1.0
-max_frames: 32
+max_frames: 128
 enable_thinking: false
 temperature: 0.3
 top_p: 0.8
