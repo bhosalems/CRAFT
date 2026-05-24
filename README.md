@@ -46,7 +46,7 @@ The release includes videos and `MAGMaR2026_queries{_dev,}.jsonl`. Topic→video
 
 ### WikiVideo (MultiVENT 2.0)
 
-We ship a CRAFT-flavoured bundle of WikiVideo at [**mbhosale/CRAFT-WikiVideo**](https://huggingface.co/datasets/mbhosale/CRAFT-WikiVideo) — original WikiVideo videos plus our pre-computed chunks, ASR cache, and DKS scores / selected frames in one place. Recommended:
+We ship a CRAFT-flavoured bundle of WikiVideo at [🤗 **mbhosale/CRAFT-WikiVideo**](https://huggingface.co/datasets/mbhosale/CRAFT-WikiVideo) — original WikiVideo videos plus our pre-computed chunks, ASR cache, and DKS scores / selected frames in one place. Recommended:
 
 ```bash
 export WIKIVIDEO_ROOT=/path/to/wikivideo
@@ -54,7 +54,7 @@ hf download mbhosale/CRAFT-WikiVideo --repo-type dataset \
     --local-dir "$WIKIVIDEO_ROOT"
 ```
 
-If you'd rather pull the upstream release and rebuild the CRAFT additions yourself, the source is [`hltcoe/wikivideo`](https://huggingface.co/datasets/hltcoe/wikivideo) — replace the command above with `hf download hltcoe/wikivideo --repo-type dataset --local-dir "$WIKIVIDEO_ROOT"`, then run the chunking, ASR, and DKS steps below.
+If you'd rather pull the upstream release and rebuild the CRAFT additions yourself, the source is [🤗 `hltcoe/wikivideo`](https://huggingface.co/datasets/hltcoe/wikivideo) — replace the command above with `hf download hltcoe/wikivideo --repo-type dataset --local-dir "$WIKIVIDEO_ROOT"`, then run the chunking, ASR, and DKS steps below.
 
 Expected layout after either download: `$WIKIVIDEO_ROOT/en/*.mp4` plus `$WIKIVIDEO_ROOT/annotations/{final_data_2015-2025,multivent1_matched_queries_videos}.json`. Synthesised persona queries ([data/wikivideo_queries.jsonl](data/wikivideo_queries.jsonl)) and the pre-built ASR cache ([`asr_wikivideo/`](asr_wikivideo/)) also ship in this repo for convenience. To regenerate the queries, edit the path constants at [generate_wikivideo_queries.py:36-40](generate_wikivideo_queries.py#L36-L40) and re-run the script.
 
@@ -138,7 +138,7 @@ PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
     bash run_query.sh outputs/craft_magmar_dks
 ```
 
-(Same pattern for WikiVideo with `MAX_FRAMES=32` and `run_query_wikivideo.sh`.) The resolver falls back to the chunked source when a DKS clip is missing, so partial coverage is non-blocking. For WikiVideo, we ship pre-computed scores + selected frames in [`mbhosale/CRAFT-WikiVideo`](https://huggingface.co/datasets/mbhosale/CRAFT-WikiVideo) under `aks/{outscores,selected_frames}/wikivideo/clip/` — only step 3 (clip cutting) is needed.
+(Same pattern for WikiVideo with `MAX_FRAMES=32` and `run_query_wikivideo.sh`.) The resolver falls back to the chunked source when a DKS clip is missing, so partial coverage is non-blocking. For WikiVideo, we ship pre-computed scores + selected frames in [🤗 `mbhosale/CRAFT-WikiVideo`](https://huggingface.co/datasets/mbhosale/CRAFT-WikiVideo) under `aks/{outscores,selected_frames}/wikivideo/clip/` — only step 3 (clip cutting) is needed.
 
 ### Data files
 
@@ -233,11 +233,10 @@ Both scripts invoke `mirage/infof1.py` and `mirage/citef1.py` with `--eval_type 
 
 ## Acknowledgements
 
-- **MAGMaR-2026** organisers for the benchmark and the official query / video distribution at [akhilvssg/magmar-2026-test-asr-embeddings](https://huggingface.co/datasets/akhilvssg/magmar-2026-test-asr-embeddings).
-- **WikiVideo** ([repo](https://github.com/alexmartin1722/wikivideo), [paper](https://arxiv.org/abs/2504.00939)) and the **MultiVENT 2.0** team at HLTCOE for the multilingual news-event video collection, distributed at [hltcoe/wikivideo](https://huggingface.co/datasets/hltcoe/wikivideo).
+- **MAGMaR-2026** organisers for the benchmark and the official query / video distribution at [🤗 akhilvssg/magmar-2026-test-asr-embeddings](https://huggingface.co/datasets/akhilvssg/magmar-2026-test-asr-embeddings).
+- **WikiVideo** ([repo](https://github.com/alexmartin1722/wikivideo), [paper](https://arxiv.org/abs/2504.00939)) and the **MultiVENT 2.0** team at HLTCOE for the multilingual news-event video collection, distributed at [🤗 hltcoe/wikivideo](https://huggingface.co/datasets/hltcoe/wikivideo).
 - **MIRAGE** for the multimodal RAG evaluation framework used as our scorer.
-- **Adaptive Keyframe Sampling** (Tang et al., [arXiv:2502.21271](https://arxiv.org/abs/2502.21271), CVPR 2025) — the upstream scoring algorithm we build on for our **Dynamic Keyframe Selection (DKS)** module. Code lives under [`AKS/`](AKS/) (directory name preserved from the upstream fork); our CLIP variant uses `openai/clip-vit-base-patch32` directly without the SeViLA stack.
-- **SeViLA** ([Yui010206/SeViLA](https://github.com/Yui010206/SeViLA)) — referenced for the optional BLIP / SeViLA scorer modes in [`AKS/feature_extract_folder.py`](AKS/feature_extract_folder.py); not required for the default CLIP path we use.
+- **Adaptive Keyframe Sampling** (Tang et al., [arXiv:2502.21271](https://arxiv.org/abs/2502.21271), CVPR 2025) — the upstream scoring algorithm we build on for our **Dynamic Keyframe Selection (DKS)** module. Code lives under [`AKS/`](AKS/) (directory name preserved from the upstream fork); our CLIP variant uses `openai/clip-vit-base-patch32`.
 - **Qwen** team for Qwen3.5-9B and Qwen3-VL-30B-A3B-Instruct-FP8 (extractors), Qwen3-ASR-1.7B (speech), and the Qwen2.5-7B-Instruct MIRAGE judge.
 - **`AdoptedIrelia/UNLI`** (UNLI base + LoRA, Qwen2.5-Omni-3B backbone) for video-grounded entailment scoring.
 - **MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli** and **meta-llama/Llama-3.2-3B-Instruct** for cross-claim contradiction screening and adjudication.
