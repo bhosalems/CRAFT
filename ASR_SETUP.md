@@ -187,11 +187,10 @@ No code changes needed - `run_query.sh` looks at `ASR_DIR` (default
 `$VIDEO_ROOT/asr`):
 
 ```bash
-deactivate  # back to main env
-TEAM_ID=cite_chasers RUN_ID=magmar_query_v12 TASK=oracle \
-    MAX_CRITIC_ROUNDS=4 STEP15_CHUNK_SIZE=10 \
-    ASR_DIR=/a2il/data/mbhosale/MAGMaR2026_test/asr \
-    bash run_query.sh outputs_query_branchv12
+conda deactivate  # back to the main env
+ASR_DIR="$VIDEO_ROOT/asr" \
+PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
+    bash run_query.sh outputs/craft_magmar_main
 ```
 
 To disable ASR for an A/B run: `ASR_DIR= bash run_query.sh ...`.
