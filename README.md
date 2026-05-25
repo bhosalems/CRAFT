@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 Then prepare data ([📦 Datasets](#-datasets)) and run the pipeline ([🏃 Running CRAFT](#-running-craft)).
 
-> A separate **general-note** branch ([run_step1_general_notes.py](run_step1_general_notes.py), [run_note.sh](run_note.sh), [run_note_branch_pipeline.py](run_note_branch_pipeline.py)) is present but not end-to-end verified. this README covers only the query branch.
+> A separate **general-note** branch ([run_step1_general_notes.py](run_step1_general_notes.py), [run_note.sh](run_note.sh), [run_note_branch_pipeline.py](run_note_branch_pipeline.py)) is present but not end-to-end verified. This README covers only the query branch.
 
 ---
 
@@ -62,7 +62,7 @@ Expected layout after either download: `$WIKIVIDEO_ROOT/en/*.mp4` plus `$WIKIVID
 
 ### Chunking
 
-Videos > 120 s are split into `<video_id>__chunk000.mp4`, … (originals untouched). The orchestrators do this automatically. manual invocation:
+Videos > 120 s are split into `<video_id>__chunk000.mp4`, … (originals untouched). The orchestrators do this automatically. Manual invocation:
 
 ```bash
 python chunk_videos.py \
@@ -77,7 +77,7 @@ Needs `ffmpeg`/`ffprobe` on `PATH` (falls back to PyAV). Idempotent. `--force` t
 
 ### ASR cache
 
-Pre-pass. the pipeline only reads from `$ASR_DIR` (set empty to disable). **Pre-built caches ship in this repo** so you can skip the ASR pre-pass entirely:
+Pre-pass. The pipeline only reads from `$ASR_DIR` (set empty to disable). **Pre-built caches ship in this repo** so you can skip the ASR pre-pass entirely:
 
 | Dataset | In-repo path | Files |
 |---|---|---|
@@ -105,7 +105,7 @@ Two envs are required because `omnilingual-asr` pins `fairseq2` ≤ 0.6 (torch �
 
 ### Dynamic Keyframe Selection (DKS, optional)
 
-For each `(query, video)` pair, DKS scores every frame with CLIP (`openai/clip-vit-base-patch32`), picks the top-`N`, and re-encodes them as a short query-specific clip the VLM consumes in place of the full chunked video. DKS gains show up only when the VLM's frame budget is also constrained — we evaluate it at `MAX_FRAMES=64` (MAGMaR) and `MAX_FRAMES=32` (WikiVideo), versus the 128-frame reference. Built on AKS (Tang et al., [arXiv:2502.21271](https://arxiv.org/abs/2502.21271), CVPR 2025); CRAFT-adapted code in [`AKS/`](AKS/).
+For each `(query, video)` pair, DKS scores every frame with CLIP (`openai/clip-vit-base-patch32`), picks the top-`N`, and re-encodes them as a short query-specific clip the VLM consumes in place of the full chunked video. DKS gains show up only when the VLM's frame budget is also constrained — we evaluate it at `MAX_FRAMES=64` (MAGMaR) and `MAX_FRAMES=32` (WikiVideo), versus the 128-frame reference. Built on AKS (Tang et al., [arXiv:2502.21271](https://arxiv.org/abs/2502.21271), CVPR 2025). CRAFT-adapted code in [`AKS/`](AKS/).
 
 **Prep** (set `N=64` for MAGMaR, `N=32` for WikiVideo):
 
@@ -147,7 +147,7 @@ PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
 | File | Purpose |
 |---|---|
 | `data/topic_video_mapping{_dev,_test,}.json` | MAGMaR topics → video IDs (pre-chunk) |
-| `data/topic_video_mapping*_v2.json` | post-chunk variant. auto-derived by `run_query.sh` |
+| `data/topic_video_mapping*_v2.json` | post-chunk variant. Auto-derived by `run_query.sh` |
 | `data/video_chunk_map{_wikivideo,}.json` | chunk-id → `{video_id, start, end}` (parent-id remap at output time) |
 | `data/topic_video_mapping_wikivideo{,_dev}.json` | WikiVideo events → video IDs |
 | `data/wikivideo_queries{,_dev}.jsonl` | synthesised persona queries (`query_id`, `query_type`, `language`, `title`, `persona_title`, `background`, `query`) |
@@ -157,7 +157,7 @@ PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
 
 ## 🏃 Running CRAFT
 
-`PARALLEL_*` should match your visible GPU count (drop to `1` for single-GPU). All other knobs ship at the reference values. see [Configuration defaults](#configuration-defaults).
+`PARALLEL_*` should match your visible GPU count (drop to `1` for single-GPU). All other knobs ship at the reference values. See [Configuration defaults](#configuration-defaults).
 
 ### MAGMaR-2026
 
@@ -192,14 +192,14 @@ PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
 | `COVERAGE_FOLLOWUP_ROUNDS` | `1` | `1` | re-prompts when coverage gaps are flagged |
 | `CRITIC_NLI_ENABLED` / `CRITIC_COVERAGE_ENABLED` | `true` | `true` | DeBERTa-v3 contradiction screen / Llama-3.2-3B coverage audit |
 | `STEP15_CHUNK_SIZE` | `10` | `10` | Stage 1.5 sub-batch size |
-| `MAX_FRAMES` | `128` | `128` | Stage 1b VLM frame budget (Hydra `runtime.max_frames`). drop to `64` (MAGMaR) or `32` (WikiVideo) when running with DKS |
+| `MAX_FRAMES` | `128` | `128` | Stage 1b VLM frame budget (Hydra `runtime.max_frames`). Drop to `64` (MAGMaR) or `32` (WikiVideo) when running with DKS |
 | `GPU_MEM_UTIL` | `0.85` | `0.85` | vLLM `gpu_memory_utilization` |
 | `PARALLEL_QUERIES` / `_STEP15` / `_STEP5` | `1` | `1` | parallel workers (set to GPU count) |
 | `ASR_DIR` | `$VIDEO_ROOT/asr` | same | empty disables ASR |
 | `AKS_VIDEO_ROOT` | unset | unset | when set, the resolver prefers `$AKS_VIDEO_ROOT/q<query_id>/<video_id>.mp4` over the chunked source (enables DKS — see [Dynamic Keyframe Selection](#dynamic-keyframe-selection-dks-optional)) |
 | `SKIP_CHUNK` / `SKIP_STEP1` | `auto` | `auto` | `1` = skip, `auto` = skip if outputs exist |
 
-Atomic claims are produced by the prompts ([prompts.py](prompts.py)). the post-hoc `format_submission.py --atomize` splitter is off by default. The Hydra config ([conf/step1_query_claims.yaml](conf/step1_query_claims.yaml)) also defaults to MAGMaR (`override /model: qwen3_5_vl`) for direct invocations of `run_step1_query_claims.py`. orchestrators override at runtime via `model.model=$MODEL_NAME`.
+Atomic claims are produced by the prompts ([prompts.py](prompts.py)). The post-hoc `format_submission.py --atomize` splitter is off by default. The Hydra config ([conf/step1_query_claims.yaml](conf/step1_query_claims.yaml)) also defaults to MAGMaR (`override /model: qwen3_5_vl`) for direct invocations of `run_step1_query_claims.py`. Orchestrators override at runtime via `model.model=$MODEL_NAME`.
 
 ---
 
@@ -237,7 +237,7 @@ Both scripts invoke `mirage/infof1.py` and `mirage/citef1.py` with `--eval_type 
 
 - **WikiVideo** ([repo](https://github.com/alexmartin1722/wikivideo), [paper](https://arxiv.org/abs/2504.00939)) and the **MultiVENT 2.0** team at HLTCOE for the multilingual news-event video collection, distributed at [🤗 hltcoe/wikivideo](https://huggingface.co/datasets/hltcoe/wikivideo).
 - **MIRAGE** for the multimodal RAG evaluation framework used as our scorer.
-- **Adaptive Keyframe Sampling** (Tang et al., [arXiv:2502.21271](https://arxiv.org/abs/2502.21271), CVPR 2025) — the upstream scoring algorithm we build on for our **Dynamic Keyframe Selection (DKS)** module. Code lives under [`AKS/`](AKS/) (directory name preserved from the upstream fork); our CLIP variant uses `openai/clip-vit-base-patch32`.
+- **Adaptive Keyframe Sampling** (Tang et al., [arXiv:2502.21271](https://arxiv.org/abs/2502.21271), CVPR 2025) — the upstream scoring algorithm we build on for our **Dynamic Keyframe Selection (DKS)** module. Code lives under [`AKS/`](AKS/) (directory name preserved from the upstream fork). Our CLIP variant uses `openai/clip-vit-base-patch32`.
 - **Qwen** team for Qwen3.5-9B and Qwen3-VL-30B-A3B-Instruct-FP8 (extractors), Qwen3-ASR-1.7B (speech), and the Qwen2.5-7B-Instruct MIRAGE judge.
 - **`AdoptedIrelia/UNLI`** (UNLI base + LoRA, Qwen2.5-Omni-3B backbone) for video-grounded entailment scoring.
 - **MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli** and **meta-llama/Llama-3.2-3B-Instruct** for cross-claim contradiction screening and adjudication.
