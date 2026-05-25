@@ -81,7 +81,7 @@ expects.
 | Script | `extract_asr.py` |
 | Inputs | post-chunking topic mapping, raw `*.mp4` |
 | Outputs | `<video_root>/asr/<video_id>.json` |
-| Backends | **Qwen3-ASR-1.7B** (primary, 30 langs incl. EN/ZH/YUE/TH). **Whisper-large-v3** (fallback for Burmese/Nepali/etc.). optional `omniASR-LLM-7B` (requires fairseq2) |
+| Backends | **Qwen3-ASR-1.7B** (primary, 30 langs incl. EN/ZH/YUE/TH). **Whisper-large-v3** (fallback for Burmese/Nepali/etc.). Optional `omniASR-LLM-7B` (requires fairseq2) |
 | Translation | Whisper `task=translate` over every non-English entry → `text_en` field |
 | Loop detector | TTR < 0.18 over ≥20 tokens, OR longest run ≥ 8, OR top-3-gram ≥ 40% - any flag clears the `text` field |
 | Failure mode addressed | **Visual-only extraction misses spoken evidence**. For queries whose video collection is dominated by a low-resource spoken language (e.g. Burmese, Nepali), a persona-strict visual filter can reject every otherwise-relevant clip. ASR provides an alternative grounding modality. The translation pass provides English anchors so the English MIRAGE judge can score non-English audio claims. |
@@ -108,7 +108,7 @@ Cache schema:
 
 | Property | Value |
 |---|---|
-| Scripts | `AKS/feature_extract_folder.py` (scoring), `AKS/frame_select.py` (top-N selection), `AKS/cut_aks_clips.py` (clip cutting). Directory `AKS/` keeps the upstream import path. the algorithm we run is CRAFT's DKS variant. |
+| Scripts | `AKS/feature_extract_folder.py` (scoring), `AKS/frame_select.py` (top-N selection), `AKS/cut_aks_clips.py` (clip cutting). Directory `AKS/` keeps the upstream import path. The algorithm we run is CRAFT's DKS variant. |
 | Inputs | post-chunking topic mapping, queries JSONL, chunked `*.mp4` |
 | Outputs | per-(query, video) score JSONs at `<output>/<dataset>/<model>/scores.json`, selected-frame indices at `<output>/selected_frames/<dataset>/<model>/`, and curated clips at `<aks_root>/q<QID>/<video_id>.mp4` |
 | Scoring backbone | **CLIP** (`openai/clip-vit-base-patch32`) by default. `mclip` / `blip` / `sevila` available via `--extract_feature_model` (BLIP / SeViLA need the upstream SeViLA env) |
@@ -160,7 +160,7 @@ contains:
      caused 30-50% of long-tail-topic videos to contribute zero claims,
      making them invisible to all citation downstream. We replace it
      with: *prefer direct answers but emit 1-2 atomic facts the
-     persona would still find useful as background. only return empty
+     persona would still find useful as background. Only return empty
      when the clip shows nothing identifiable about the topic.*
    - **Atomic claims** (\textsc{InfoP-Ref} fix). Each claim must be a
      single declarative sentence judgeable as one yes/no entailment.
@@ -220,8 +220,7 @@ never affects extraction quality.
 When `PARALLEL_QUERIES > 1`, `run_query.sh` shards queries across GPUs
 via an 8-slot pool. Each worker pins to a single visible device via
 `CUDA_VISIBLE_DEVICES`. A **barrier** waits for the dying vLLM
-worker's KV cache to release before the next worker reuses the slot.
-without this, naïve round-robin packs multiple vLLM instances on the
+worker's KV cache to release before the next worker reuses the slot. Without this, naïve round-robin packs multiple vLLM instances on the
 same card and they OOM-cascade at startup.
 
 The **combined `query_conditioned_claims.jsonl` is intentionally NOT
@@ -243,7 +242,7 @@ recombine pass produces it after all workers finish.
 | Knobs | `STEP15_CHUNK_SIZE` (videos per subprocess to bound mmap leaks). `STEP15_NO_AUDIO=1` to skip audio decode |
 
 The `chunked` variant of `predict_unli` exists because long runs leak
-mmaps via libav and eventually exhaust `vm.max_map_count`. sharding
+mmaps via libav and eventually exhaust `vm.max_map_count`. Sharding
 into N-video subprocesses reclaims those mmaps between chunks.
 
 ---
@@ -255,8 +254,8 @@ into N-video subprocesses reclaims those mmaps between chunks.
 | Script | `assemble_packets.py` |
 | Inputs | `query_conditioned_claims_calibrated.jsonl`, queries JSONL, mapping |
 | Outputs | `claim_packets/query_<N>.json` (one per query) + `all_packets.json` |
-| Algorithm | sort claims by `calibration.unli.prob` descending. keep top-K (`unli_threshold=null`, ranking only) |
-| Failure mode addressed | **Information overload at inference**. Without packet selection, the inference LLM receives 90+ raw claims for some queries. the prompt blows past `max_tokens` and the JSON output truncates, causing silent parser failure. Confidence ranking preserves long-tail evidence that hard thresholds would discard. |
+| Algorithm | sort claims by `calibration.unli.prob` descending. Keep top-K (`unli_threshold=null`, ranking only) |
+| Failure mode addressed | **Information overload at inference**. Without packet selection, the inference LLM receives 90+ raw claims for some queries. The prompt blows past `max_tokens` and the JSON output truncates, causing silent parser failure. Confidence ranking preserves long-tail evidence that hard thresholds would discard. |
 | Knobs | `unli_threshold` (config), packet size cap |
 
 ---
@@ -303,8 +302,8 @@ Mitigate by lowering the packet size cap or raising `max_tokens`.
 | Script | `generate_report.py` |
 | Inputs | claim packets, calibrated claims, inferences (per-query JSONLs) |
 | Outputs | `reports_query_based/all_reports.json` (one report object per query) |
-| Algorithm | for each query: if inferences exist, emit one section per inference with `source_citations` populated from the inference's `source_ids`. otherwise fall back to one section per top-K calibrated claim |
-| Failure mode addressed | **End-to-end provenance**. The text the evaluator scores is the text the inference (or fallback) emitted. the citations the evaluator scores are the ones Stage 1b assigned. No rewriting happens here. |
+| Algorithm | for each query: if inferences exist, emit one section per inference with `source_citations` populated from the inference's `source_ids`. Otherwise fall back to one section per top-K calibrated claim |
+| Failure mode addressed | **End-to-end provenance**. The text the evaluator scores is the text the inference (or fallback) emitted. The citations the evaluator scores are the ones Stage 1b assigned. No rewriting happens here. |
 
 The fallback path matters for metric stability: when Stage 2b
 silently fails for a query, this stage emits one section per raw
@@ -321,8 +320,8 @@ claim, which inflates \textsc{CiteR} but widens variance in
 | Script | `format_submission.py` |
 | Inputs | `all_reports.json`, chunk-id ↔ parent-id map |
 | Outputs | `submission.jsonl` (one line per query, MAGMaR-2026 schema) |
-| Knobs | `--no-atomize` (default. the post-hoc splitter is OFF because Stages 1b and 2b already enforce atomic claims). `--chunk-map` |
-| Failure mode addressed | **Chunked-id leakage to evaluator**. The MIRAGE judge expects parent video ids. without remapping, every cited `<vid>__chunk000` would be a non-match. |
+| Knobs | `--no-atomize` (default off, because Stages 1b and 2b already enforce atomic claims). `--chunk-map` |
+| Failure mode addressed | **Chunked-id leakage to evaluator**. The MIRAGE judge expects parent video ids. Without remapping, every cited `<vid>__chunk000` would be a non-match. |
 
 ---
 
@@ -332,7 +331,7 @@ claim, which inflates \textsc{CiteR} but widens variance in
 |---|---|
 | External tool | MIRAGE scorer (sibling repo at [`mirage/`](mirage/), env `video_rag_eval`) |
 | Variants we run | `info_f1` reference, `cite_f1` reference |
-| Skipped | `info_f1` / `cite_f1` collection (VLM-grounded. expensive) |
+| Skipped | `info_f1` / `cite_f1` collection (VLM-grounded, expensive) |
 
 ---
 

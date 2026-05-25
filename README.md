@@ -36,15 +36,15 @@ Then prepare data ([📦 Datasets](#-datasets)) and run the pipeline ([🏃 Runn
 
 ### MAGMaR-2026
 
-We use the MAGMaR-2026 test release at [🤗 **akhilvssg/magmar-2026-test-asr-embeddings**](https://huggingface.co/datasets/akhilvssg/magmar-2026-test-asr-embeddings) — videos, queries, and pre-computed ASR embeddings in one place:
+We ship a CRAFT-flavoured bundle of MAGMaR-2026 at [🤗 **mbhosale/CRAFT-MAGMaR**](https://huggingface.co/datasets/mbhosale/CRAFT-MAGMaR) — videos (originals + pre-computed chunks), queries, ASR cache, and DKS scores / selected frames in one place:
 
 ```bash
 export VIDEO_ROOT=/path/to/MAGMaR2026_test
-hf download akhilvssg/magmar-2026-test-asr-embeddings \
-    --repo-type dataset --local-dir "$VIDEO_ROOT"
+hf download mbhosale/CRAFT-MAGMaR --repo-type dataset \
+    --local-dir "$VIDEO_ROOT"
 ```
 
-The release includes videos and `MAGMaR2026_queries{_dev,}.jsonl`. Topic→video mappings and the pre-built ASR cache ([`asr_magmar/`](asr_magmar/)) ship in this repo, only chunking is needed check mor ein chunking section below.
+The release includes videos (pre-chunked, no further chunking needed), `MAGMaR2026_queries{_dev,}.jsonl`, the ASR cache, and the DKS scores / selected frames. Topic→video mappings ship in this repo.
 
 ### WikiVideo (MultiVENT 2.0)
 
