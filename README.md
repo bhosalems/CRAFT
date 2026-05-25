@@ -140,7 +140,7 @@ PARALLEL_QUERIES=8 PARALLEL_STEP15=8 PARALLEL_STEP5=8 \
     bash run_query.sh outputs/craft_magmar_dks
 ```
 
-(Same pattern for WikiVideo with `MAX_FRAMES=32` and `run_query_wikivideo.sh`.) The resolver falls back to the chunked source when a DKS clip is missing, so partial coverage is non-blocking. For WikiVideo, we ship pre-computed scores + selected frames in [🤗 `mbhosale/CRAFT-WikiVideo`](https://huggingface.co/datasets/mbhosale/CRAFT-WikiVideo) under `aks/{outscores,selected_frames}/wikivideo/clip/` — only step 3 (clip cutting) is needed.
+(Same pattern for WikiVideo with `MAX_FRAMES=32` and `run_query_wikivideo.sh`.) The resolver falls back to the chunked source when a DKS clip is missing, so partial coverage is non-blocking. Both [🤗 `mbhosale/CRAFT-MAGMaR`](https://huggingface.co/datasets/mbhosale/CRAFT-MAGMaR) and [🤗 `mbhosale/CRAFT-WikiVideo`](https://huggingface.co/datasets/mbhosale/CRAFT-WikiVideo) ship pre-computed scores + selected frames under `aks/{outscores,selected_frames}/<dataset>/clip/`, so only step 3 (clip cutting) is needed.
 
 ### Data files
 
