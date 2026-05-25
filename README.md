@@ -36,9 +36,11 @@ Then prepare data ([📦 Datasets](#-datasets)) and run the pipeline ([🏃 Runn
 
 ### MAGMaR-2026
 
+We use the MAGMaR-2026 test release at [🤗 **akhilvssg/magmar-2026-test-asr-embeddings**](https://huggingface.co/datasets/akhilvssg/magmar-2026-test-asr-embeddings) — videos, queries, and pre-computed ASR embeddings in one place:
+
 ```bash
 export VIDEO_ROOT=/path/to/MAGMaR2026_test
-huggingface-cli download akhilvssg/magmar-2026-test-asr-embeddings \
+hf download akhilvssg/magmar-2026-test-asr-embeddings \
     --repo-type dataset --local-dir "$VIDEO_ROOT"
 ```
 
@@ -233,7 +235,6 @@ Both scripts invoke `mirage/infof1.py` and `mirage/citef1.py` with `--eval_type 
 
 ## Acknowledgements
 
-- **MAGMaR-2026** organisers for the benchmark and the official query / video distribution at [🤗 akhilvssg/magmar-2026-test-asr-embeddings](https://huggingface.co/datasets/akhilvssg/magmar-2026-test-asr-embeddings).
 - **WikiVideo** ([repo](https://github.com/alexmartin1722/wikivideo), [paper](https://arxiv.org/abs/2504.00939)) and the **MultiVENT 2.0** team at HLTCOE for the multilingual news-event video collection, distributed at [🤗 hltcoe/wikivideo](https://huggingface.co/datasets/hltcoe/wikivideo).
 - **MIRAGE** for the multimodal RAG evaluation framework used as our scorer.
 - **Adaptive Keyframe Sampling** (Tang et al., [arXiv:2502.21271](https://arxiv.org/abs/2502.21271), CVPR 2025) — the upstream scoring algorithm we build on for our **Dynamic Keyframe Selection (DKS)** module. Code lives under [`AKS/`](AKS/) (directory name preserved from the upstream fork); our CLIP variant uses `openai/clip-vit-base-patch32`.
