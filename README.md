@@ -44,7 +44,7 @@ hf download akhilvssg/magmar-2026-test-asr-embeddings \
     --repo-type dataset --local-dir "$VIDEO_ROOT"
 ```
 
-The release includes videos and `MAGMaR2026_queries{_dev,}.jsonl`. Topic→video mappings and the pre-built ASR cache ([`asr_magmar/`](asr_magmar/)) ship in this repo, so no further data prep is needed.
+The release includes videos and `MAGMaR2026_queries{_dev,}.jsonl`. Topic→video mappings and the pre-built ASR cache ([`asr_magmar/`](asr_magmar/)) ship in this repo, only chunking is needed check mor ein chunking section below.
 
 ### WikiVideo (MultiVENT 2.0)
 
