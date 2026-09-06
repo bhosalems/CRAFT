@@ -4,7 +4,9 @@
 
 <sup>1</sup>**University at Buffalo**  |  <sup>2</sup>**New York University**
 
-[Paper](https://arxiv.org/abs/2605.19075v1)
+[![Paper](https://img.shields.io/badge/Paper-arXiv%3A2606.00377-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.19075v1)
+[![CRAFT-wikivideo](https://img.shields.io/badge/HuggingFace-VSM-ffd21e?logo=huggingface&logoColor=000)](https://huggingface.co/datasets/mbhosale/CRAFT-WikiVideo)
+[![CRAFT-MAGMaR](https://img.shields.io/badge/HuggingFace-VSM-ffd21e?logo=huggingface&logoColor=000)](https://huggingface.co/datasets/mbhosale/CRAFT-MAGMaR)
 
 ## Overview
 
